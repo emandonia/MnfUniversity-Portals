@@ -1,0 +1,6 @@
+<asp:Image runat="server" SkinID="LoadingImage" ImageUrl="images/indicator.gif" />
+
+<asp:gridview runat="server" backcolor="#606060">
+    <AlternatingRowStyle backcolor="white" />
+
+</asp:gridview>

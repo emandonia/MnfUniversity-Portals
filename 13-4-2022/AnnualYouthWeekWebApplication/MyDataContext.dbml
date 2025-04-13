@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Annual_Youth_Week" Class="MyDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLSERVER;Initial Catalog=Annual_Youth_Week;Persist Security Info=True;User ID=portal_admin" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="Annual_Youth_WeekConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Activities" Member="Activities">
+    <Type Name="Activity">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Activity_Name" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Association Name="Activity_Field" Member="Fields" ThisKey="ID" OtherKey="Activity_id" Type="Field" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Years" Member="Years">
+    <Type Name="Year">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Year" Member="Year1" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Fac_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Year_Student" Member="Students" ThisKey="ID" OtherKey="Year_ID" Type="Student" />
+      <Association Name="Faculty_Year" Member="Faculty" ThisKey="Fac_id" OtherKey="ID" Type="Faculty" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Companion_types" Member="Companion_types">
+    <Type Name="Companion_type">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Comp_Type" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Association Name="Companion_type_Companion" Member="Companions" ThisKey="ID" OtherKey="Comp_type" Type="Companion" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Faculties" Member="Faculties">
+    <Type Name="Faculty">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Faculty" Member="Faculty1" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Association Name="Faculty_Year" Member="Years" ThisKey="ID" OtherKey="Fac_id" Type="Year" />
+      <Association Name="Faculty_Student" Member="Students" ThisKey="ID" OtherKey="Faculty_ID" Type="Student" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Fields" Member="Fields">
+    <Type Name="Field">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Field_Name" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Activity_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Field_Instructor" Member="Instructors" ThisKey="ID" OtherKey="FieldID" Type="Instructor" />
+      <Association Name="Field_Student" Member="Students" ThisKey="ID" OtherKey="Field_id" Type="Student" />
+      <Association Name="Activity_Field" Member="Activity" ThisKey="Activity_id" OtherKey="ID" Type="Activity" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.General_Instructor_Types" Member="General_Instructor_Types">
+    <Type Name="General_Instructor_Type">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Gen_Inst_Type" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Association Name="General_Instructor_Type_General_Instructor" Member="General_Instructors" ThisKey="ID" OtherKey="General_inst_type" Type="General_Instructor" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Higher_Admin_Types" Member="Higher_Admin_Types">
+    <Type Name="Higher_Admin_Type">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Admin_Type" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="Higher_Admin_Type_Higher_Admin" Member="Higher_Admins" ThisKey="ID" OtherKey="Admin_type_id" Type="Higher_Admin" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Instructor_Types" Member="Instructor_Types">
+    <Type Name="Instructor_Type">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Inst_Type" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="Instructor_Type_Instructor" Member="Instructors" ThisKey="ID" OtherKey="Inst_type" Type="Instructor" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Universities" Member="Universities">
+    <Type Name="University">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="University_Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="University_User" Member="Users" ThisKey="ID" OtherKey="University_id" Type="User" />
+      <Association Name="University_Companion" Member="Companions" ThisKey="ID" OtherKey="University_id" Type="Companion" />
+      <Association Name="University_General_Instructor" Member="General_Instructors" ThisKey="ID" OtherKey="University_id" Type="General_Instructor" />
+      <Association Name="University_Higher_Admin" Member="Higher_Admins" ThisKey="ID" OtherKey="University_id" Type="Higher_Admin" />
+      <Association Name="University_Instructor" Member="Instructors" ThisKey="ID" OtherKey="University_id" Type="Instructor" />
+      <Association Name="University_Student" Member="Students" ThisKey="ID" OtherKey="University_id" Type="Student" />
+      <Association Name="University_Member" Member="Members" ThisKey="ID" OtherKey="University_id" Type="Member" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="University_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="user_type_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Loginstate" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="University_User" Member="University" ThisKey="University_id" OtherKey="ID" Type="University" IsForeignKey="true" />
+      <Association Name="UserType_User" Member="UserType" ThisKey="user_type_id" OtherKey="ID" Type="UserType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserTypes" Member="UserTypes">
+    <Type Name="UserType">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserType" Member="UserType1" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Association Name="UserType_User" Member="Users" ThisKey="ID" OtherKey="user_type_id" Type="User" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Companions" Member="Companions">
+    <Type Name="Companion">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Comp_Name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="National_ID" Type="System.String" DbType="NVarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="Gender" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Birth_Date" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Birth_Place" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="phone_no" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Personal_Image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NatID_Image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="University_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Comp_type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SerialNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Companion_type_Companion" Member="Companion_type" ThisKey="Comp_type" OtherKey="ID" Type="Companion_type" IsForeignKey="true" />
+      <Association Name="University_Companion" Member="University" ThisKey="University_id" OtherKey="ID" Type="University" IsForeignKey="true" />
+      <Association Name="Gender_Companion" Member="Gender1" ThisKey="Gender" OtherKey="id" Type="Gender" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.General_Instructors" Member="General_Instructors">
+    <Type Name="General_Instructor">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Gen_Inst_Name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="National_ID" Type="System.String" DbType="NVarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="Gender" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Birth_Date" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Birth_Place" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="phone_no" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Personal_Image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NatID_Image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="University_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="General_inst_type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SerialNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="General_Instructor_Type_General_Instructor" Member="General_Instructor_Type" ThisKey="General_inst_type" OtherKey="ID" Type="General_Instructor_Type" IsForeignKey="true" />
+      <Association Name="University_General_Instructor" Member="University" ThisKey="University_id" OtherKey="ID" Type="University" IsForeignKey="true" />
+      <Association Name="Gender_General_Instructor" Member="Gender1" ThisKey="Gender" OtherKey="id" Type="Gender" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Higher_Admins" Member="Higher_Admins">
+    <Type Name="Higher_Admin">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Admin_Name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="National_ID" Type="System.String" DbType="NVarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone_Number" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Birth_Date" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Birth_Place" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Personal_Image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="University_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Admin_type_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SerialNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Higher_Admin_Type_Higher_Admin" Member="Higher_Admin_Type" ThisKey="Admin_type_id" OtherKey="ID" Type="Higher_Admin_Type" IsForeignKey="true" />
+      <Association Name="University_Higher_Admin" Member="University" ThisKey="University_id" OtherKey="ID" Type="University" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Instructors" Member="Instructors">
+    <Type Name="Instructor">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Inst_Name" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="National_ID" Type="System.String" DbType="NVarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="Gender" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Birth_Date" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Birth_Place" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="phone_no" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Personal_Image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NatID_Image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="University_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Inst_type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SerialNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FieldID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Field_Instructor" Member="Field" ThisKey="FieldID" OtherKey="ID" Type="Field" IsForeignKey="true" />
+      <Association Name="Instructor_Type_Instructor" Member="Instructor_Type" ThisKey="Inst_type" OtherKey="ID" Type="Instructor_Type" IsForeignKey="true" />
+      <Association Name="University_Instructor" Member="University" ThisKey="University_id" OtherKey="ID" Type="University" IsForeignKey="true" />
+      <Association Name="Gender_Instructor" Member="Gender1" ThisKey="Gender" OtherKey="id" Type="Gender" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Students" Member="Students">
+    <Type Name="Student">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Stu_Name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="National_ID" Type="System.String" DbType="NVarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="Gender" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Birth_Date" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Birth_Place" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="phone_no" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Personal_Image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NatID_Image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="University_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Faculty_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Year_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Activity_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Field_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SerialNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Faculty_Student" Member="Faculty" ThisKey="Faculty_ID" OtherKey="ID" Type="Faculty" IsForeignKey="true" />
+      <Association Name="Field_Student" Member="Field" ThisKey="Field_id" OtherKey="ID" Type="Field" IsForeignKey="true" />
+      <Association Name="University_Student" Member="University" ThisKey="University_id" OtherKey="ID" Type="University" IsForeignKey="true" />
+      <Association Name="Year_Student" Member="Year" ThisKey="Year_ID" OtherKey="ID" Type="Year" IsForeignKey="true" />
+      <Association Name="Gender_Student" Member="Gender1" ThisKey="Gender" OtherKey="id" Type="Gender" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Members" Member="Members">
+    <Type Name="Member">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Member_Name" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="National_ID" Type="System.String" DbType="NVarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="Birth_Date" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Birth_Place" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="phone_no" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Personal_Image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NatID_Image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="University_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SerialNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="University_Member" Member="University" ThisKey="University_id" OtherKey="ID" Type="University" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Gender" Member="Genders">
+    <Type Name="Gender">
+      <Column Name="id" Type="System.Boolean" DbType="Bit NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="gender" Member="gender1" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Gender_Companion" Member="Companions" ThisKey="id" OtherKey="Gender" Type="Companion" />
+      <Association Name="Gender_General_Instructor" Member="General_Instructors" ThisKey="id" OtherKey="Gender" Type="General_Instructor" />
+      <Association Name="Gender_Instructor" Member="Instructors" ThisKey="id" OtherKey="Gender" Type="Instructor" />
+      <Association Name="Gender_Student" Member="Students" ThisKey="id" OtherKey="Gender" Type="Student" />
+    </Type>
+  </Table>
+</Database>

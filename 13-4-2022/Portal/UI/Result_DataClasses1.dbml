@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MIS_Portal" Class="Result_DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=BLADE-03\SQLSERVER;Initial Catalog=MIS_Portal;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MIS_PortalConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.RESULT" Member="RESULTs">
+    <Type Name="RESULT">
+      <Column Name="STU_SEQ_NUM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="STU_ID" Type="System.String" DbType="NVarChar(14)" CanBeNull="true" />
+      <Column Name="SUB_NAME" Type="System.String" DbType="NVarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="STU_SUB_MARK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="STU_SUB_DEGREE" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SUB_TERM" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="STUDENT_RESULT" Member="STUDENT" ThisKey="STU_SEQ_NUM" OtherKey="STU_SEQ_NUM" Type="STUDENT" IsForeignKey="true" />
+      <Association Name="SUBJECT_RESULT" Member="SUBJECT" ThisKey="SUB_NAME" OtherKey="SUB_NAME" Type="SUBJECT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T8" Member="T8s">
+    <Type Name="T8">
+      <Column Name="AcdNumber" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+      <Column Name="S_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="S_Case" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="A1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A3" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A4" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A5" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A6" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A7" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A8" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A9" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A10" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A11" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A12" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A13" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A14" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="C1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="C2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EE1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="C3" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A1D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A2D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A3D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A4D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A5D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A6D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A7D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A8D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A9D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A10D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A11D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A12D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A13D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A14D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="C1D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="C2D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="C3D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="B1N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="B1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="B2N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="B2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="B3N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="B3M" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="B3" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="B4N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="B4M" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="B4" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="B5N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="B5M" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="B5" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="D1N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="D1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="D2N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="D2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="D3N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="D3" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="D4N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="D4" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="D5N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="D5" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="D6N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="D6" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="memo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GA1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA2" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA3" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA4" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA5" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA6" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA7" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA8" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA9" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA10" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA11" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA12" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA13" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA14" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GC1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GC2" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GC3" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GB1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GB2" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GB3" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GB4" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GB5" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GD1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GD2" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GD3" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GD4" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GD5" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GD6" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="G_SUM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="P1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="P2" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="P" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="G1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Code2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="R" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA1D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA2D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA3D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA4D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA5D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA6D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA7D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA8D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA9D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA10D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA11D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA12D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA13D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GA14D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GB1D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GB2D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GB3D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GB4D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GB5D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GC1D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GC2D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GC3D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GD1D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GD2D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GD3D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GD4D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GD5D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GD6D" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="A1L" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A2L" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A3L" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A4L" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A5L" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A6L" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A7L" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A8L" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A9L" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A10L" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A11L" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A12L" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A13L" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A14L" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="C1L" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="C2L" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="C3L" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="A1N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="A2N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="A3N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="A4N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="A5N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="A6N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="A7N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="A8N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="A9N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="A10N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="A11N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="A12N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="A13N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="A14N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="A1M" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A2M" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A3M" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A4M" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A5M" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A6M" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A7M" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A8M" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A9M" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A10M" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A11M" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A12M" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A13M" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="A14M" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="C1N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="C2N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="C3N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="C1M" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="C2M" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="C3M" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="University" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Faculty" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Presedent" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dean" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Head" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dept" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="R_Date" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Year" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AcdYear" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="B1D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="B2D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="D1D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="D2D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="D3D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="D4D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="D5D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="D6D" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="G2" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="G" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="B1M" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="B2M" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="D1M" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="D2M" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="D3M" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="D4M" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="D5M" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="D6M" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GEE1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="EE1N" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EE1M" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Expr1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Vice Dean]" Member="Vice_Dean" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Name1" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name2" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name3" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name4" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name5" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name6" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name7" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name8" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name9" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name10" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name11" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name12" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name13" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name14" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name15" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name16" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name17" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name18" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name19" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name20" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name21" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name22" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name23" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name24" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.STUDENT" Member="STUDENTs">
+    <Type Name="STUDENT">
+      <Column Name="STU_SEQ_NUM" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STU_ID" Type="System.String" DbType="NVarChar(14)" CanBeNull="true" />
+      <Column Name="STU_NAME" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="STU_FACULTY" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="STU_DEPT" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="STU_YEAR" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="STU_CASE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="STU_MARKS_SUM" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="STU_MARKS_PERC" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="STU_DEGREE" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="STU_RES_STATUS" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="STU_ACD_YEAR" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="STU_RES_DATE" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="STU_PAYS_STATUS" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="STUDENT_RESULT" Member="RESULTs" ThisKey="STU_SEQ_NUM" OtherKey="STU_SEQ_NUM" Type="RESULT" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SUBJECT" Member="SUBJECTs">
+    <Type Name="SUBJECT">
+      <Column Name="SUB_NAME" Type="System.String" DbType="NVarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SUB_MIN_MARK" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="SUB_MAX_MARK" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Association Name="SUBJECT_RESULT" Member="RESULTs" ThisKey="SUB_NAME" OtherKey="SUB_NAME" Type="RESULT" />
+    </Type>
+  </Table>
+</Database>

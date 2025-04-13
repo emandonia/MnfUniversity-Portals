@@ -1,0 +1,3 @@
+﻿namespace MnfUniversity_Portals
+{
+}

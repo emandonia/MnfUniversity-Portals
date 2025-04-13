@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Address" xml:space="preserve">
+    <value>الدولة / المحافظة</value>
+  </data>
+  <data name="AdminEditors" xml:space="preserve">
+    <value>مرحبا بك فى صفحة المحررات</value>
+  </data>
+  <data name="AdminEditors_infoReg" xml:space="preserve">
+    <value>معلومات المسجلين بالدورات</value>
+  </data>
+  <data name="AdminEditors_select" xml:space="preserve">
+    <value>من فضلك أختر المحرر</value>
+  </data>
+  <data name="AdvImageEditors" xml:space="preserve">
+    <value>مرحبا بك فى محرر الإعلانات</value>
+  </data>
+  <data name="arTitle" xml:space="preserve">
+    <value>عنوان الخبر عربى</value>
+  </data>
+  <data name="ChooseCourse" xml:space="preserve">
+    <value>اختر الدورة :</value>
+  </data>
+  <data name="ConsDetails" xml:space="preserve">
+    <value>الإستشارات</value>
+  </data>
+  <data name="ConsEditor" xml:space="preserve">
+    <value>مرحبا بك فى محرر الإستشارات</value>
+  </data>
+  <data name="ContactAddress" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ContactE-Mail" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ContactInfo" xml:space="preserve">
+    <value>معلومات الأتصال</value>
+  </data>
+  <data name="ContactMob" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>معلومات الأتصال</value>
+  </data>
+  <data name="CopyRight" xml:space="preserve">
+    <value>جميع الحقوق محفوظة2016 @ الوكالة العربية للعلاقات العامة  </value>
+  </data>
+  <data name="CourseAV" xml:space="preserve">
+    <value>متاح / غير متاح :</value>
+  </data>
+  <data name="courseAval" xml:space="preserve">
+    <value>عدد الدورات المتاحة : </value>
+  </data>
+  <data name="CourseDa" xml:space="preserve">
+    <value>تاريخ الدورة :</value>
+  </data>
+  <data name="CourseDe" xml:space="preserve">
+    <value>التفاصيل : </value>
+  </data>
+  <data name="CourseHo" xml:space="preserve">
+    <value>عدد الساعات : </value>
+  </data>
+  <data name="CourseNa" xml:space="preserve">
+    <value>اسم الدورة :</value>
+  </data>
+  <data name="courseNo" xml:space="preserve">
+    <value>عدد الدورات : </value>
+  </data>
+  <data name="courseNotAval" xml:space="preserve">
+    <value>عدد الدورات الغير متاحة : </value>
+  </data>
+  <data name="CoursePl" xml:space="preserve">
+    <value>مكان الإنعقاد : </value>
+  </data>
+  <data name="CoursePr" xml:space="preserve">
+    <value>تكلفة الدورة : </value>
+  </data>
+  <data name="CoursesArchive" xml:space="preserve">
+    <value>الدورات </value>
+  </data>
+  <data name="CoursesEditor" xml:space="preserve">
+    <value>مرحبا بك فى محرر الكورسات</value>
+  </data>
+  <data name="CV" xml:space="preserve">
+    <value>السيرة الذاتية</value>
+  </data>
+  <data name="Data Of Add and Search" xml:space="preserve">
+    <value>بيانات البحث والادخال</value>
+  </data>
+  <data name="DataOfMainMenu" xml:space="preserve">
+    <value>بيانات القوائم الرئيسية</value>
+  </data>
+  <data name="DataOfSubMenu" xml:space="preserve">
+    <value>بيانات القوائم الفرعية</value>
+  </data>
+  <data name="details" xml:space="preserve">
+    <value>عرض التـفـاصيـل</value>
+  </data>
+  <data name="E-Learning" xml:space="preserve">
+    <value>التدريب عن بعد</value>
+  </data>
+  <data name="enTitle" xml:space="preserve">
+    <value>عنوان الخبر انجليزى</value>
+  </data>
+  <data name="EventDetails" xml:space="preserve">
+    <value>تفاصيل الحدث</value>
+  </data>
+  <data name="EventsEditor" xml:space="preserve">
+    <value>مرحبا بك فى محرر الأحداث</value>
+  </data>
+  <data name="Greetings" xml:space="preserve">
+    <value>التحية</value>
+  </data>
+  <data name="houreNumber" xml:space="preserve">
+    <value>عدد الساعات</value>
+  </data>
+  <data name="ImageLink" xml:space="preserve">
+    <value>شركاء النجاح</value>
+  </data>
+  <data name="ImageLinkEditors" xml:space="preserve">
+    <value>مرحبا بك فى محرر الصور الهامة</value>
+  </data>
+  <data name="ImportantLink" xml:space="preserve">
+    <value>الإستشارات</value>
+  </data>
+  <data name="insertmainmenu" xml:space="preserve">
+    <value>ادخال قائمة رئيسية</value>
+  </data>
+  <data name="insertnew" xml:space="preserve">
+    <value>ادخال جديد</value>
+  </data>
+  <data name="insertsubmenu" xml:space="preserve">
+    <value>ادخال قائمة فرعية</value>
+  </data>
+  <data name="Job" xml:space="preserve">
+    <value>الوظيفة</value>
+  </data>
+  <data name="LatestNews" xml:space="preserve">
+    <value>آخر الأخبار</value>
+  </data>
+  <data name="LinkEditors" xml:space="preserve">
+    <value>مرحبا بك فى محرر الروابط الهامة</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="Login_title" xml:space="preserve">
+    <value>صفحة دخول الأدمن</value>
+  </data>
+  <data name="logoText" xml:space="preserve">
+    <value>الوكالة العربية للعلاقات العامة</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>تسجيل الخروج</value>
+  </data>
+  <data name="Mainmenu" xml:space="preserve">
+    <value>قائمة رئيسية</value>
+  </data>
+  <data name="Menu_Editor" xml:space="preserve">
+    <value>مرحبا بك فى محرر القوائم والصفحات</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>"شكرا  تم التسجيل بنجاح"</value>
+  </data>
+  <data name="Message2" xml:space="preserve">
+    <value>" ناسف حدث خطا"</value>
+  </data>
+  <data name="MiniCourse" xml:space="preserve">
+    <value>الدورات</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>الجوال</value>
+  </data>
+  <data name="more_Events" xml:space="preserve">
+    <value>المزيد</value>
+  </data>
+  <data name="more_news" xml:space="preserve">
+    <value>المزيد</value>
+  </data>
+  <data name="NationalID" xml:space="preserve">
+    <value>الرقم القومى/ جواز السفر</value>
+  </data>
+  <data name="News Archive" xml:space="preserve">
+    <value>أرشيف الاخبار</value>
+  </data>
+  <data name="NewsArchive" xml:space="preserve">
+    <value>أرشيف الأخبار</value>
+  </data>
+  <data name="NewsDetails" xml:space="preserve">
+    <value>تفاصيل الخبر</value>
+  </data>
+  <data name="NewsEditor" xml:space="preserve">
+    <value>مرحبا بك فى محرر الأخبار</value>
+  </data>
+  <data name="NoDataLabelResource1" xml:space="preserve">
+    <value>لا توجد بيانات .</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>ملاحظات</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+  <data name="Place" xml:space="preserve">
+    <value>مكان الإنعقاد</value>
+  </data>
+  <data name="please" xml:space="preserve">
+    <value>من فضلك أدخل البيانات الصحيحة</value>
+  </data>
+  <data name="please1" xml:space="preserve">
+    <value>من فضلك قم بملىء هذا الحقل</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>التكلفة</value>
+  </data>
+  <data name="Published_On" xml:space="preserve">
+    <value>تاريخ النشر</value>
+  </data>
+  <data name="ReadMore" xml:space="preserve">
+    <value>أقرأالمزيد</value>
+  </data>
+  <data name="RegBtn" xml:space="preserve">
+    <value>تسجيل</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>تاريخ الإنعقاد</value>
+  </data>
+  <data name="RegDetails" xml:space="preserve">
+    <value>اسم الدورة</value>
+  </data>
+  <data name="Registration" xml:space="preserve">
+    <value>التسجيل</value>
+  </data>
+  <data name="Registrations" xml:space="preserve">
+    <value>التسجيل</value>
+  </data>
+  <data name="RegMessage" xml:space="preserve">
+    <value>التسجيل يتم فى دورة : </value>
+  </data>
+  <data name="Resgister" xml:space="preserve">
+    <value>سجل</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="Search about" xml:space="preserve">
+    <value>بحث عن :</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>ارسال</value>
+  </data>
+  <data name="siteImpor" xml:space="preserve">
+    <value>مواقع هامة</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="submenu" xml:space="preserve">
+    <value>قائمة فرعية</value>
+  </data>
+  <data name="Teacher" xml:space="preserve">
+    <value>متاح / غير متاح</value>
+  </data>
+  <data name="username" xml:space="preserve">
+    <value>اسم المستخدم</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>مرحبا بك فى موقع الوكالة العربية للعلاقات العامة </value>
+  </data>
+  <data name="welcomeEditor" xml:space="preserve">
+    <value>مرحبا بك فى محرر الكلمة الترحيبية</value>
+  </data>
+  <data name="WelcomeWord" xml:space="preserve">
+    <value>مرحبا بك فى موقع الوكالة العربية للعلاقات العامة مرحبا بك فى موقع الجمعية العربية للعلاقات العامة مرحبا بك فى موقع الجمعية العربية للعلاقات العامة مرحبا بك فى موقع الجمعية العربية للعلاقات العامة مرحبا بك فى موقع الجمعية العربية للعلاقات العامة</value>
+  </data>
+  <data name="Workplace" xml:space="preserve">
+    <value>مكان العمل</value>
+  </data>
+  <data name="YourEmail" xml:space="preserve">
+    <value>الإيميل</value>
+  </data>
+  <data name="YourMessage" xml:space="preserve">
+    <value>الرسالة</value>
+  </data>
+  <data name="YourName" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="YourPhone" xml:space="preserve">
+    <value>التليفون</value>
+  </data>
+</root>

@@ -1,0 +1,251 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RootMaster.master.cs" Inherits="MnfUniversity_Portals.Masterpages.RootMaster" %>
+
+<%@ Register Src="~/UserControls/Viewers/SearchBarViewer.ascx" TagPrefix="uc" TagName="SearchBarViewer" %>
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="../Styles/Main/MasterStyle.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Main/StructuralStyle.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/newmaster/css/style_1.css" rel="stylesheet" type="text/css">
+    <link href="../Styles/newmaster/css/horizontal.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/newmaster/css/body_style.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/newmaster/css/login_style.css" rel="stylesheet" type="text/css">
+    <link href="../Styles/newmaster/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/newmaster/css/coin-slider-styles.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/newmaster/css/tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/menu.css" type="text/css" media="screen" />
+
+    <script type="text/javascript" src="../Styles/newmaster/jquery/jquery.min.min.js"></script>
+    <script type="text/javascript" src="../Styles/newmaster/jquery/jquery.tinycarousel.min.js"></script>
+    <script type="text/javascript" src="../Styles/newmaster/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../Styles/newmaster/jquery/login.js"></script>
+    <script type="text/javascript" src="../Styles/newmaster/jquery/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../Styles/newmaster/jquery/jquery.totemticker.js"></script>
+    <script type="text/javascript" src="../Styles/newmaster/jquery/slidedeck.jquery.lite.pack.js"></script>
+    <script type="text/javascript" src="../Styles/newmaster/jquery/js.js"></script>
+    <script type="text/javascript" src="../Styles/newmaster/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../Styles/newmaster/jquery/scripts.js"></script>
+    <script type="text/javascript" src="../Styles/newmaster/jquery/news_bar.js"></script>
+    <script type="text/javascript" src="../Styles/newmaster/jquery/jcarousellite_1.0.1c4.js"></script>
+    <script type="text/javascript" src="../Styles/newmaster/jquery/jquery-latest.pack.js"></script>
+
+    <script type="text/javascript">
+
+        function tick() {
+            $('#ticker li:first').slideUp(function () { $(this).appendTo($('#ticker')).slideDown(); });
+        }
+        setInterval(function () { tick(); }, 5000);
+
+    </script>
+
+    <script type="text/javascript" src="../Styles/newmaster/jquery/1.2.js"></script>
+    <script type="text/javascript" src="../Styles/newmaster/jquery/coin-slider.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57986194-1', 'auto');
+  ga('send', 'pageview');
+
+</script>       
+ <div>
+            <script type="text/javascript">
+                Sys.Application.add_load(applicationLoadHandler);
+                Sys.Application.add_unload(applicationUnloadHandler);
+                Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequestHandler);
+                Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(beginRequestHandler);
+            </script>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    showimagebox();
+                    window.Sys.WebForms.PageRequestManager.getInstance().add_endRequest(showimagebox);
+
+                });
+
+                function showimagebox() {
+                    try {
+                        $("a#imagebox").fancybox({ 'titlePosition': 'inside' });
+                    } catch (e) {
+
+                    }
+
+                };
+            </script>
+            <ajaxtk:ToolkitScriptManager runat="server" ID="MainTSM">
+                <Scripts>
+                    <asp:ScriptReference Path="~/Scripts/Script.js" />
+                    <asp:ScriptReference Path="~/Scripts/maximizerestore.js" />
+                </Scripts>
+            </ajaxtk:ToolkitScriptManager>
+            <div align="center">
+                <div id="table">
+                    <div id="upper_bar">
+                        <div id="left_bar" class="left_bar"style="float: <%=StaticUtilities.FloatLeft%>;" >
+                            <div style="float: <%=StaticUtilities.FloatRight%>; width: 40%">
+                                <uc:LoginControlContainer runat="server" EnableViewState="False" ID="LoginControl" />
+                                <div id="lang">
+                                    <uc:LanguageSelector style="float: left" runat="server" ID="LanguageSelector" />
+                                </div>
+                            </div>
+                            <div style="float: <%=StaticUtilities.FloatLeft%>; width: 60%">
+                                <div style="float: <%=StaticUtilities.FloatRight%>; height: 45px">
+                                    <uc:RSSViewer runat="server" ID="RSSViewer" />
+                                </div>
+                                <div style="float: <%=StaticUtilities.FloatLeft%>; border: 0 none; margin-left: 220px; padding-top: 4px; top: 0; margin-top: 0; height: 35px; cursor: pointer;">
+                                    <uc:CommunicationViewer runat="server" ID="CommunicationViewer" />
+                                </div>
+                            </div>
+                        </div>
+                        <div id="right_bar" class="right_bar" style="float: <%=StaticUtilities.FloatRight%>;">
+                            <uc:MenuViewer runat="server" MenuOrientation="Horizontal" Position="top" ID="MenuViewer5" />
+                        </div>
+                    </div>
+                    <div id="header">
+                        <uc:BannerViewer runat="server" ID="BannerViewer" />
+                    </div>
+                    <div id="basic_items" class="basic_items">
+                        <uc:MenuViewer runat="server" MenuOrientation="Horizontal" Position="Vertical" ID="MenuViewerControl" />
+                    </div>
+                    <div id="body">
+                        <div id="left_body" class="left_body">
+                            <div id="news_move">
+                                <div style="float: left; width: 50%">
+                                    <uc:SearchBarViewer runat="server" ID="SearchBarViewer" />
+                                    <uc:AdminMenu runat="server" ID="AdminMenu" />
+                                </div>
+                                <div style="float: right; width: 50%">
+                                    <uc:NewsBarViewer runat="server" ID="NewsBarViewer" />
+                                </div>
+                            </div>
+                            <div id="right">
+                                <div id="right_1"  style="direction: <%=StaticUtilities.Dir%>;">
+
+                                    <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </div>
+                                <div id="right_2">
+                                    <div id="electronic_portal" class="electronic_portal"></div>
+                                    <div id="digital_library" class="digital_library"></div>
+                                    <div id="staff" class="staff"></div>
+                                    <div id="event_calender_logo" class="event_calender_logo"></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div id="spacer"></div>
+                    <div id="upper_footer" >
+                        <div id="upper_footer_left" >
+
+                            <div class="content_1">
+                                <div class="arrow"></div>
+                                روابط مهمة
+                            </div>
+                            <div class="bottom_box">
+                                <uc:MenuViewer runat="server" MenuOrientation="Vertical" Position="implink1" ID="MenuViewerControl2" />
+
+
+                            </div>
+                        </div>
+                        <div id="Div2" >
+
+                            <div class="content_1">
+                                <div class="arrow"></div>
+                                <asp:Label EnableViewState="False" ID="Label3" runat="server" Text="Voting" meta:resourcekey="VotingLabelResource1"></asp:Label>
+                            </div>
+                            <div class="bottom_box">
+                                <uc:VotingViewer EnableViewState="False" runat="server" ID="VotingViewer" />
+                            </div>
+                        </div>
+                        <div id="Div3" >
+
+                            <div class="content_1">
+                                <div class="arrow"></div>
+                                ضع عنوان رئيسى هنا
+                            </div>
+                            <div class="bottom_box">
+                                <uc:MenuViewer runat="server" MenuOrientation="Vertical" Position="implink2" ID="MenuViewer1" />
+
+                            </div>
+                        </div>
+
+                        <div id="Div4" >
+
+                            <div class="content_1">
+                                <div class="arrow"></div>
+                                ضع عنوان رئيسى هنا
+                            </div>
+                            <div class="bottom_box">
+                                <uc:MenuViewer runat="server" MenuOrientation="Vertical" Position="implink3" ID="MenuViewer2" />
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer">
+                        <div class="footer_link">
+                            <p>عنوان رئيسى هنا </p>
+                            <uc:MenuViewer runat="server" MenuOrientation="Vertical" Position="implink4" ID="MenuViewer3" />
+
+
+                        </div>
+                        <div class="footer_link">
+                            <p>عنوان رئيسى هنا </p>
+                            <uc:MenuViewer runat="server" MenuOrientation="Vertical" Position="implink5" ID="MenuViewer4" />
+
+
+                        </div>
+                        <div class="all_right">
+                            <p align="center">جميع الحقوق محفوطة (مشروع البوابة الإلكترونية) جامعة المنوفية 2013	</p>
+                            <p align="center">تصميم وبرمجة فريق العمل بالمشروع	</p>
+                            <div class="portal_logo"></div>
+                        </div>
+                        <div class="footer_link">
+                            <p align="center">عداد الزوار </p>
+                            <div id="counter">
+                                <!-- hitwebcounter Code START -->
+                                <img src="http://hitwebcounter.com/counter/counter.php?page=4699260&style=0006&nbdigits=7&type=page&initCount=0" title="" alt="" border="0">
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </form>
+    <div id="innerPopup" class="PrProgress" style="display: none; direction: <%=StaticUtilities.Dir%>">
+        <div class="PrHeader">
+            <asp:Label ID="Label1" EnableViewState="False" runat="server" Text="Loading Please wait ..."></asp:Label>
+        </div>
+        <div class="PrBody">
+            <asp:Image ID="Image2" Width="220" Height="19" ImageUrl="~/App_Themes/Default/images/activity.gif"
+                AlternateText="loading..." runat="server" />
+        </div>
+    </div>
+    <div id="pnlPopup" class="PrContainer" style="display: none;" />
+</body>
+</html>

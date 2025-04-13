@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MnfUniversity_Portals.UserControls.Code.UserControlBase" Collapsed="true">
+    <Position X="14.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAERIAICAAAABgAAAAAQAAAQABAASAAQEAAAAA=</HashCode>
+      <FileName>UserControls\Base\UserControlBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnfUniversity_Portals.UserControls.Editors.Base.ListViewBasedUserControl" Collapsed="true">
+    <Position X="18.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAQkImBEQABQAESAhhAgABBiUAAQAAghAgQACAAgA=</HashCode>
+      <FileName>UserControls\Base\ListViewBasedControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnfUniversity_Portals.UserControls.Base.DetailsViewBasedUserControl" Collapsed="true">
+    <Position X="7" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoIAEAIEAPAETAIgCAgiCAAKBAAkADBMCAjEAAKAAgA=</HashCode>
+      <FileName>UserControls\Base\DetailsViewBasedControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnfUniversity_Portals.UserControls.Viewers.EventSliderControl" Collapsed="true">
+    <Position X="25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAgABAAAFAAAggABgAAIAAAAECAAABAAAAAEBAIAAAQ=</HashCode>
+      <FileName>UserControls\Viewers\EventSliderControl.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnfUniversity_Portals.UserControls.Editors.ArticleEditor.Details.ArticleDetailsViewUserControl" Collapsed="true">
+    <Position X="2.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAEACIAAAAACAAAAAALAAAgADAACAAAQAAAAAA=</HashCode>
+      <FileName>UserControls\Editors\ArticleEditor\Details\ArticleDetailsViewUserControl.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnfUniversity_Portals.UserControls.Editors.ArticleEditor.ArticleEditorUserControl" Collapsed="true">
+    <Position X="16" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAQAJABAAAAIAFCIAAAAAAAgUAAAAAgAAAAIAAAAA=</HashCode>
+      <FileName>UserControls\Editors\ArticleEditor\Editor\ArticleEditorUserControl.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnfUniversity_Portals.UserControls.Editors.HighlightsEditor.Details.HighlightsDetailsViewControl" Collapsed="true">
+    <Position X="7" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAEAAEACAAAAAwCAAACABIAAAgADAACAAAQABAEAQ=</HashCode>
+      <FileName>UserControls\Editors\HighlightsEditor\Details\HighlightsDetailsViewControl.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnfUniversity_Portals.UserControls.Editors.HighlightsEditor.Editor.HighlightsEditorControl" Collapsed="true">
+    <Position X="13.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAQIIABAAAAAAECAAgAAAAAgUIAAAAgAAAAAAABAA=</HashCode>
+      <FileName>UserControls\Editors\HighlightsEditor\Editor\HighlightsEditorControl.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnfUniversity_Portals.UserControls.Editors.MenuEditor.MenuDetailsViewUserControl" Collapsed="true">
+    <Position X="11.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAQEAiIAQABgCAABAAQIAIgkgDAACgkAEAAAIBQ=</HashCode>
+      <FileName>UserControls\Editors\MenuEditor\Details\MenuDetailsViewUserControl.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnfUniversity_Portals.UserControls.Editors.MenuEditor.MenuEditorUserControl" Collapsed="true">
+    <Position X="22.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAIABAAAAABECQAAgAACBgUAACAAgAQAAAAABAA=</HashCode>
+      <FileName>UserControls\Editors\MenuEditor\Editor\MenuEditorUserControl.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnfUniversity_Portals.UserControls.Editors.NewsEditor.Details.NewsDetailsViewControl" Collapsed="true">
+    <Position X="9.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEACAAAAAiCAAAAAAIAAAgADAACAAACABAAAQ=</HashCode>
+      <FileName>UserControls\Editors\NewsEditor\Details\NewsDetailsViewControl.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnfUniversity_Portals.UserControls.Editors.NewsEditor.Editor.NewsEditorControl" Collapsed="true">
+    <Position X="20.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAIADAAAAAIECAAAAAAAAgUAAQAAgAAYAAIAAAA=</HashCode>
+      <FileName>UserControls\Editors\NewsEditor\Editor\NewsEditorControl.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnfUniversity_Portals.UserControls.ResxEditor" Collapsed="true">
+    <Position X="27.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAIJAECIAgACAAIAAABgIAACAIgBEREpMiCAQAIAABA=</HashCode>
+      <FileName>UserControls\Editors\ResXEditor\ResxEditor.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnfUniversity_Portals.UserControls.Editors.VotingEditor.Details.VotingDetailsControl" Collapsed="true">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAgCAAAAAAIAAAgADAACAAAQAAAEAQ=</HashCode>
+      <FileName>UserControls\Editors\VotingEditor\Details\VotingDetailsControl.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnfUniversity_Portals.UserControls.Editors.VotingEditor.Editor.VotingEditorControl" Collapsed="true">
+    <Position X="18.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAICFAAAAAAECAAAIAAAAkVAAIAAgAAIAAAAAAA=</HashCode>
+      <FileName>UserControls\Editors\VotingEditor\Editor\VotingEditorControl.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

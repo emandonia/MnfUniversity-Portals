@@ -1,0 +1,157 @@
+
+a,
+a:focus,
+a:active,
+a:hover,
+object,
+embed {
+  outline: none;
+  text-decoration: none;
+}
+:-moz-any-link:focus {
+outline: none;
+}
+input::-moz-focus-inner {
+border: 0;
+}
+
+:focus { outline: 0; }
+
+body { background: #ccc; }
+
+.brand { padding: 10px 40px !important; }
+
+.navbar {  }
+
+/* MEGA MENU STYLE
+********************************/ 
+
+
+
+.mega-menu {
+ padding: 10px 0px !important;
+width: 800px !important;
+border-radius: 0;
+margin-top: 0px;
+}
+.mega-menu ul li{
+display: block !important;
+
+font-size: 0.94rem;
+padding: 6px 5px 5px 6px ;
+}
+.mega-menu ul li:hover{
+
+background-color:#554f70}
+
+.mega-menu li {
+  display: inline-block;
+  
+  font-size: 0.94rem;
+  padding: 3px 0px;
+}
+
+.mega-menu li.mega-menu-column {
+
+width: 32.5%;
+display: inline-block !important;
+}
+
+.mega-menu .nav-header {
+padding: 0 !important;
+margin-bottom: 10px;
+
+width: 100%;
+border-bottom: 1px solid #ddd;
+}
+
+.mega-menu img { padding-bottom: 10px; }
+
+/* Disable Toggle style
+********************************/  
+
+/* Dropdown Toggle on style */
+
+
+
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  background: inherit; /* Set to inherit when using mouse hover to open dropdown */
+  color: #ffffff;
+}
+
+/* Toggle off style */
+
+
+
+.navbar .nav li.dropdown.open.active > .dropdown-toggle,
+ .navbar .nav > li.dropdown > a:focus {
+  background: inherit;
+  color: inherit;
+}
+
+/* Toggle hover */
+
+
+
+.navbar .nav li.dropdown > .dropdown-toggle:hover,
+ .navbar .nav li.dropdown.open > .dropdown-toggle:hover { background-color:#554f70; }
+
+/* Toggle caret*/
+
+
+
+.navbar .nav li.dropdown > .dropdown-toggle .caret { border-bottom-color:#fff;
+ border-top-color:#fff;
+}
+
+/* Toggle caret hover */
+
+
+
+.navbar .nav li.dropdown > a:hover .caret,
+ .navbar .nav li.dropdown > a:focus .caret {
+  border-bottom-color:#F2F2F2;
+  border-top-color: #F2F2F2;
+}
+
+/* Toggle caret active */
+
+
+
+.navbar .nav li.dropdown.open > .dropdown-toggle .caret,
+ .navbar .nav li.dropdown.active > .dropdown-toggle .caret,
+ .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
+  border-bottom-color: #fff;
+  border-top-color: #fff;
+}
+
+/* Hover style
+********************************/ 
+
+
+
+.navbar .nav > li > a,
+.mega-menu a {
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  /* -webkit-transform: translate3d(0, 0, 0); Webkit Hardware Acceleration*/ 
+  -webkit-backface-visibility: hidden; /* Safari Flicker Fix #2 */
+  -webkit-transform: translateZ(0);
+  padding::20px;
+  
+}
+.mega-menu-column li a{
+
+color:#241E3E ;
+padding::20px !important;
+}
+.mega-menu-column li a:hover{
+
+color:#ffffff !important;
+
+}

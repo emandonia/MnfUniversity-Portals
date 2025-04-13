@@ -1,0 +1,480 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CONMaster.master.cs" Inherits="MnfUniversity_Portals.Masterpages.CONMaster" %>
+
+ 
+<%--<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SectorsMaster.Master.cs" Inherits="MnfUniversity_Portals.Masterpages.SectorsMaster" %>--%>
+<%@ Import Namespace="Common" %>
+<%@ Register TagPrefix="uc" Namespace="MnfUniversity_Portals.UserControls.Viewers" Assembly="Portals" %>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<%--<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">--%>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+  
+    <meta http-equiv="Content-Type" content="مكتبة جامعة المنوفية , menofia university Library" />
+    <title></title>
+       <asp:ContentPlaceHolder ID="meta" runat="server"></asp:ContentPlaceHolder>
+     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <link href="../Styles/University_Master/css/photo_click.css" rel="stylesheet" />
+    <link href="../Styles/University_Master/css/Socialstyle.css" rel="stylesheet" />
+    <link href="../Styles/University_Master/css/common.css" rel="stylesheet" />
+    <script src="../Styles/University_Master/jquery/modernizr.custom.79639.js"></script>
+    <link href="../Styles/University_Master/css/style7.css" rel="stylesheet" />
+    <link href="../Styles/University_Master/css/Library_MenuExample.css" rel="stylesheet" />
+    <link href="../Styles/University_Master/css/Library_latestNews.css" rel="stylesheet" />
+    <link href="../Styles/University_Master/css/Library_style.css" rel="stylesheet" />
+    <link href="../Styles/Main/MasterStyle.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Main/StructuralStyle.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/Theme/ThemesStyle.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/University_Master/css/horizontal.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/University_Master/css/login_style.css" rel="stylesheet" type="text/css">
+    <link href="../Styles/University_Master/css/global.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../Styles/University_Master/css/menu.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../Styles/Main/styles.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../Styles/University_Master/css/Menu.css" rel="stylesheet" />
+    <script type="text/javascript" src="../Styles/University_Master/jquery/login.js"></script>
+    <link href="../Scripts/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" />
+    <link href="../Styles/University_Master/css/UpTop.css" rel="stylesheet" />
+    <link href="../Styles/University_Master/css/tabs.css" rel="stylesheet" />
+
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+    <script src="/Styles/University_Master/jquery/crawler.js"></script>
+
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            // hide #back-top first
+            $("#back-top").hide();
+
+            // fade in #back-top
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('#back-top').fadeIn();
+                    } else {
+                        $('#back-top').fadeOut();
+                    }
+                });
+
+                // scroll body to 0px on click
+                $('#back-top a').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+            });
+
+        });
+</script>
+
+ <script type="text/javascript">
+     marqueeInit({
+         uniqueid: 'mycrawler2',
+         style: {
+
+         },
+         inc: 5, //speed - pixel increment for each iteration of this marquee's movement
+         mouse: 'cursor driven', //mouseover behavior ('pause' 'cursor driven' or false)
+         moveatleast: 2,
+         neutral: 150,
+         savedirection: true,
+         random: true
+     });
+
+
+
+       </script>
+    
+
+</head>
+<body  dir='<%=StaticUtilities.Dir %>'>
+    
+    <form id="form1" enctype="multipart/form-data" method="post" runat="server">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NR4J2Q"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function (w, d, s, l, i) {
+w[l] = w[l] || []; w[l].push({
+'gtm.start':
+new Date().getTime(), event: 'gtm.js'
+}); var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+'//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-NR4J2Q');</script>
+<!-- End Google Tag Manager -->
+      
+
+<script type="text/javascript">
+
+    Sys.Application.add_load(applicationLoadHandler);
+    Sys.Application.add_unload(applicationUnloadHandler);
+    Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequestHandler);
+    Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(beginRequestHandler);
+      </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                showimagebox();
+                window.Sys.WebForms.PageRequestManager.getInstance().add_endRequest(showimagebox);
+
+            });
+
+            function showimagebox() {
+                try {
+                    $("a#imagebox").fancybox({ 'titlePosition': 'inside' });
+                } catch (e) {
+
+                }
+
+            };
+        </script>
+        
+         <%--code for the Loading message to appear
+         ( method is at Script.js in toolkitscriptmanager)
+         Sys.Application.add_load(applicationLoadHandler); Sys.Application.add_unload(applicationUnloadHandler); Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequestHandler); Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(beginRequestHandler); // code for imagebox ( fancybox ) to work well with ajax $(document).ready(function () { showimagebox(); window.Sys.WebForms.PageRequestManager.getInstance().add_endRequest(showimagebox);  });  function showimagebox() { try { $("a#imagebox").fancybox({ 'titlePosition': 'inside' }); } catch (e) {  }  }; --%>
+        <ajaxtk:ToolkitScriptManager runat="server" ID="MainTSM" CombineScripts="True">
+            <Scripts>
+                <asp:ScriptReference Path="~/Scripts/Script.js" />
+                <asp:ScriptReference Path="~/Scripts/maximizerestore.js" />
+               
+            </Scripts>
+        </ajaxtk:ToolkitScriptManager>
+
+        <div id="pagewrap">
+	<p id="back-top">
+	<a href="#top"><span></span>Back to Top</a>
+	</p>
+
+</div>
+        <div align="center" dir='<%=StaticUtilities.Dir %>'>
+            <div class="fix">
+            <div class="table">
+               
+                
+                <div class="upperbarcontain">
+                 <div class="upper_bar">
+                    <div class="left_bar" style="float: <%=StaticUtilities.FloatLeft%>;">
+                        <div style="float: <%=StaticUtilities.FloatRight%>; width: 70%">
+                             
+                            <div id="Div1"  class="login_style" runat="server" style="width:30%;  ">
+                        <asp:UpdatePanel ID="UpdatePanel1" UpdateMode="Conditional" runat="server">
+     
+         <ContentTemplate>   
+                                
+                            <asp:LoginView ID="LoginView1" runat="server">
+                                <AnonymousTemplate>
+                                     <div> <asp:Login ID="Login1" runat="server" Font-Bold  ="True"   BorderPadding="4" 
+                              Font-Names="Verdana"  ForeColor="White" OnLoggedIn="Login1_LoggedIn" OnLoggingIn="Login1_LoggingIn" RememberMeText=""
+                             Width="280px" DisplayRememberMe="False"    Font-Size="0.8em" meta:resourcekey="Login1Resource1" TitleText="">
+                            <InstructionTextStyle Font-Italic="True" Font-Bold ="True" ForeColor="Black" />
+                                         <LayoutTemplate>
+                                             <table cellpadding="4" cellspacing="0" style="border-collapse:collapse;">
+                                                
+                                                        
+                                                
+                                                  <tr>
+                                                     <td>
+                                                         <table cellpadding="0" style="width:280px;">
+                                                             
+                                                             
+                                                             
+                                                              <tr>
+                                                     
+                                                     
+                                                     
+                                                                <td align="center">
+                                                                     <asp:Label ID="UserNameLabel" runat="server" AssociatedControlID="UserName" meta:resourcekey="UserNameLabelResource1"></asp:Label>
+                                                                 </td>
+                                                      
+                                                                 <td align="center">
+                                                                     <asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password" meta:resourcekey="PasswordLabelResource1"></asp:Label>
+                                                                 </td>  
+                                                         
+                                                        
+                                                 </tr>
+                                                             <tr>
+                                                                 
+                                                                 <td>
+                                                                     <asp:TextBox ID="UserName" runat="server" CssClass="textboxuser"  meta:resourcekey="UserNameResource1"></asp:TextBox>
+                                                                     <asp:RequiredFieldValidator ID="UserNameRequired" runat="server" ControlToValidate="UserName" ErrorMessage="User Name is required." meta:resourcekey="UserNameRequiredResource1" ToolTip="User Name is required." ValidationGroup="ctl00$ctl06$Login1">*</asp:RequiredFieldValidator>
+                                                               
+                                                                 <td>
+                                                                     <asp:TextBox ID="Password" runat="server" CssClass="textboxpassword"  meta:resourcekey="PasswordResource1" TextMode="Password"></asp:TextBox>
+                                                                     <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password" ErrorMessage="Password is required." meta:resourcekey="PasswordRequiredResource1" ToolTip="Password is required." ValidationGroup="ctl00$ctl06$Login1">*</asp:RequiredFieldValidator>
+                                                                 </td>
+                                                               
+                                                                 <td align="right" >
+                                                                     <asp:Button ID="LoginButton" runat="server" CssClass="login_button" CommandName="Login" Font-Bold="True"  meta:resourcekey="LoginButtonResource1" Text="Log In" ValidationGroup="ctl00$ctl06$Login1" />
+                                                                 </td>
+                                                                 <caption>
+                                                                     <tr>
+                                                                         <td align="center" colspan="2" style="color: Red;">
+                                                                             <asp:Literal ID="FailureText" runat="server" EnableViewState="False" meta:resourcekey="FailureTextResource2"></asp:Literal>
+                                                                         </td>
+                                                                     </tr>
+                                                                 </caption>
+                                                             </tr>
+                                                             
+                                                         </table>
+                                                     </td>
+                                                 </tr>
+                                             </table>
+                                         </LayoutTemplate>
+                           <LoginButtonStyle BackColor="CornflowerBlue" 
+                                Font-Names="Verdana" Font-Size="1.2em" ForeColor="White" Font-Bold ="True" Font-Overline="True"/>
+                                            <TextBoxStyle Font-Size="1.2em" />
+                           
+                                         <TitleTextStyle Wrap="False" />
+                           
+                            </asp:Login>
+                       </div>
+
+
+                </AnonymousTemplate>
+                <LoggedInTemplate >
+                    
+                    <div class="logout_div"  >
+                    <asp:LoginStatus ID="LoginStatus1" runat="server"  Font-Bold ="True"  OnLoggedOut="LoginStatus1_LoggedOut1" OnLoggingOut="LoginStatus1_LoggingOut" meta:resourcekey="LoginStatus1Resource1" />
+               
+                    </div>
+                    
+                     </LoggedInTemplate>
+                                
+                            </asp:LoginView>    
+                            
+                          </ContentTemplate>
+    </asp:UpdatePanel>
+                            
+                            
+                             <%--      
+                            <asp:LoginView ID="LoginView1" runat="server">
+                                <AnonymousTemplate> <div> <asp:Login ID="Login1" runat="server" BackColor=""  BorderPadding="4" 
+                              Font-Names="Verdana"  ForeColor="#333333" 
+                            Orientation="Horizontal" TextLayout="TextOnTop" OnLoggedIn="Login1_LoggedIn" OnLoggingIn="Login1_LoggingIn" RememberMeText=""
+                             Width="144px" DisplayRememberMe="False">
+                            <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
+                            <LoginButtonStyle BackColor="" BorderColor=""  
+                                Font-Names="Verdana" Font-Size="0.8em" ForeColor="#0d66b2" Font-Bold ="true"/>
+                            <TextBoxStyle Font-Size="0.8em" />
+                            <TitleTextStyle  Font-Bold="True" Font-Size="0.9em" ForeColor="#0d66b2" />
+
+                            </asp:Login>
+                       </div>
+                                </AnonymousTemplate>
+                <LoggedInTemplate ><asp:LoginStatus ID="LoginStatus1" runat="server" OnLoggedOut="LoginStatus1_LoggedOut1" OnLoggingOut="LoginStatus1_LoggingOut" />
+                </LoggedInTemplate>
+                                
+                            </asp:LoginView>    
+                            
+                        --%>    
+                            
+                            
+
+                       
+                         <div id="LoginStatus" style ="float:left; margin-top :-50px; margin-left:30px;font-weight :bold " >
+                                   </div>
+                       
+                              
+                  
+                                           
+                    </div>
+                            <div id="logindiv" runat="server">
+                            <%--  <uc:LoginControlContainer runat="server" EnableViewState="False" ID="LoginControl" />--%>
+                            
+                            </div>
+                         <%--   <div class="lang" style="float: <%=StaticUtilities.FloatRight%>;">
+                                
+                                <uc:LanguageSelector style="float: left" runat="server" ID="LanguageSelector" />
+                            </div>--%>
+                          
+                            <div class="menu_display_1" style="float: <%=StaticUtilities.FloatRight%>;">
+                                
+                                
+                                
+                                 <div id="testy"></div> <div class="PrettyMenu"  dir='<%=StaticUtilities.Dir %>'>
+                                <div id="test" >
+                        <uc:AdminMenu CssSelectorClass="PrettyMenu" Position="Vertical" runat="server" ID="AdminMenu" />
+                                                                                                       </div>  </div>
+                                
+                                
+                                
+                               <%-- 
+                                <div class="lang" style="float: <%=StaticUtilities.FloatRight%>;">
+                                
+                                <uc:LanguageSelector style="float: left" runat="server" ID="LanguageSelector" />
+                            </div>
+                          --%>
+                            </div>
+                        </div>
+                        <%--<div style="float: <%=StaticUtilities.FloatLeft%>; width: 30%">
+                            <div style="float: <%=StaticUtilities.FloatRight%>; height: 45px">
+                                <uc:RSSViewer runat="server" ID="RSSViewer" />
+                            </div>
+                            <div style="border: 0 none; padding-top: 4px; top: 0; margin-top: 0; height: 35px; cursor: pointer;">
+                               
+                            </div>
+                        </div>--%>
+                        
+                    </div>
+                    <div class="right_bar" style="float: <%=StaticUtilities.FloatRight%>;">
+                           <div class="lang" style="float: <%=StaticUtilities.FloatLeft%>;">
+                                
+                                <uc:LanguageSelector style="float: left" runat="server" ID="LanguageSelector" />
+                            </div>
+                        <uc:MenuViewer runat="server"  CssSelectorClass="PrettyMenu" MenuOrientation="Horizontal" Position="top"  ID="MenuViewer5" />
+                    </div>
+                </div>
+                   </div>
+                   </div>
+                <div class="header_container">
+                <div class="header">
+                   
+                  
+                    <uc:BannerViewer runat="server" ID="BannerViewer" />
+                </div>
+
+                     <div class="faculty_dep" >  <asp:Label ID="LblDep" runat="server"  ></asp:Label></div>
+                </div>
+               <div class="menu_display"> 
+                   <div class="PrettyMenu"  dir='<%=StaticUtilities.Dir %>'>
+
+                       <div class="home_img" style="float: <%=StaticUtilities.FloatRight%>;">
+
+                       <asp:FormView ID="OwnerImageFormView" runat="server" align="center" DataSourceID="DummyDataSource">
+    <ItemTemplate>
+						<a href='<%#URLBuilder.HomeURL(Page)%>' target="_self" rel="nofollow" title="Home">
+						<img width="35" height="34" src="/Styles/University_Master/images/home.png" alt="Home" title="Home" onmouseover="this.src='/Styles/University_Master/images/home-hover.png';" onmouseout="this.src='/Styles/University_Master/images/home.png';"></a>
+					  </ItemTemplate>
+</asp:FormView>
+       <asp:ObjectDataSource ID="DummyDataSource" runat="server" SelectMethod="DummyDataMethod"
+    TypeName="StaticUtilities"></asp:ObjectDataSource>
+                       </div>
+                   <div class="menucontin" dir='<%=StaticUtilities.Dir %>'>
+                                                                                                      
+                        <div id="test2" >
+                    <uc:MenuViewer runat="server" CssSelectorClass="PrettyMenu" MenuOrientation="Horizontal"  Position="Vertical" ID="MenuViewerControl" /></div>
+               </div> </div></div>
+                </div> 
+            <div class="NewsContainer">
+                <div class="news_move">
+                    <div style="float: <%=StaticUtilities.FloatRight%>; width: 30%; margin-top: 10px; " >
+                      
+                        
+                       <uc:SearchBarViewer runat="server" ID="SearchBarViewer" />
+                         
+                        <uc:ErrorMessageViewer runat="server" ID="ErrorMessageViewer" />
+
+                       
+                    </div>
+                    
+              
+                    <div style="float: right; width: 65%">
+                        <uc:NewsBarViewer runat="server" ID="NewsBarViewer" />
+                    </div>
+                        
+                </div>
+                </div>
+            <uc:CommunicationViewer runat="server" ID="CommunicationViewer1" />
+                <div class="body">
+                      <div  class="bodycontainer" runat="server" ID="MyDiv">
+                         <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>    
+                       
+                   
+                    
+                    <asp:ContentPlaceHolder ID="LeftLinksPlaceHolder" runat="server"></asp:ContentPlaceHolder>                    
+                    <asp:ContentPlaceHolder ID="EventsPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="RightLinksPlaceHolder" runat="server"></asp:ContentPlaceHolder>  
+                      
+
+                      </div>       
+                         <div align="center">
+                    <asp:ContentPlaceHolder ID="NewsPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+                  
+                               <%--<asp:Button ID ="Button2" CssClass="login_button" runat="server" OnClick="Button2_Click" meta:resourcekey ="MoreNews"></asp:Button>--%>
+				 
+                              </div> 
+                    
+                </div>
+                
+                <div class="spacer" >
+
+
+                 
+
+
+                </div>
+                <div class="footer_container">
+                                  <div class="footer">
+                                    <div class="main" style="float:right; ">
+			
+				<ul class="ch-grid">
+					<li>
+						<div class="ch-item">				
+							<div class="ch-info">
+								<div class="ch-info-front ch-img-1"></div>
+								<div class="ch-info-back">
+									<%--<h3><a href=#"> الفيس بوك</a></h3>--%>
+                 <a href="https://www.facebook.com/pages/Menoufia-Univesity/167163930059893?ref=hl"><img src="/Styles/University_Master/images/1_hover.png" /></a>            
+                                       
+									
+								</div>	
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item">
+							<div class="ch-info">
+								<div class="ch-info-front ch-img-2"></div>
+								<div class="ch-info-back">
+								     <a href="https://twitter.com/MinoufiyaUniver"><img src="/Styles/University_Master/images/2_hover.png" /></a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item">
+							<div class="ch-info">
+								<div class="ch-info-front ch-img-3"></div>
+								<div class="ch-info-back">
+									     <a href="http://www.youtube.com/results?search_query=%D8%AC%D8%A7%D9%85%D8%B9%D8%A9+%D8%A7%D9%84%D9%85%D9%86%D9%88%D9%81%D9%8A%D8%A9&oq=%D8%AC%D8%A7%D9%85%D8%B9%D8%A9+%D8%A7%D9%84%D9%85%D9%86&gs_l=youtube.3.2.0l5j0i5l5.12085.17916.0.21905.10.8.0.2.2.0.358.1290.0j6j1j1.8.0...0.0...1ac.1.zO7lypvN8iE"><img src="/Styles/University_Master/images/3_hover.png" /></a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul></div>
+
+      <div class="all_right" style="float: right; ">
+	<p align="center"> تصميم وبرمجة فريق العمل بالمشروع </p>
+	<p align="center"> جميع الحقوق محفوطة (مشروع البوابة الإلكترونية) جامعة المنوفية 2013   </p>
+      </div>
+      <div class="portal_logo" style="float:right; "></div>
+                               
+                                    	
+	<div class="footer_link" style="float:left; ">
+	  <p align="center">عداد الزوار </p>
+          <div id="counter">  
+  <!-- hitwebcounter Code START -->
+<img src="http://hitwebcounter.com/counter/counter.php?page=4699260&style=0006&nbdigits=7&type=page&initCount=0" title="" Alt=""   border="0" ></div>
+        
+	</div>
+	</div>
+                </div>
+        </div>
+               
+           
+        <%--</div>--%> 
+        
+    </form> <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <div id="innerPopup" class="PrProgress" style="display: none; direction: <%=StaticUtilities.Dir%>">
+        <div class="PrHeader">
+            <asp:Label ID="Label1" EnableViewState="False" runat="server" Text="Loading Please wait ..." meta:resourcekey="Label1Resource1"></asp:Label>
+        </div>
+        <div class="PrBody">
+            <asp:Image ID="Image2" Width="220px" Height="19px" ImageUrl="~/Styles/Theme/images/activity.gif" AlternateText="loading..." runat="server" meta:resourcekey="Image2Resource1" />
+        </div>
+    </div>
+    <div id="pnlPopup" class="PrContainer" style="display: none;" />
+</body>
+</html>

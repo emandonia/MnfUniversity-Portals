@@ -1,0 +1,300 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="MnfUniversity_Portals.Masterpages.SiteMaster"
+    CodeBehind="SiteMaster.master.cs" %>
+
+<%@ Import Namespace="Common" %>
+
+
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="جامعة المنوفية , menofia university " />
+    <asp:ContentPlaceHolder ID="meta" runat="server"></asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="../Styles/Main/MasterStyle.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Main/StructuralStyle.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/Main/styles.css"  rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" enctype="multipart/form-data" method="post" runat="server">
+        <script type="text/javascript">
+            Sys.Application.add_load(applicationLoadHandler);
+            Sys.Application.add_unload(applicationUnloadHandler);
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequestHandler);
+            Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(beginRequestHandler);
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                showimagebox();
+                window.Sys.WebForms.PageRequestManager.getInstance().add_endRequest(showimagebox);
+
+            });
+
+            function showimagebox() {
+                try {
+                    $("a#imagebox").fancybox({ 'titlePosition': 'inside' });
+                } catch (e) {
+
+                }
+
+            };
+        </script>
+        <ajaxtk:ToolkitScriptManager runat="server" ID="MainTSM">
+            <Scripts>
+                <asp:ScriptReference Path="~/Scripts/Script.js" />
+                <asp:ScriptReference Path="~/Scripts/script2.js" />
+                <asp:ScriptReference Path="~/Scripts/maximizerestore.js" />
+            </Scripts>
+        </ajaxtk:ToolkitScriptManager>
+        <div id="main">
+
+            <div align="center">
+                <p style="width: 100%; direction: <%=StaticUtilities.Dir%>; margin: 10 px!important;">
+                    <asp:Label EnableViewState="False" runat="server" ID="NotificationLabel" BackColor="White" ForeColor="Red" Font-Names="Tahoma" Font-Size="15px" Font-Bold="True" Width="100%" meta:resourcekey="NotificationLabel"></asp:Label>
+                </p>
+                <div id="Table_01" border="0" cellpadding="0" cellspacing="0">
+                    <div id="upper_bar">
+                        <div id="default-01" style="float: <%=StaticUtilities.FloatLeft%>" class="style1">
+                            <div style="float: <%=StaticUtilities.FloatRight%>">
+                                <uc:RSSViewer runat="server" ID="RSSViewer" />
+
+                            </div>
+                            <uc:LanguageSelector runat="server" ID="LanguageSelector" />
+
+                        </div>
+                        <div id="default-03" style="float: <%=StaticUtilities.FloatRight%>">
+                            <div id="Upper_menu" style="float: <%=StaticUtilities.FloatRight%>">
+                                <div dir='<%=StaticUtilities.Dir %>'>
+                                    <asp:Menu ID="HorizontalMenu" StaticSubMenuIndent="20" StaticHoverStyle-CssClass=""
+                                        Orientation="Horizontal" runat="server">
+                                        <DynamicMenuItemStyle CssClass="MenuItem" />
+                                        <DynamicHoverStyle CssClass="MenuItemHover" />
+                                    </asp:Menu>
+                                </div>
+                            </div>
+                            <div id="themes_bar" class="style1" style="float: <%=StaticUtilities.FloatLeft%>">
+                                <div style="float: <%=StaticUtilities.FloatRight%>">
+                                    <asp:Label EnableViewState="False" ID="Label1" runat="server" Text="Choose Theme" Style="display: block; padding-top: 7px;" meta:resourcekey="Label1Resource2"></asp:Label>
+                                </div>
+                                <asp:ObjectDataSource ID="ThemeDataSource" runat="server" SelectMethod="GetThemes"
+                                    TypeName="App_Code.ThemeManager"></asp:ObjectDataSource>
+                                <asp:DropDownList ID="Themeddl" CssClass="select" runat="server" OnDataBound="Themeddl_DataBound"
+                                    AutoPostBack="True" DataSourceID="ThemeDataSource" DataTextField="Name" DataValueField="Name" />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="header">
+                        <div id="default-04">
+                            <uc:BannerViewer runat="server" ID="BannerViewer" />
+
+                        </div>
+                    </div>
+                    <div id="default-10">
+                        <div id="right_menu" style="float: <%=StaticUtilities.FloatRight%>">
+                            <div id="basic_menu" class="stylemain">
+                                <asp:Label EnableViewState="False" ID="Label7" runat="server" meta:resourcekey="Label7Resource1" Style="display: block; padding-top: 10px;" Text="القائمة الرئيسية"></asp:Label>
+                            </div>
+                            <asp:ContentPlaceHolder runat="server" ID="CustomMenuPlaceHolder"></asp:ContentPlaceHolder>
+
+                            <uc:MenuViewer runat="server" MenuOrientation="Vertical" Position="Vertical" ID="MenuViewerControl" />
+                        </div>
+                        <div id="body" style="float: <%=StaticUtilities.FloatLeft%>">
+                            <div id="left_menu" style="float: <%=StaticUtilities.FloatLeft%>">
+                                <div id="log_in">
+
+                                    <uc:LoginControl runat="server" EnableViewState="False" ID="LoginControl" />
+                                    <br />
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                    <br />
+                                    <uc:ErrorMessageViewer runat="server" ID="ErrorMessageViewer" />
+
+
+                                    <uc:AdminMenu runat="server" ID="AdminMenu" />
+
+
+
+
+
+                                </div>
+                                <div id="menu" style="float: <%=StaticUtilities.FloatRight%>">
+                                    <div id="calendar" class="style2">
+                                        <asp:Label EnableViewState="False" ID="Label2" runat="server" Text="Calender & Time" meta:resourcekey="calenderLabelResource1"></asp:Label>
+                                    </div>
+                                    <div id="box_1">
+                                        <div>
+                                            <div class="top_left">
+                                            </div>
+                                            <div class="top_right">
+                                            </div>
+                                            <div class="top_mid">
+                                            </div>
+                                        </div>
+                                        <div class="shadowleft">
+                                            <div class="shadowright">
+                                                <div>
+                                                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0"
+                                                        width="100%" height="350">
+                                                        <param name="movie" value="<%=URLBuilder.VirtualPath(Page) %>/styles/commonimages/clock-calendar.swf">
+                                                        <param name="quality" value="high">
+                                                        <param name="wmode" value="transparent">
+                                                        <embed wmode="transparent" src="<%=URLBuilder.VirtualPath(Page) %>/styles/commonimages/clock-calendar.swf"
+                                                            quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"
+                                                            width="150px" height="350">
+                                                    </embed></object>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bottom_left">
+                                            </div>
+                                            <div class="bottom_right">
+                                            </div>
+                                            <div class="bottom_mid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <asp:ContentPlaceHolder runat="server" ID="LeftLinksPlaceHolder">
+                                        <asp:Label runat="server" Text=""></asp:Label>
+                                    </asp:ContentPlaceHolder>
+                                    <asp:ContentPlaceHolder runat="server" ID="RightLinksPlaceHolder">
+                                        <asp:Label runat="server" Text=""></asp:Label>
+                                    </asp:ContentPlaceHolder>
+                                 <asp:ContentPlaceHolder runat="server" ID="EventsPlaceHolder">
+                                        <asp:Label runat="server" Text=""></asp:Label>
+                                    </asp:ContentPlaceHolder>    
+                                    <asp:ContentPlaceHolder runat="server" ID="NewsPlaceHolder">
+                                        <asp:Label runat="server" Text=""></asp:Label>
+                                    </asp:ContentPlaceHolder>  
+                                    
+                                    <div id="voice" class="style2">
+                                        <asp:Label EnableViewState="False" ID="Label3" runat="server" Text="Voting" meta:resourcekey="VotingLabelResource1"></asp:Label>
+                                    </div>
+                                    <div id="box_2" class="voting">
+                                        <div>
+                                            <div class="top_left">
+                                            </div>
+                                            <div class="top_right">
+                                            </div>
+                                            <div class="top_mid">
+                                            </div>
+                                        </div>
+                                        <div class="shadowleft">
+                                            <div class="shadowright">
+                                                <div>
+                                                    <uc:VotingViewer EnableViewState="False" runat="server" ID="VotingViewer" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="bottom_left">
+                                            </div>
+                                            <div class="bottom_right">
+                                            </div>
+                                            <div class="bottom_mid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <asp:Panel runat="server" ID="BranchesPanel">
+                                        <div id="photo_gellary" class="style2">
+                                            <asp:Label EnableViewState="False" ID="SubEntitiesLabel" runat="server" Text="Branches"></asp:Label>
+                                        </div>
+                                        <div id="box_3">
+                                            <div>
+                                                <div class="top_left">
+                                                </div>
+                                                <div class="top_right">
+                                                </div>
+                                                <div class="top_mid">
+                                                </div>
+                                            </div>
+                                            <div class="shadowleft">
+                                                <div class="shadowright">
+                                                    <div style="overflow: auto !important; padding-top: 10px">
+                                                        <uc:SubEntitiesViewer runat="server" ID="SubEntitiesViewer" />
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="bottom_left">
+                                                </div>
+                                                <div class="bottom_right">
+                                                </div>
+                                                <div class="bottom_mid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </asp:Panel>
+
+                                </div>
+                            </div>
+                            <div style="padding: 0 25px 0 25px">
+                                <%--http://www.facebook.com/pages/Minoufiya-University/167163930059893?ref=hl %>
+                                <%-- ReSharper disable Asp.Image --%>
+                                <div style="position: fixed; border: 0 none; left: 0; top: 50%; margin-top: -57px; width: 60px; height: 60px; cursor: pointer;">
+                                    <a title="FaceBook" rel="nofollow" target="_blank" href="">
+                                        <img border="0" onmouseout="this.src='<%=URLBuilder.VirtualPath(Page) %>/styles/main/images/f1.png';"
+                                            onmouseover="this.src='<%=URLBuilder.VirtualPath(Page) %>/styles/main/images/f2.png';"
+                                            title="تابعنا على الفيس بوك" alt="facebook" src="<%=URLBuilder.VirtualPath(Page) %>/styles/main/images/f1.png"
+                                            width="35" height="34"></a>
+                                    <a title="Twitter" rel="nofollow" target="_blank" href="https://twitter.com/MinoufiyaUniver">
+                                        <img border="0" onmouseout="this.src='<%=URLBuilder.VirtualPath(Page) %>/styles/main/images/t1.png';"
+                                            onmouseover="this.src='<%=URLBuilder.VirtualPath(Page) %>/styles/main/images/t2.png';"
+                                            title="تابعنا على تويتر" alt="twitter" src="<%=URLBuilder.VirtualPath(Page) %>/styles/main/images/t1.png"
+                                            width="35" height="34"></a>
+                                    <a title="youtube" rel="nofollow" target="_blank" href="http://www.youtube.com/results?search_query=%D8%AC%D8%A7%D9%85%D8%B9%D8%A9+%D8%A7%D9%84%D9%85%D9%86%D9%88%D9%81%D9%8A%D8%A9&oq=%D8%AC%D8%A7%D9%85%D8%B9%D8%A9+%D8%A7%D9%84%D9%85%D9%86&gs_l=youtube.3.2.0l5j0i5l5.12085.17916.0.21905.10.8.0.2.2.0.358.1290.0j6j1j1.8.0...0.0...1ac.1.zO7lypvN8iE">
+                                        <img border="0" onmouseout="this.src='<%=URLBuilder.VirtualPath(Page) %>/styles/main/images/u1.png';"
+                                            onmouseover="this.src='<%=URLBuilder.VirtualPath(Page) %>/styles/main/images/u2.png';"
+                                            title="تابعنا على يوتيوب" alt="youtube" src="<%=URLBuilder.VirtualPath(Page) %>/styles/main/images/u1.png"
+                                            width="35" height="34" />
+                                    </a>
+                                    <%-- ReSharper restore Asp.Image --%>
+                                </div>
+                            </div>
+                            <div id="body_cen" style="float: <%=StaticUtilities.FloatRight%>; direction: <%=StaticUtilities.Dir%>">
+                                <div id="news_1">
+                                    <uc:NewsBarViewer runat="server" ID="NewsBarViewer" />
+
+                                    <div id="img_news" class="img_news">
+                                    </div>
+                                </div>
+                                <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer">
+                    </div>
+                    <div id="slide_show2">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div class="style5">
+                        <asp:Label EnableViewState="False" ID="Label6" runat="server" Text="All rights reserved -Menoufia University(Portal Project) ©2012"
+                            meta:resourcekey="RightsLabelResource1"></asp:Label><br />
+                        <br />
+                        <asp:Image ID="Image1" runat="server" AlternateText="Portal Footer" GenerateEmptyAlternateText="True"
+                            ImageAlign="Middle" />
+                    </div>
+                </div>
+                <!-- End ImageReady Slices -->
+            </div>
+        </div>
+    </form>
+    <div id="innerPopup" class="PrProgress" style="display: none; direction: <%=StaticUtilities.Dir%>">
+        <div class="PrHeader">
+            <asp:Label EnableViewState="False" runat="server" Text="Loading Please wait ..."></asp:Label>
+        </div>
+        <div class="PrBody">
+            <asp:Image ID="Image2" Width="220" Height="19" ImageUrl="~/App_Themes/Default/images/activity.gif"
+                AlternateText="loading..." runat="server" />
+        </div>
+    </div>
+    <div id="pnlPopup" class="PrContainer" style="display: none;" />
+</body>
+</html>

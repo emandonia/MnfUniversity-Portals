@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Errors>
+  <Error>
+    <Time>2025-03-02 12:34:32</Time>
+    <Message>Object reference not set to an instance of an object.</Message>
+    <StackTrace>   at App_Code.PageBase.get_CurrentOwnerID()
+   at App_Code.PageBase.InitializeCulture()
+   at ASP.default_aspx.__BuildControlTree(default_aspx __ctrl) in F:\13-4-2022\Portal\Default.aspx:line 1
+   at ASP.default_aspx.FrameworkInitialize()
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</StackTrace>
+  </Error>
+  <Error>
+    <Time>2025-03-02 13:17:42</Time>
+    <Message>Object reference not set to an instance of an object.</Message>
+    <StackTrace>   at App_Code.PageBase.get_CurrentOwnerID()
+   at App_Code.PageBase.InitializeCulture()
+   at ASP.default_aspx.__BuildControlTree(default_aspx __ctrl) in F:\13-4-2022\Portal\Default.aspx:line 1
+   at ASP.default_aspx.FrameworkInitialize()
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</StackTrace>
+  </Error>
+  <Error>
+    <Time>2025-03-02 13:20:20</Time>
+    <Message>Exception of type 'System.Web.HttpUnhandledException' was thrown.</Message>
+    <StackTrace>   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.ui_home_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</StackTrace>
+    <InnerExceptionMessage>Specified argument was out of the range of valid values.</InnerExceptionMessage>
+    <InnerExceptionStackTrace>   at Common.URLBuilder.OwnerFilePath(RouteData routeData, String separator)
+   at Common.URLBuilder.Path(RouteData routeData, PathType type, SiteFolders folder, Object filename, String language, Boolean getDefault)
+   at Common.URLBuilder.Path(Page page, PathType type, SiteFolders folder, Object filename, String language, Boolean getDefault)
+   at MnfUniversity_Portals.UI.Home.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</InnerExceptionStackTrace>
+  </Error>
+  <Error>
+    <Time>2025-03-02 13:23:13</Time>
+    <Message>Object reference not set to an instance of an object.</Message>
+    <StackTrace>   at App_Code.PageBase.get_CurrentOwnerID()
+   at App_Code.PageBase.InitializeCulture()
+   at ASP.default_aspx.__BuildControlTree(default_aspx __ctrl) in F:\13-4-2022\Portal\Default.aspx:line 1
+   at ASP.default_aspx.FrameworkInitialize()
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</StackTrace>
+  </Error>
+  <Error>
+    <Time>2025-03-03 08:05:40</Time>
+    <Message>Object reference not set to an instance of an object.</Message>
+    <StackTrace>   at App_Code.PageBase.get_CurrentOwnerID()
+   at App_Code.PageBase.InitializeCulture()
+   at ASP.default_aspx.__BuildControlTree(default_aspx __ctrl) in F:\13-4-2022\Portal\Default.aspx:line 1
+   at ASP.default_aspx.FrameworkInitialize()
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</StackTrace>
+  </Error>
+  <Error>
+    <Time>2025-03-04 10:20:55</Time>
+    <Message>Access to the path 'F:\13-4-2022\Portal\App_Data\ErrorLogs.xml' is denied.</Message>
+    <StackTrace>   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Xml.XmlDocument.Save(String filename)
+   at ASP.global_asax.LogErrorToXml(Exception exception) in F:\13-4-2022\Portal\global.asax:line 164</StackTrace>
+  </Error>
+  <Error>
+    <Time>2025-03-04 10:20:56</Time>
+    <Message>Exception of type 'System.Web.HttpUnhandledException' was thrown.</Message>
+    <StackTrace>   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.ui_admin_menueditor_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</StackTrace>
+    <InnerExceptionMessage>DetailsView 'Editor_DetailsView' must be in insert mode to insert a new record.</InnerExceptionMessage>
+    <InnerExceptionStackTrace>   at System.Web.UI.WebControls.DetailsView.HandleInsert(String commandArg, Boolean causesValidation)
+   at System.Web.UI.WebControls.DetailsView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.DetailsViewRow.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</InnerExceptionStackTrace>
+  </Error>
+  <Error>
+    <Time>2025-03-04 10:22:46</Time>
+    <Message>Exception of type 'System.Web.HttpUnhandledException' was thrown.</Message>
+    <StackTrace>   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.ui_admin_menueditor_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</StackTrace>
+    <InnerExceptionMessage>DetailsView 'Editor_DetailsView' must be in insert mode to insert a new record.</InnerExceptionMessage>
+    <InnerExceptionStackTrace>   at System.Web.UI.WebControls.DetailsView.HandleInsert(String commandArg, Boolean causesValidation)
+   at System.Web.UI.WebControls.DetailsView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.DetailsViewRow.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</InnerExceptionStackTrace>
+  </Error>
+  <Error>
+    <Time>2025-03-04 10:22:50</Time>
+    <Message>Exception of type 'System.Web.HttpUnhandledException' was thrown.</Message>
+    <StackTrace>   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.ui_admin_menueditor_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</StackTrace>
+    <InnerExceptionMessage>DetailsView 'Editor_DetailsView' must be in insert mode to insert a new record.</InnerExceptionMessage>
+    <InnerExceptionStackTrace>   at System.Web.UI.WebControls.DetailsView.HandleInsert(String commandArg, Boolean causesValidation)
+   at System.Web.UI.WebControls.DetailsView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.DetailsViewRow.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</InnerExceptionStackTrace>
+  </Error>
+  <Error>
+    <Time>2025-03-04 10:23:36</Time>
+    <Message>Object reference not set to an instance of an object.</Message>
+    <StackTrace>   at App_Code.PageBase.get_CurrentOwnerID() in F:\13-4-2022\Portal\Base Code\PageBase.cs:line 92
+   at App_Code.PageBase.InitializeCulture() in F:\13-4-2022\Portal\Base Code\PageBase.cs:line 128
+   at ASP.default_aspx.__BuildControlTree(default_aspx __ctrl) in F:\13-4-2022\Portal\Default.aspx:line 1
+   at ASP.default_aspx.FrameworkInitialize()
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</StackTrace>
+  </Error>
+  <Error>
+    <Time>2025-03-04 10:23:36</Time>
+    <Message>Object reference not set to an instance of an object.</Message>
+    <StackTrace>   at App_Code.PageBase.get_CurrentOwnerID() in F:\13-4-2022\Portal\Base Code\PageBase.cs:line 92
+   at App_Code.PageBase.InitializeCulture() in F:\13-4-2022\Portal\Base Code\PageBase.cs:line 128
+   at ASP.default_aspx.__BuildControlTree(default_aspx __ctrl) in F:\13-4-2022\Portal\Default.aspx:line 1
+   at ASP.default_aspx.FrameworkInitialize()
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</StackTrace>
+  </Error>
+  <Error>
+    <Time>2025-03-04 10:26:28</Time>
+    <Message>Exception of type 'System.Web.HttpUnhandledException' was thrown.</Message>
+    <StackTrace>   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.ui_admin_menueditor_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</StackTrace>
+    <InnerExceptionMessage>DetailsView 'Editor_DetailsView' must be in insert mode to insert a new record.</InnerExceptionMessage>
+    <InnerExceptionStackTrace>   at System.Web.UI.WebControls.DetailsView.HandleInsert(String commandArg, Boolean causesValidation)
+   at System.Web.UI.WebControls.DetailsView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.DetailsViewRow.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</InnerExceptionStackTrace>
+  </Error>
+  <Error>
+    <Time>2025-03-04 10:26:32</Time>
+    <Message>Exception of type 'System.Web.HttpUnhandledException' was thrown.</Message>
+    <StackTrace>   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.ui_admin_menueditor_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</StackTrace>
+    <InnerExceptionMessage>DetailsView 'Editor_DetailsView' must be in insert mode to insert a new record.</InnerExceptionMessage>
+    <InnerExceptionStackTrace>   at System.Web.UI.WebControls.DetailsView.HandleInsert(String commandArg, Boolean causesValidation)
+   at System.Web.UI.WebControls.DetailsView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.DetailsViewRow.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</InnerExceptionStackTrace>
+  </Error>
+  <Error>
+    <Time>2025-03-04 10:26:38</Time>
+    <Message>Object reference not set to an instance of an object.</Message>
+    <StackTrace>   at App_Code.PageBase.get_CurrentOwnerID() in F:\13-4-2022\Portal\Base Code\PageBase.cs:line 92
+   at App_Code.PageBase.InitializeCulture() in F:\13-4-2022\Portal\Base Code\PageBase.cs:line 128
+   at ASP.default_aspx.__BuildControlTree(default_aspx __ctrl) in F:\13-4-2022\Portal\Default.aspx:line 1
+   at ASP.default_aspx.FrameworkInitialize()
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</StackTrace>
+  </Error>
+  <Error>
+    <Time>2025-03-04 10:26:40</Time>
+    <Message>Object reference not set to an instance of an object.</Message>
+    <StackTrace>   at App_Code.PageBase.get_CurrentOwnerID() in F:\13-4-2022\Portal\Base Code\PageBase.cs:line 92
+   at App_Code.PageBase.InitializeCulture() in F:\13-4-2022\Portal\Base Code\PageBase.cs:line 128
+   at ASP.default_aspx.__BuildControlTree(default_aspx __ctrl) in F:\13-4-2022\Portal\Default.aspx:line 1
+   at ASP.default_aspx.FrameworkInitialize()
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</StackTrace>
+  </Error>
+  <Error>
+    <Time>2025-03-04 12:12:06</Time>
+    <Message>==========Message============Exception of type 'System.Web.HttpUnhandledException' was thrown.</Message>
+    <StackTrace>==========StackTrace============   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.ui_home_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</StackTrace>
+    <InnerExceptionMessage>==========InnerException============The remote server returned an error: (503) Server Unavailable.</InnerExceptionMessage>
+    <InnerExceptionStackTrace>=============InnerExceptionStackTrace================   at System.Net.HttpWebRequest.GetResponse()
+   at System.Xml.XmlDownloadManager.GetNonFileStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Web.UI.WebControls.XmlDataSource.PopulateXmlDocument(XmlDocument document, CacheDependency&amp; dataCacheDependency, CacheDependency&amp; transformCacheDependency)
+   at System.Web.UI.WebControls.XmlDataSource.GetXmlDocument()
+   at System.Web.UI.WebControls.XmlHierarchicalDataSourceView.Select()
+   at System.Web.UI.WebControls.Menu.DataBindItem(MenuItem item)
+   at System.Web.UI.WebControls.Menu.PerformDataBinding()
+   at System.Web.UI.WebControls.HierarchicalDataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.Menu.EnsureDataBound()
+   at System.Web.UI.WebControls.Menu.OnPreRender(EventArgs e, Boolean registerScript)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</InnerExceptionStackTrace>
+  </Error>
+  <Error>
+    <Time>2025-03-04 12:12:09</Time>
+    <Message>==========Message============Exception of type 'System.Web.HttpUnhandledException' was thrown.</Message>
+    <StackTrace>==========StackTrace============   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.ui_home_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</StackTrace>
+    <InnerExceptionMessage>==========InnerException============The remote server returned an error: (503) Server Unavailable.</InnerExceptionMessage>
+    <InnerExceptionStackTrace>=============InnerExceptionStackTrace================   at System.Net.HttpWebRequest.GetResponse()
+   at System.Xml.XmlDownloadManager.GetNonFileStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Web.UI.WebControls.XmlDataSource.PopulateXmlDocument(XmlDocument document, CacheDependency&amp; dataCacheDependency, CacheDependency&amp; transformCacheDependency)
+   at System.Web.UI.WebControls.XmlDataSource.GetXmlDocument()
+   at System.Web.UI.WebControls.XmlHierarchicalDataSourceView.Select()
+   at System.Web.UI.WebControls.Menu.DataBindItem(MenuItem item)
+   at System.Web.UI.WebControls.Menu.PerformDataBinding()
+   at System.Web.UI.WebControls.HierarchicalDataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.Menu.EnsureDataBound()
+   at System.Web.UI.WebControls.Menu.OnPreRender(EventArgs e, Boolean registerScript)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</InnerExceptionStackTrace>
+  </Error>
+  <Error>
+    <Time>2025-03-04 12:12:14</Time>
+    <Message>==========Message============Object reference not set to an instance of an object.</Message>
+    <StackTrace>==========StackTrace============   at App_Code.PageBase.get_CurrentOwnerID() in F:\13-4-2022\Portal\Base Code\PageBase.cs:line 92
+   at App_Code.PageBase.InitializeCulture() in F:\13-4-2022\Portal\Base Code\PageBase.cs:line 128
+   at ASP.default_aspx.__BuildControlTree(default_aspx __ctrl) in F:\13-4-2022\Portal\Default.aspx:line 1
+   at ASP.default_aspx.FrameworkInitialize()
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</StackTrace>
+  </Error>
+  <Error>
+    <Time>2025-03-04 12:12:14</Time>
+    <Message>==========Message============Object reference not set to an instance of an object.</Message>
+    <StackTrace>==========StackTrace============   at App_Code.PageBase.get_CurrentOwnerID() in F:\13-4-2022\Portal\Base Code\PageBase.cs:line 92
+   at App_Code.PageBase.InitializeCulture() in F:\13-4-2022\Portal\Base Code\PageBase.cs:line 128
+   at ASP.default_aspx.__BuildControlTree(default_aspx __ctrl) in F:\13-4-2022\Portal\Default.aspx:line 1
+   at ASP.default_aspx.FrameworkInitialize()
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</StackTrace>
+  </Error>
+</Errors>

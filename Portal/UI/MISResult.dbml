@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="menofeya" Class="MISResultDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=172.16.1.13;Initial Catalog=menofeya;User ID=portal.staff" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="menofeyaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ED_STUD" Member="ED_STUDs">
+    <Type Name="ED_STUD">
+      <Column Name="ED_STUD_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="STUD_CODE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="NATIONAL_NUMBER" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="FULL_NAME_AR" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="CL_FULL_NAME_AR" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="STUD_NAME_AR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CL_STUD_NAME_AR" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FATHER_NAME_AR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CL_FATHER_NAME_AR" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GRANDFATHER_NAME_AR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CL_GRANDFATHER_NAME_AR" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FAMILY_NAME_AR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CL_FAMILY_NAME_AR" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FULL_NAME_EN" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="STUD_NAME_EN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FATHER_NAME_EN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GRANDFATHER_NAME_EN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FAMILY_NAME_EN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FATHER_PROFESSION" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="FATHER_NATIONAL_NUMBER" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="MOTHER_NATIONAL_NUMBER" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="MOTHER_NAME_AR" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CL_MOTHER_NAME_AR" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MOTHER_NAME_EN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="GS_CODE_GENDER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_CODE_RELIGION_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="BIRTH_REG_NUMBER" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BIRTH_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GS_BIRTH_COUNTRY_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="GS_COUNTRY_INFO_ID_1" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_COUNTRY_INFO_ID_2" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="STUD_PHOTO" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="USER_ITEC" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PASSWORD_ITEC" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ONLINE_PASSWORD" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="S" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.natega2017" Method="natega2017">
+    <Parameter Name="NationalId" Parameter="nationalId" Type="System.String" DbType="NVarChar(16)" />
+    <ElementType Name="natega2017Result">
+      <Column Name="SUBJECT_DESCR_AR" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="RATING_DESCR_AR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.StudentInfo2017" Method="StudentInfo2017">
+    <Parameter Name="NationalId" Parameter="nationalId" Type="System.String" DbType="NVarChar(16)" />
+    <ElementType Name="StudentInfo2017Result">
+      <Column Name="FULL_NAME_AR" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

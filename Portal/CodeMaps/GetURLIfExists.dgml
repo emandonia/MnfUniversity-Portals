@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph DataVirtualized="True" GraphDirection="LeftToRight" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 @4 @5 Member=(Name=BannerFileUploader_UploadedComplete @7))" Category="CodeSchema_Method" Bounds="236.013333333334,-2.8421709430404E-14,247.93,25.96" CodeSchemaProperty_IsProtected="True" DelayedCrossGroupLinksState="Fetched" Label="BannerFileUploader_UploadedComplete" />
+    <Node Id="(@1 @4 @5 Member=(Name=IconFileUploader_UploadedComplete @7))" Category="CodeSchema_Method" Bounds="243.243333333333,368,233.47,25.96" CodeSchemaProperty_IsProtected="True" DelayedCrossGroupLinksState="Fetched" Label="IconFileUploader_UploadedComplete" />
+    <Node Id="(@1 @4 @5 Member=(Name=IntroFileUploader_UploadedComplete @7))" Category="CodeSchema_Method" Bounds="241.895,424,236.166666666667,25.96" CodeSchemaProperty_IsProtected="True" DelayedCrossGroupLinksState="Fetched" Label="IntroFileUploader_UploadedComplete" />
+    <Node Id="(@1 @4 @5 Member=(Name=LogoFileUploader_UploadedComplete @7))" Category="CodeSchema_Method" Bounds="241.133333333333,480,237.69,25.96" CodeSchemaProperty_IsProtected="True" DelayedCrossGroupLinksState="Fetched" Label="LogoFileUploader_UploadedComplete" />
+    <Node Id="(@1 Namespace=Common Type=URLBuilder Member=(Name=BannerURL OverloadingParameters=[(@3 Namespace=System.Web.UI Type=Page)]))" Category="CodeSchema_Method" Bounds="312.935,592,94.0866666666666,25.96" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsStatic="True" DelayedCrossGroupLinksState="Fetched" Label="BannerURL" />
+    <Node Id="(@1 Namespace=MnfUniversity_Portals Type=_Default Member=(Name=Page_Load OverloadingParameters=[(@2 Namespace=System Type=Object),(@2 Namespace=System Type=EventArgs)]))" Category="CodeSchema_Method" Bounds="313.476666666667,536,93.0033333333333,25.96" CodeSchemaProperty_IsProtected="True" DelayedCrossGroupLinksState="Fetched" Label="Page_Load" />
+    <Node Id="(@1 Namespace=MnfUniversity_Portals.Masterpages Type=SiteMaster Member=(Name=AddSiteIcon OverloadingParameters=[(@3 Namespace=System.Web.UI Type=Page)]))" Category="CodeSchema_Method" Bounds="309.951666666667,55.9999999999999,100.053333333333,25.96" CodeSchemaProperty_IsPrivate="True" DelayedCrossGroupLinksState="Fetched" Label="AddSiteIcon" />
+    <Node Id="(@1 Namespace=MnfUniversity_Portals.Masterpages Type=SiteMaster Member=(Name=LogoPath OverloadingParameters=[(@2 Namespace=System Type=Object)]))" Category="CodeSchema_Method" Bounds="316.748333333333,112,86.46,25.96" CodeSchemaProperty_IsPrivate="True" DelayedCrossGroupLinksState="Fetched" Label="LogoPath" />
+    <Node Id="(@1 Namespace=MnfUniversity_Portals.UI Type=Subs Member=(Name=LogoPath OverloadingParameters=[(@2 Namespace=System Type=Object)]))" Category="CodeSchema_Method" Bounds="316.748333333333,168,86.46,25.96" CodeSchemaProperty_IsProtected="True" DelayedCrossGroupLinksState="Fetched" Label="LogoPath" />
+    <Node Id="(@1 Namespace=MnfUniversity_Portals.UserControls.Viewers Type=EventSliderControl Member=ShowHighlights)" Category="CodeSchema_Method" Bounds="300.488333333333,224,118.98,25.96" CodeSchemaProperty_IsPrivate="True" DelayedCrossGroupLinksState="Fetched" Label="ShowHighlights" />
+    <Node Id="@10" Category="CodeSchema_Method" Bounds="540.003333333333,324,111.333333333333,25.96" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsStatic="True" CommonLabel="GetURLIfExists" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Method" Label="GetURLIfExists" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" />
+    <Node Id="@8" Category="CodeSchema_Method" Bounds="209.953333333333,280,300.05,25.96" CodeSchemaProperty_IsProtected="True" DelayedCrossGroupLinksState="Fetched" Label="BannerLangDropDownList_SelectedIndexChanged" />
+    <Node Id="@9" Category="CodeSchema_Method" Bounds="0,324,179.953333333333,25.96" CodeSchemaProperty_IsProtected="True" DelayedCrossGroupLinksState="Fetched" Label="FilterControl_SearchClicked" />
+  </Nodes>
+  <Links>
+    <Link Source="(@1 @4 @5 Member=(Name=BannerFileUploader_UploadedComplete @7))" Target="@10" Category="CodeSchema_Calls" Bounds="385.262939453125,25.9599990844727,198.155700683594,290.292167663574" Weight="1" />
+    <Link Source="(@1 @4 @5 Member=(Name=IconFileUploader_UploadedComplete @7))" Target="@10" Category="CodeSchema_Calls" Bounds="429.507385253906,349.0185546875,101.676513671875,18.9814453125" Weight="1" />
+    <Link Source="(@1 @4 @5 Member=(Name=IntroFileUploader_UploadedComplete @7))" Target="@10" Category="CodeSchema_Calls" Bounds="403.812591552734,354.339630126953,160.692596435547,69.6603698730469" Weight="1" />
+    <Link Source="(@1 @4 @5 Member=(Name=LogoFileUploader_UploadedComplete @7))" Target="@10" Category="CodeSchema_Calls" Bounds="413.269927978516,356.73193359375,165.109771728516,123.26806640625" Weight="1" />
+    <Link Source="(@1 Namespace=Common Type=URLBuilder Member=(Name=BannerURL OverloadingParameters=[(@3 Namespace=System.Web.UI Type=Page)]))" Target="@10" Category="CodeSchema_Calls" Bounds="377.975036621094,357.619689941406,204.962036132813,234.380310058594" Weight="1" />
+    <Link Source="(@1 Namespace=MnfUniversity_Portals Type=_Default Member=(Name=Page_Load OverloadingParameters=[(@2 Namespace=System Type=Object),(@2 Namespace=System Type=EventArgs)]))" Target="@10" Category="CodeSchema_Calls" Bounds="405.584320068359,357.640289306641,177.464569091797,179.221527099609" Weight="2" />
+    <Link Source="(@1 Namespace=MnfUniversity_Portals.Masterpages Type=SiteMaster Member=(Name=AddSiteIcon OverloadingParameters=[(@3 Namespace=System.Web.UI Type=Page)]))" Target="@10" Category="CodeSchema_Calls" Bounds="375.880828857422,81.9599990844727,203.420074462891,235.084342956543" Weight="1" />
+    <Link Source="(@1 Namespace=MnfUniversity_Portals.Masterpages Type=SiteMaster Member=(Name=LogoPath OverloadingParameters=[(@2 Namespace=System Type=Object)]))" Target="@10" Category="CodeSchema_Calls" Bounds="374.408874511719,137.960006713867,200.139221191406,180.021224975586" Weight="1" />
+    <Link Source="(@1 Namespace=MnfUniversity_Portals.UI Type=Subs Member=(Name=LogoPath OverloadingParameters=[(@2 Namespace=System Type=Object)]))" Target="@10" Category="CodeSchema_Calls" Bounds="380.217407226563,193.960006713867,189.495300292969,124.885665893555" Weight="1" />
+    <Link Source="(@1 Namespace=MnfUniversity_Portals.UserControls.Viewers Type=EventSliderControl Member=ShowHighlights)" Target="@10" Category="CodeSchema_Calls" Bounds="419.468322753906,245.826858520508,156.657470703125,71.8485565185547" Weight="2" />
+    <Link Source="@8" Target="@10" Category="CodeSchema_Calls" Bounds="429.507385253906,305.959991455078,101.676513671875,18.9814453125" Weight="1" />
+    <Link Source="@9" Target="@10" Category="CodeSchema_Calls" Bounds="179.953338623047,336.980010986328,351.050018310547,0" Weight="3" />
+    <Link Source="@9" Target="@8" Category="CodeSchema_Calls" Bounds="169.627151489258,307.407562255859,101.817855834961,16.5924377441406" Weight="1" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Calls" Label="Calls" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Called By" OutgoingActionLabel="Calls" />
+    <Category Id="CodeSchema_Member" Label="Member" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Field" NavigationActionLabel="Members" />
+    <Category Id="CodeSchema_Method" Label="Method" BasedOn="CodeSchema_Member" CanBeDataDriven="True" DefaultAction="Link:Forward:CodeSchema_Calls" Icon="CodeSchema_Method" NavigationActionLabel="Methods" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPrivate" Label="Is Private" Description="Flag to indicate the scope is Private" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsProtected" Label="Is Protected" Description="Flag to indicate the scope is Protected" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPublic" Label="Is Public" Description="Flag to indicate the scope is Public" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsStatic" Label="Is Static" Description="Flag to indicate the member is a static member" DataType="System.Boolean" />
+    <Property Id="CommonLabel" DataType="System.String" />
+    <Property Id="DataVirtualized" Label="Data Virtualized" Description="If true, the graph can contain nodes and links that represent data for virtualized nodes/links (i.e. not actually created in the graph)." DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="DelayedCrossGroupLinksState" Label="Delayed Cross-Group Links State" Description="Unspecified if the delayed cross-group links state is not specified. NotFetched if delayed cross-group links on this node are not fetched into the graph yet. Fetched if all delayed cross-group links have already fetched." DataType="Microsoft.VisualStudio.GraphModel.DelayedDataState" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="FunctionTypeFlags" Label="FunctionTypeFlags" Description="FunctionTypeFlags" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="Icon" Label="Icon" Description="Icon" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="Language" Label="Language" Description="Language" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="Visibility" Label="Visibility" Description="Defines whether a node in the graph is visible or not" DataType="System.Windows.Visibility" />
+    <Property Id="Weight" Label="Weight" Description="Weight" DataType="System.Double" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+    <Name Id="Member" Label="Member" ValueType="System.Object" />
+    <Name Id="Name" Label="Name" ValueType="System.String" />
+    <Name Id="Namespace" Label="Namespace" ValueType="System.String" />
+    <Name Id="OverloadingParameters" Label="Parameter" ValueType="Microsoft.VisualStudio.GraphModel.GraphNodeIdCollection" Formatter="NameValueNoEscape" />
+    <Name Id="Type" Label="Type" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(058d7a0d-479d-4454-9235-0243cab57f8f.OutputPathUri)" />
+    <Alias n="2" Uri="Assembly=$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll" />
+    <Alias n="3" Uri="Assembly=$(FxReferenceAssembliesUri)/.NETFramework/v4.0/System.Web.dll" />
+    <Alias n="4" Id="Namespace=MnfUniversity_Portals.UI.Admin" />
+    <Alias n="5" Id="Type=AdminPreferences" />
+    <Alias n="6" Uri="Assembly=$(VsSolutionUri)/Portal/bin/AjaxControlToolkit.dll" />
+    <Alias n="7" Id="OverloadingParameters=[(@2 Namespace=System Type=Object),(@6 Namespace=AjaxControlToolkit Type=AsyncFileUploadEventArgs)]" />
+    <Alias n="8" Id="(@1 @4 @5 Member=(Name=BannerLangDropDownList_SelectedIndexChanged OverloadingParameters=[(@2 Namespace=System Type=Object),(@2 Namespace=System Type=EventArgs)]))" />
+    <Alias n="9" Id="(@1 @4 @5 Member=(Name=FilterControl_SearchClicked OverloadingParameters=[(@2 Namespace=System Type=Object),(@2 Namespace=System Type=EventArgs)]))" />
+    <Alias n="10" Id="(@1 Namespace=Common Type=URLBuilder Member=(Name=GetURLIfExists OverloadingParameters=[(@3 Namespace=System.Web.UI Type=Page),(@1 Namespace=Common Type=ImageFolders),(@2 Namespace=System Type=String),(@2 Namespace=System Type=String),(@2 Namespace=System Type=String)]))" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Results" ValueLabel="True">
+      <Condition Expression="HasCategory('QueryResult')" />
+      <Setter Property="Background" Value="#FFBCFFBE" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Assembly" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Assembly')" />
+      <Setter Property="Background" Value="#FF094167" />
+      <Setter Property="Stroke" Value="#FF094167" />
+      <Setter Property="Icon" Value="CodeSchema_Assembly" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Namespace" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Namespace')" />
+      <Setter Property="Background" Value="#FF0E619A" />
+      <Setter Property="Stroke" Value="#FF0E619A" />
+      <Setter Property="Icon" Value="CodeSchema_Namespace" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Interface" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Interface')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Interface" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Struct" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Struct')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Struct" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Enumeration" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Enum')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Enum" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Delegate" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Delegate')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Delegate" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Class" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Type')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Class" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Property')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Property" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Method" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Method')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Method" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Event" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Event')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Event" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Field')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Field" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Out Parameter" ValueLabel="True">
+      <Condition Expression="CodeSchemaProperty_IsOut = 'True'" />
+      <Setter Property="Icon" Value="CodeSchema_OutParameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Parameter" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_Parameter')" />
+      <Setter Property="Icon" Value="CodeSchema_Parameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Local Variable" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_LocalExpression')" />
+      <Setter Property="Icon" Value="CodeSchema_LocalExpression" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Externals" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Externals')" />
+      <Setter Property="Background" Value="#FF424242" />
+      <Setter Property="Stroke" Value="#FF424242" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Inherits From" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('InheritsFrom') And Target.HasCategory('CodeSchema_Class')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Implements" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('Implements') And Target.HasCategory('CodeSchema_Interface')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Field Read" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Target.HasCategory('CodeSchema_Field') And HasCategory('CodeSchema_FieldRead')" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Comment Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Source.HasCategory('Comment')" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Cursor Location" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCursorLocation = 'True'" />
+      <Setter Property="IndicatorWest" Value="CursorLocationIndicator" />
+    </Style>
+  </Styles>
+  <Paths>
+    <Path Id="058d7a0d-479d-4454-9235-0243cab57f8f.OutputPathUri" Value="file:///D:/Ahmed's Files/MnfPortal Project/MnfPortals/MnfUniversity Portals/Portal/bin/Portals.dll" />
+    <Path Id="FxReferenceAssembliesUri" Value="file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework" />
+    <Path Id="VsSolutionUri" Value="file:///D:/Ahmed's Files/MnfPortal Project/MnfPortals/MnfUniversity Portals" />
+  </Paths>
+</DirectedGraph>

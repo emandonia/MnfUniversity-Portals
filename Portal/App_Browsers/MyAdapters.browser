@@ -1,0 +1,11 @@
+<!-- File: MyAdapters.browser -->
+<browsers>
+  <browser refID="Default">
+    <controlAdapters>
+
+      <adapter controlType="System.Web.UI.WebControls.Menu"
+               adapterType="MnfUniversity_Portals.Base_Code.MenuAdapter" />
+    </controlAdapters>
+  </browser>
+</browsers>
+

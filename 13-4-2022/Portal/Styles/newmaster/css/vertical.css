@@ -1,0 +1,102 @@
+#nav-v, #nav-v li, #nav-v ul {
+	list-style: none;
+	width: 260px; /* العرض الكلي للقوائم */
+	float:right;
+	padding: 0;
+	margin: 0;
+}
+#nav-v ul {
+	position: absolute;
+	z-index: 1000;
+	display: none;
+	right: 100%;
+	top: 0;
+}
+#nav-v li {
+	position: relative;
+	width: 100%;
+}
+#nav-v li.iehover { 
+	z-index: 1000; 
+} 
+
+
+/* ---- ROOT > -------------------------- */
+#nav-v a {
+	font: bold 15px Arial, Helvetica, sans-serif;
+	border-bottom: 1px solid #ffffff;
+	padding: 4px 10px;
+	text-decoration: none;
+	background: #3B5998; 
+	outline-style:none;
+	display: block;
+	color: #FFF;
+	height: auto !important;
+	height: 1%;
+}
+/* ---- ROOT:Hover > -------------------- */
+#nav-v a:hover, #nav-v li:hover a, #nav-v li.iehover a {
+	background-color: #526ea9;
+	color: #FFF;
+}
+/* ---- ROOT.ArrowDown > ---------------- */
+#nav-v a.popup_down {
+	background-image: url(../images/arrow_down_v.gif);
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+}
+
+
+/* ---- ROOT > LEVEL_01 ----------------- */
+#nav-v li:hover li a, #nav-v li.iehover li a {
+	border-bottom: 1px solid #ffffff;
+	background-color: #3B5998;
+	padding: 4px 10px;
+	color: #FFF;
+	float: none;
+}
+/* ---- ROOT > LEVEL_01:Hover ----------- */
+#nav-v li:hover li a:hover, #nav-v li:hover li:hover a, #nav-v li.iehover li.iehover, #nav-v li.iehover li.iehover a {
+	background-color: #526ea9;
+	color: #fff;
+}
+/* ---- ROOT > LEVEL_01.ArrowLeft ------- */
+#nav-v li:hover li a.popup, #nav-v li.iehover li a.popup {
+	background-image: url(../images/arrow.gif);
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+}
+
+
+/* ---- ROOT >> LEVEL_02 ---------------- */
+#nav-v li:hover li:hover li a, #nav-v li.iehover li.iehover li a {
+	border-bottom: 1px solid #ffffff;
+	background-color: #3B5998;
+	color: #FFF;
+}
+/* ---- ROOT >> LEVEL_02:Hover ---------- */
+#nav-v li:hover li:hover li a:hover, #nav-v li:hover li:hover li:hover a, #nav-v li.iehover li.iehover li a:hover, #nav-v li.iehover li.iehover li.iehover a {
+background-color: #526ea9;
+	color: #fff;
+}
+
+
+/* ---- ROOT >>> LEVEL_03 --------------- */
+#nav-v li:hover li:hover li:hover li a, #nav-v li.iehover li.iehover li.iehover li a {
+	border-bottom: 1px solid #ffffff;
+	background-color: #3B5998;
+	color: #FFF;
+}
+/* ---- ROOT >>> LEVEL_03:Hover --------- */
+#nav-v li:hover li:hover li:hover li a:hover, #nav-v li.iehover li.iehover li.iehover li a:hover {
+background-color: #526ea9;
+	color: #fff;
+}
+
+
+#nav-v li:hover ul ul, #nav-v li:hover ul ul ul, #nav-v li.iehover ul ul, #nav-v li.iehover ul ul ul {
+	display: none;
+}
+#nav-v li:hover ul, #nav-v ul li:hover ul, #nav-v ul ul li:hover ul, #nav-v li.iehover ul, #nav-v ul li.iehover ul, #nav-v ul ul li.iehover ul {
+	display: block;
+}

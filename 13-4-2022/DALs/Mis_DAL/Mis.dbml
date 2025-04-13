@@ -1,0 +1,1481 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="menofeya" Class="MisDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.AS_FACULTY_INFO" Member="AS_FACULTY_INFOs">
+    <Type Name="AS_FACULTY_INFO">
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AS_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_COUNTRY_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="FACULTY_ADDRESS" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="FACULTY_DESCR_AR" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="FACULTY_DESCR_EN" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="CON_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GS_CONTACT_METHOD_H_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="IS_GENDER_MALE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="IS_GENDER_FEMALE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="IS_STUDY_METHOD_YEARS" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="IS_STUDY_METHOD_LEVELS" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="IS_STUDY_REGULAR" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="IS_STUDY_ASSOCIATIVE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="IS_STUDY_OPEN" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="IS_STUDY_ABSTRACT" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="IS_STUDY_APPLIED" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_STF_MEMBER_ID2" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="FACULTY_LOGO" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="SA_STF_MEMBER_ID3" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_STF_MEMBER_ID4" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="IS_STUDY_GENERAL_ASSOCIATIVE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="IS_SCHOOL" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Association Name="AS_FACULTY_INFO_SA_SC_QUAL" Member="SA_SC_QUALs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="SA_SC_QUAL" />
+      <Association Name="AS_FACULTY_INFO_SA_STF_MEMBER" Member="SA_STF_MEMBERs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="SA_STF_MEMBER" />
+      <Association Name="AS_FACULTY_INFO_SA_EMP_HIERARCHY" Member="SA_EMP_HIERARCHies" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="SA_EMP_HIERARCHY" />
+      <Association Name="AS_FACULTY_INFO_SA_TRAINING_COURSE" Member="SA_TRAINING_COURSEs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="SA_TRAINING_COURSE" />
+      <Association Name="AS_FACULTY_INFO_SA_SUPERVISING_JOB" Member="SA_SUPERVISING_JOBs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="SA_SUPERVISING_JOB" />
+      <Association Name="AS_FACULTY_INFO_SA_CODE_SUPERVISE_JOB" Member="SA_CODE_SUPERVISE_JOBs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="SA_CODE_SUPERVISE_JOB" />
+      <Association Name="AS_FACULTY_INFO_SA_SC_MISSION" Member="SA_SC_MISSIONs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="SA_SC_MISSION" />
+      <Association Name="AS_FACULTY_INFO_SA_EXT_EXP" Member="SA_EXT_EXPs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="SA_EXT_EXP" />
+      <Association Name="AS_FACULTY_INFO_SA_INT_DEL" Member="SA_INT_DELs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="SA_INT_DEL" />
+      <Association Name="AS_FACULTY_INFO_SA_JOINT_SUPERVISION" Member="SA_JOINT_SUPERVISIONs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="SA_JOINT_SUPERVISION" />
+      <Association Name="AS_FACULTY_INFO_SA_STF_SUBJECT" Member="SA_STF_SUBJECTs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="SA_STF_SUBJECT" />
+      <Association Name="AS_FACULTY_INFO_ED_CODE_SUBJECT" Member="ED_CODE_SUBJECTs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="ED_CODE_SUBJECT" />
+      <Association Name="AS_FACULTY_INFO_SA_PAR_DEL" Member="SA_PAR_DELs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="SA_PAR_DEL" />
+      <Association Name="AS_FACULTY_INFO_SA_SECONDMENT" Member="SA_SECONDMENTs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="SA_SECONDMENT" />
+      <Association Name="AS_FACULTY_INFO_SA_SC_MEETING_ATTENDENCE" Member="SA_SC_MEETING_ATTENDENCEs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="SA_SC_MEETING_ATTENDENCE" />
+      <Association Name="AS_FACULTY_INFO_ED_PHASE_NODE" Member="ED_PHASE_NODEs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="ED_PHASE_NODE" />
+      <Association Name="AS_FACULTY_INFO_ED_BYLAW" Member="ED_BYLAWs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="ED_BYLAW" />
+      <Association Name="AS_FACULTY_INFO_ED_SUBJECT" Member="ED_SUBJECTs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="ED_SUBJECT" />
+      <Association Name="AS_FACULTY_INFO_SA_RESEARCH_TEAM" Member="SA_RESEARCH_TEAMs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="SA_RESEARCH_TEAM" />
+      <Association Name="AS_FACULTY_INFO_PG_PHASE_NODE" Member="PG_PHASE_NODEs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="PG_PHASE_NODE" />
+      <Association Name="AS_FACULTY_INFO_PG_SUBJECT" Member="PG_SUBJECTs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="PG_SUBJECT" />
+      <Association Name="AS_FACULTY_INFO_PG_BYLAW" Member="PG_BYLAWs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="PG_BYLAW" />
+      <Association Name="AS_FACULTY_INFO_AS_GRANTABLE_DEGREE" Member="AS_GRANTABLE_DEGREEs" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_GRANTABLE_DEGREE" />
+      <Association Name="AS_NODE_AS_FACULTY_INFO" Member="AS_NODE" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="AS_NODE" IsForeignKey="true" />
+      <Association Name="GS_CONTACT_METHOD_H_AS_FACULTY_INFO" Member="GS_CONTACT_METHOD_H" ThisKey="GS_CONTACT_METHOD_H_ID" OtherKey="GS_CONTACT_METHOD_H_ID" Type="GS_CONTACT_METHOD_H" IsForeignKey="true" />
+      <Association Name="SA_STF_MEMBER_AS_FACULTY_INFO" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+      <Association Name="SA_STF_MEMBER_AS_FACULTY_INFO1" Member="SA_STF_MEMBER1" ThisKey="SA_STF_MEMBER_ID3" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+      <Association Name="SA_STF_MEMBER_AS_FACULTY_INFO2" Member="SA_STF_MEMBER2" ThisKey="SA_STF_MEMBER_ID4" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+      <Association Name="SA_STF_MEMBER_AS_FACULTY_INFO3" Member="SA_STF_MEMBER3" ThisKey="SA_STF_MEMBER_ID2" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+      <Association Name="GS_COUNTRY_NODE_AS_FACULTY_INFO" Member="GS_COUNTRY_NODE" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="GS_COUNTRY_NODE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PG_THESIS_GENERAL_SPEC" Member="PG_THESIS_GENERAL_SPECs">
+    <Type Name="PG_THESIS_GENERAL_SPEC">
+      <Column Name="PG_THESIS_GENERAL_SPEC_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AS_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GENERAL_SPEC_CODE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="GENERAL_SPEC_DESCR_AR" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="GENERAL_SPEC_DESCR_EN" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Association Name="PG_THESIS_GENERAL_SPEC_PG_THESIS_DETAILED_SPEC" Member="PG_THESIS_DETAILED_SPECs" ThisKey="PG_THESIS_GENERAL_SPEC_ID" OtherKey="PG_THESIS_GENERAL_SPEC_ID" Type="PG_THESIS_DETAILED_SPEC" />
+      <Association Name="PG_THESIS_GENERAL_SPEC_SA_SC_QUAL" Member="SA_SC_QUALs" ThisKey="PG_THESIS_GENERAL_SPEC_ID" OtherKey="PG_THESIS_GENERAL_SPEC_ID" Type="SA_SC_QUAL" />
+      <Association Name="PG_THESIS_GENERAL_SPEC_SA_STF_MEMBER" Member="SA_STF_MEMBERs" ThisKey="PG_THESIS_GENERAL_SPEC_ID" OtherKey="PG_THESIS_GENERAL_SPEC_ID" Type="SA_STF_MEMBER" />
+      <Association Name="PG_THESIS_GENERAL_SPEC_SA_EXT_EXP" Member="SA_EXT_EXPs" ThisKey="PG_THESIS_GENERAL_SPEC_ID" OtherKey="PG_THESIS_GENERAL_SPEC_ID" Type="SA_EXT_EXP" />
+      <Association Name="PG_THESIS_GENERAL_SPEC_SA_INT_DEL" Member="SA_INT_DELs" ThisKey="PG_THESIS_GENERAL_SPEC_ID" OtherKey="PG_THESIS_GENERAL_SPEC_ID" Type="SA_INT_DEL" />
+      <Association Name="PG_THESIS_GENERAL_SPEC_SA_JOINT_SUPERVISION" Member="SA_JOINT_SUPERVISIONs" ThisKey="PG_THESIS_GENERAL_SPEC_ID" OtherKey="PG_THESIS_GENERAL_SPEC_ID" Type="SA_JOINT_SUPERVISION" />
+      <Association Name="AS_NODE_PG_THESIS_GENERAL_SPEC" Member="AS_NODE" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="AS_NODE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PG_THESIS_DETAILED_SPEC" Member="PG_THESIS_DETAILED_SPECs">
+    <Type Name="PG_THESIS_DETAILED_SPEC">
+      <Column Name="PG_THESIS_DETAILED_SPEC_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PG_THESIS_GENERAL_SPEC_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="DETAILED_SPEC_CODE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DETAILED_SPEC_DESC_AR" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="DETAILED_SPEC_DESC_EN" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Association Name="PG_THESIS_DETAILED_SPEC_SA_SC_QUAL" Member="SA_SC_QUALs" ThisKey="PG_THESIS_DETAILED_SPEC_ID" OtherKey="PG_THESIS_DETAILED_SPEC_ID" Type="SA_SC_QUAL" />
+      <Association Name="PG_THESIS_DETAILED_SPEC_SA_STF_MEMBER" Member="SA_STF_MEMBERs" ThisKey="PG_THESIS_DETAILED_SPEC_ID" OtherKey="PG_THESIS_DETAILED_SPEC_ID" Type="SA_STF_MEMBER" />
+      <Association Name="PG_THESIS_DETAILED_SPEC_SA_EXT_EXP" Member="SA_EXT_EXPs" ThisKey="PG_THESIS_DETAILED_SPEC_ID" OtherKey="PG_THESIS_DETAILED_SPEC_ID" Type="SA_EXT_EXP" />
+      <Association Name="PG_THESIS_DETAILED_SPEC_SA_INT_DEL" Member="SA_INT_DELs" ThisKey="PG_THESIS_DETAILED_SPEC_ID" OtherKey="PG_THESIS_DETAILED_SPEC_ID" Type="SA_INT_DEL" />
+      <Association Name="PG_THESIS_DETAILED_SPEC_SA_JOINT_SUPERVISION" Member="SA_JOINT_SUPERVISIONs" ThisKey="PG_THESIS_DETAILED_SPEC_ID" OtherKey="PG_THESIS_DETAILED_SPEC_ID" Type="SA_JOINT_SUPERVISION" />
+      <Association Name="PG_THESIS_GENERAL_SPEC_PG_THESIS_DETAILED_SPEC" Member="PG_THESIS_GENERAL_SPEC" ThisKey="PG_THESIS_GENERAL_SPEC_ID" OtherKey="PG_THESIS_GENERAL_SPEC_ID" Type="PG_THESIS_GENERAL_SPEC" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AS_NODE" Member="AS_NODEs">
+    <Type Name="AS_NODE">
+      <Column Name="AS_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NODE_ORDER" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_PARENT_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_CHILD_COUNT" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_PATH" Type="System.String" DbType="NVarChar(90) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_LEVEL" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_IS_FIXED" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_CAN_HAVE_CHILD" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_CODE_NODE_NATURE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_DESCR_AR" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_DESCR_EN" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="NODE_CODE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="IS_NODE_VISIBLE" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="CURRENT_UNIVERSITY" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="GS_COUNTRY_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_INSTITUTE" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Association Name="AS_NODE_AS_FACULTY_INFO" Member="AS_FACULTY_INFOs" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="AS_FACULTY_INFO" />
+      <Association Name="AS_NODE_PG_THESIS_GENERAL_SPEC" Member="PG_THESIS_GENERAL_SPECs" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="PG_THESIS_GENERAL_SPEC" />
+      <Association Name="AS_NODE_AS_NODE" Member="AS_NODEs" ThisKey="AS_NODE_ID" OtherKey="NODE_PARENT_ID" Type="AS_NODE" />
+      <Association Name="AS_NODE_SA_SC_QUAL" Member="SA_SC_QUALs" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="SA_SC_QUAL" />
+      <Association Name="AS_NODE_SA_STF_MEMBER" Member="SA_STF_MEMBERs" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="SA_STF_MEMBER" />
+      <Association Name="AS_NODE_SA_EMP_HIERARCHY" Member="SA_EMP_HIERARCHies" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="SA_EMP_HIERARCHY" />
+      <Association Name="AS_NODE_SA_TRAINING_COURSE" Member="SA_TRAINING_COURSEs" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="SA_TRAINING_COURSE" />
+      <Association Name="AS_NODE_SA_SUPERVISING_JOB" Member="SA_SUPERVISING_JOBs" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="SA_SUPERVISING_JOB" />
+      <Association Name="AS_NODE_SA_SC_MISSION" Member="SA_SC_MISSIONs" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="SA_SC_MISSION" />
+      <Association Name="AS_NODE_SA_EXT_EXP" Member="SA_EXT_EXPs" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="SA_EXT_EXP" />
+      <Association Name="AS_NODE_SA_PAR_DEL" Member="SA_PAR_DELs" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="SA_PAR_DEL" />
+      <Association Name="AS_NODE_SA_SECONDMENT" Member="SA_SECONDMENTs" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="SA_SECONDMENT" />
+      <Association Name="AS_NODE_SA_SC_MEETING" Member="SA_SC_MEETINGs" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="SA_SC_MEETING" />
+      <Association Name="AS_NODE_ED_SUBJECT" Member="ED_SUBJECTs" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="ED_SUBJECT" />
+      <Association Name="AS_NODE_ED_SUBJECT1" Member="ED_SUBJECTs1" ThisKey="AS_NODE_ID" OtherKey="AS_SCI_NODE_ID" Type="ED_SUBJECT" />
+      <Association Name="AS_NODE_PG_SUBJECT" Member="PG_SUBJECTs" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="PG_SUBJECT" />
+      <Association Name="AS_NODE_PG_SUBJECT1" Member="PG_SUBJECTs1" ThisKey="AS_NODE_ID" OtherKey="AS_SCI_NODE_ID" Type="PG_SUBJECT" />
+      <Association Name="AS_NODE_PG_NODE_GRANTABLE_DEGREE" Member="PG_NODE_GRANTABLE_DEGREEs" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="PG_NODE_GRANTABLE_DEGREE" />
+      <Association Name="AS_NODE_AS_NODE" Member="AS_NODE1" ThisKey="NODE_PARENT_ID" OtherKey="AS_NODE_ID" Type="AS_NODE" IsForeignKey="true" />
+      <Association Name="GS_COUNTRY_NODE_AS_NODE" Member="GS_COUNTRY_NODE" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="GS_COUNTRY_NODE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AS_CODE_DEGREE" Member="AS_CODE_DEGREEs">
+    <Type Name="AS_CODE_DEGREE">
+      <Column Name="AS_CODE_DEGREE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AS_CODE_DEGREE_CLASS_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="DEGREE_DESCR_AR" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="DEGREE_DESCR_EN" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="DEGREE_CODE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="AS_CODE_DEGREE_SA_SC_QUAL" Member="SA_SC_QUALs" ThisKey="AS_CODE_DEGREE_ID" OtherKey="AS_CODE_DEGREE_ID" Type="SA_SC_QUAL" />
+      <Association Name="AS_CODE_DEGREE_AS_GRANTABLE_DEGREE" Member="AS_GRANTABLE_DEGREEs" ThisKey="AS_CODE_DEGREE_ID" OtherKey="AS_CODE_DEGREE_ID" Type="AS_GRANTABLE_DEGREE" />
+      <Association Name="AS_CODE_DEGREE_CLASS_AS_CODE_DEGREE" Member="AS_CODE_DEGREE_CLASS" ThisKey="AS_CODE_DEGREE_CLASS_ID" OtherKey="AS_CODE_DEGREE_CLASS_ID" Type="AS_CODE_DEGREE_CLASS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_SC_QUAL" Member="SA_SC_QUALs">
+    <Type Name="SA_SC_QUAL">
+      <Column Name="SA_SC_QUAL_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SC_DEG_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SC_DEG_VALID_TIL" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ROUND" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="THESIS_TITLE_AR" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="THESIS_TITLE_EN" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="THESIS_TOPIC_AR" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="THESIS_TOPIC_EN" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SPEC_SUB" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IS_COMPLEMENTRY" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="COMMENTS" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_COUNTRY_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="AS_CODE_DEGREE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="PG_THESIS_DETAILED_SPEC_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="PG_THESIS_GENERAL_SPEC_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_CODE_RATING_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_CODE_RATING_ID2" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Association Name="AS_CODE_DEGREE_SA_SC_QUAL" Member="AS_CODE_DEGREE" ThisKey="AS_CODE_DEGREE_ID" OtherKey="AS_CODE_DEGREE_ID" Type="AS_CODE_DEGREE" IsForeignKey="true" />
+      <Association Name="AS_NODE_SA_SC_QUAL" Member="AS_NODE" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="AS_NODE" IsForeignKey="true" />
+      <Association Name="PG_THESIS_DETAILED_SPEC_SA_SC_QUAL" Member="PG_THESIS_DETAILED_SPEC" ThisKey="PG_THESIS_DETAILED_SPEC_ID" OtherKey="PG_THESIS_DETAILED_SPEC_ID" Type="PG_THESIS_DETAILED_SPEC" IsForeignKey="true" />
+      <Association Name="PG_THESIS_GENERAL_SPEC_SA_SC_QUAL" Member="PG_THESIS_GENERAL_SPEC" ThisKey="PG_THESIS_GENERAL_SPEC_ID" OtherKey="PG_THESIS_GENERAL_SPEC_ID" Type="PG_THESIS_GENERAL_SPEC" IsForeignKey="true" />
+      <Association Name="AS_FACULTY_INFO_SA_SC_QUAL" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+      <Association Name="SA_STF_MEMBER_SA_SC_QUAL" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+      <Association Name="GS_COUNTRY_NODE_SA_SC_QUAL" Member="GS_COUNTRY_NODE" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="GS_COUNTRY_NODE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AS_CODE_DEGREE_CLASS" Member="AS_CODE_DEGREE_CLASSes">
+    <Type Name="AS_CODE_DEGREE_CLASS">
+      <Column Name="AS_CODE_DEGREE_CLASS_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CLASS_DESCR_AR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CLASS_DESCR_EN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CLASS_CODE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="AS_CODE_DEGREE_CLASS_AS_CODE_DEGREE" Member="AS_CODE_DEGREEs" ThisKey="AS_CODE_DEGREE_CLASS_ID" OtherKey="AS_CODE_DEGREE_CLASS_ID" Type="AS_CODE_DEGREE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GS_CODE_RELIGION" Member="GS_CODE_RELIGIONs">
+    <Type Name="GS_CODE_RELIGION">
+      <Column Name="GS_CODE_RELIGION_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RELIGION_DESCR_AR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RELIGION_DESCR_EN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RELIGION_CODE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="GS_CODE_RELIGION_SA_STF_MEMBER" Member="SA_STF_MEMBERs" ThisKey="GS_CODE_RELIGION_ID" OtherKey="GS_CODE_RELIGION_ID" Type="SA_STF_MEMBER" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GS_CODE_MARITAL_STATE" Member="GS_CODE_MARITAL_STATEs">
+    <Type Name="GS_CODE_MARITAL_STATE">
+      <Column Name="GS_CODE_MARITAL_STATE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="STATE_DESCR_AR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="STATE_DESCR_EN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STATE_CODE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="GS_CODE_MARITAL_STATE_SA_STF_MEMBER" Member="SA_STF_MEMBERs" ThisKey="GS_CODE_MARITAL_STATE_ID" OtherKey="GS_CODE_MARITAL_STATE_ID" Type="SA_STF_MEMBER" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GS_COUNTRY_INFO" Member="GS_COUNTRY_INFOs">
+    <Type Name="GS_COUNTRY_INFO">
+      <Column Name="GS_COUNTRY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NATIONALITY_DESCR_AR" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="NATIONALITY_DESCR_EN" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="NATIONALITY_CODE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="GS_COUNTRY_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="TREATE_AS_CITIZEN_FLAG" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Association Name="GS_COUNTRY_INFO_SA_STF_MEMBER" Member="SA_STF_MEMBERs" ThisKey="GS_COUNTRY_INFO_ID" OtherKey="GS_COUNTRY_INFO_ID" Type="SA_STF_MEMBER" />
+      <Association Name="GS_COUNTRY_INFO_SA_STF_MEMBER1" Member="SA_STF_MEMBERs1" ThisKey="GS_COUNTRY_INFO_ID" OtherKey="GS_COUNTRY_INFO_ID2" Type="SA_STF_MEMBER" />
+      <Association Name="GS_COUNTRY_NODE_GS_COUNTRY_INFO" Member="GS_COUNTRY_NODE" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="GS_COUNTRY_NODE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GS_CONTACT_METHOD_H" Member="GS_CONTACT_METHOD_Hs">
+    <Type Name="GS_CONTACT_METHOD_H">
+      <Column Name="GS_CONTACT_METHOD_H_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HEADER_DESCR_AR" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="HEADER_DESCR_EN" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Association Name="GS_CONTACT_METHOD_H_AS_FACULTY_INFO" Member="AS_FACULTY_INFOs" ThisKey="GS_CONTACT_METHOD_H_ID" OtherKey="GS_CONTACT_METHOD_H_ID" Type="AS_FACULTY_INFO" />
+      <Association Name="GS_CONTACT_METHOD_H_GS_CONTACT_METHOD_D" Member="GS_CONTACT_METHOD_Ds" ThisKey="GS_CONTACT_METHOD_H_ID" OtherKey="GS_CONTACT_METHOD_H_ID" Type="GS_CONTACT_METHOD_D" />
+      <Association Name="GS_CONTACT_METHOD_H_SA_STF_MEMBER" Member="SA_STF_MEMBERs" ThisKey="GS_CONTACT_METHOD_H_ID" OtherKey="GS_CONTACT_METHOD_H_ID" Type="SA_STF_MEMBER" />
+      <Association Name="GS_CONTACT_METHOD_H_SA_CODE_ORG" Member="SA_CODE_ORGs" ThisKey="GS_CONTACT_METHOD_H_ID" OtherKey="GS_CONTACT_METHOD_H_ID" Type="SA_CODE_ORG" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GS_CODE_CONTACT_METHOD" Member="GS_CODE_CONTACT_METHODs">
+    <Type Name="GS_CODE_CONTACT_METHOD">
+      <Column Name="GS_CODE_CONTACT_METHOD_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="METHOD_DESCR_AR" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="METHOD_DESCR_EN" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="METHOD_CODE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="METHOD_TYPE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Association Name="GS_CODE_CONTACT_METHOD_GS_CONTACT_METHOD_D" Member="GS_CONTACT_METHOD_Ds" ThisKey="GS_CODE_CONTACT_METHOD_ID" OtherKey="GS_CODE_CONTACT_METHOD_ID" Type="GS_CONTACT_METHOD_D" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GS_CONTACT_METHOD_D" Member="GS_CONTACT_METHOD_Ds">
+    <Type Name="GS_CONTACT_METHOD_D">
+      <Column Name="GS_CONTACT_METHOD_D_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="GS_CONTACT_METHOD_H_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_CODE_CONTACT_METHOD_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="METHOD_DESCR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="METHOD_NOTES" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Association Name="GS_CODE_CONTACT_METHOD_GS_CONTACT_METHOD_D" Member="GS_CODE_CONTACT_METHOD" ThisKey="GS_CODE_CONTACT_METHOD_ID" OtherKey="GS_CODE_CONTACT_METHOD_ID" Type="GS_CODE_CONTACT_METHOD" IsForeignKey="true" />
+      <Association Name="GS_CONTACT_METHOD_H_GS_CONTACT_METHOD_D" Member="GS_CONTACT_METHOD_H" ThisKey="GS_CONTACT_METHOD_H_ID" OtherKey="GS_CONTACT_METHOD_H_ID" Type="GS_CONTACT_METHOD_H" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_CODE_JOB_STATUS" Member="SA_CODE_JOB_STATUS">
+    <Type Name="SA_CODE_JOB_STATUS">
+      <Column Name="SA_CODE_JOB_STATUS_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="JOB_STATUS_CODE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="JOB_STATUS_DESCR" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="JOB_STATUS_DESCR_EN" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Association Name="SA_CODE_JOB_STATUS_SA_STF_MEMBER" Member="SA_STF_MEMBERs" ThisKey="SA_CODE_JOB_STATUS_ID" OtherKey="SA_CODE_JOB_STATUS_ID" Type="SA_STF_MEMBER" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_STF_MEMBER" Member="SA_STF_MEMBERs">
+    <Type Name="SA_STF_MEMBER">
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="STF_CODE" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="STF_NAME_AR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="STF_FULL_NAME_AR" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="STF_CL_FULL_NAME_AR" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="STF_FULL_NAME_EN" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="STF_CL_NAME_AR" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STF_LNAME_AR" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="STF_CL_LNAME_AR" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STF_FNAME_EN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STF_LNAME_EN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="STF_IS_AZHARY" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="FILE_NUM" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="STF_STATUS_NUM" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="STF_NATIONAL_ID_NUM" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="STF_DOB" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="STF_REG_NUM" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="STF_REG_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="STF_MNAME" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="STF_PERM_ADD" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="STF_CURR_ADD" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="STF_EMP_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AS_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="GS_CODE_GENDER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_CODE_RELIGION_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_CODE_MARITAL_STATE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_COUNTRY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_COUNTRY_INFO_ID2" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="GS_COUNTRY_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="GS_COUNTRY_NODE_ID2" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_CODE_JOB_STATUS_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_CODE_SC_DEG_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="GS_COUNTRY_NODE_ID3" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="GS_CONTACT_METHOD_H_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="STF_PHOTO" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="BASIC_SALARY" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="PG_THESIS_GENERAL_SPEC_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="PG_THESIS_DETAILED_SPEC_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="DEL_FLAG" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="RETIRMENT_AGE" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="OLD_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="EMAIL_PASSWORD" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ELAWA" Type="System.Decimal" DbType="Decimal(7,2)" CanBeNull="true" />
+      <Column Name="USER_ITEC" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PASSWORD_ITEC" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="SA_STF_MEMBER_AS_FACULTY_INFO" Member="AS_FACULTY_INFOs" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="AS_FACULTY_INFO" />
+      <Association Name="SA_STF_MEMBER_AS_FACULTY_INFO1" Member="AS_FACULTY_INFOs1" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID3" Type="AS_FACULTY_INFO" />
+      <Association Name="SA_STF_MEMBER_AS_FACULTY_INFO2" Member="AS_FACULTY_INFOs2" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID4" Type="AS_FACULTY_INFO" />
+      <Association Name="SA_STF_MEMBER_AS_FACULTY_INFO3" Member="AS_FACULTY_INFOs3" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID2" Type="AS_FACULTY_INFO" />
+      <Association Name="SA_STF_MEMBER_SA_SC_QUAL" Member="SA_SC_QUALs" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_SC_QUAL" />
+      <Association Name="SA_STF_MEMBER_SA_EMP_HIERARCHY" Member="SA_EMP_HIERARCHies" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_EMP_HIERARCHY" />
+      <Association Name="SA_STF_MEMBER_SA_TRAINING_COURSE" Member="SA_TRAINING_COURSEs" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_TRAINING_COURSE" />
+      <Association Name="SA_STF_MEMBER_SA_SUPERVISING_JOB" Member="SA_SUPERVISING_JOBs" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_SUPERVISING_JOB" />
+      <Association Name="SA_STF_MEMBER_SA_STF_PRIZE" Member="SA_STF_PRIZEs" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_PRIZE" />
+      <Association Name="SA_STF_MEMBER_SA_SC_MISSION" Member="SA_SC_MISSIONs" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_SC_MISSION" />
+      <Association Name="SA_STF_MEMBER_SA_EXT_EXP" Member="SA_EXT_EXPs" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_EXT_EXP" />
+      <Association Name="SA_STF_MEMBER_SA_INT_DEL" Member="SA_INT_DELs" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_INT_DEL" />
+      <Association Name="SA_STF_MEMBER_SA_JOINT_SUPERVISION" Member="SA_JOINT_SUPERVISIONs" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_JOINT_SUPERVISION" />
+      <Association Name="SA_STF_MEMBER_SA_STF_SUBJECT" Member="SA_STF_SUBJECTs" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_SUBJECT" />
+      <Association Name="SA_STF_MEMBER_SA_PAR_DEL" Member="SA_PAR_DELs" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_PAR_DEL" />
+      <Association Name="SA_STF_MEMBER_SA_SECONDMENT" Member="SA_SECONDMENTs" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_SECONDMENT" />
+      <Association Name="SA_STF_MEMBER_SA_SC_MEETING_ATTENDENCE" Member="SA_SC_MEETING_ATTENDENCEs" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_SC_MEETING_ATTENDENCE" />
+      <Association Name="SA_STF_MEMBER_Project_Info" Member="Project_Infos" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="Project_Info" />
+      <Association Name="SA_STF_MEMBER_U2_SA_MEMBERSHIP" Member="U2_SA_MEMBERSHIPs" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="U2_SA_MEMBERSHIP" />
+      <Association Name="SA_STF_MEMBER_U2_SA_ESTABLISH" Member="U2_SA_ESTABLISHes" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="U2_SA_ESTABLISH" />
+      <Association Name="SA_STF_MEMBER_U2_SA_BOOK" Member="U2_SA_BOOKs" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="U2_SA_BOOK" />
+      <Association Name="SA_STF_MEMBER_U2_SCIENTIFIC_PAPER" Member="U2_SCIENTIFIC_PAPERs" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="U2_SCIENTIFIC_PAPER" />
+      <Association Name="SA_STF_MEMBER_U2_SA_SERVICE_COMMUNITY_ENVIRONMENT" Member="U2_SA_SERVICE_COMMUNITY_ENVIRONMENTs" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="U2_SA_SERVICE_COMMUNITY_ENVIRONMENT" />
+      <Association Name="SA_STF_MEMBER_SA_RESEARCH_TEAM" Member="SA_RESEARCH_TEAMs" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_RESEARCH_TEAM" />
+      <Association Name="PG_THESIS_DETAILED_SPEC_SA_STF_MEMBER" Member="PG_THESIS_DETAILED_SPEC" ThisKey="PG_THESIS_DETAILED_SPEC_ID" OtherKey="PG_THESIS_DETAILED_SPEC_ID" Type="PG_THESIS_DETAILED_SPEC" IsForeignKey="true" />
+      <Association Name="PG_THESIS_GENERAL_SPEC_SA_STF_MEMBER" Member="PG_THESIS_GENERAL_SPEC" ThisKey="PG_THESIS_GENERAL_SPEC_ID" OtherKey="PG_THESIS_GENERAL_SPEC_ID" Type="PG_THESIS_GENERAL_SPEC" IsForeignKey="true" />
+      <Association Name="AS_FACULTY_INFO_SA_STF_MEMBER" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+      <Association Name="AS_NODE_SA_STF_MEMBER" Member="AS_NODE" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="AS_NODE" IsForeignKey="true" />
+      <Association Name="GS_CODE_MARITAL_STATE_SA_STF_MEMBER" Member="GS_CODE_MARITAL_STATE" ThisKey="GS_CODE_MARITAL_STATE_ID" OtherKey="GS_CODE_MARITAL_STATE_ID" Type="GS_CODE_MARITAL_STATE" IsForeignKey="true" />
+      <Association Name="GS_CONTACT_METHOD_H_SA_STF_MEMBER" Member="GS_CONTACT_METHOD_H" ThisKey="GS_CONTACT_METHOD_H_ID" OtherKey="GS_CONTACT_METHOD_H_ID" Type="GS_CONTACT_METHOD_H" IsForeignKey="true" />
+      <Association Name="GS_CODE_RELIGION_SA_STF_MEMBER" Member="GS_CODE_RELIGION" ThisKey="GS_CODE_RELIGION_ID" OtherKey="GS_CODE_RELIGION_ID" Type="GS_CODE_RELIGION" IsForeignKey="true" />
+      <Association Name="GS_COUNTRY_INFO_SA_STF_MEMBER" Member="GS_COUNTRY_INFO" ThisKey="GS_COUNTRY_INFO_ID" OtherKey="GS_COUNTRY_INFO_ID" Type="GS_COUNTRY_INFO" IsForeignKey="true" />
+      <Association Name="GS_COUNTRY_INFO_SA_STF_MEMBER1" Member="GS_COUNTRY_INFO1" ThisKey="GS_COUNTRY_INFO_ID2" OtherKey="GS_COUNTRY_INFO_ID" Type="GS_COUNTRY_INFO" IsForeignKey="true" />
+      <Association Name="SA_CODE_JOB_STATUS_SA_STF_MEMBER" Member="SA_CODE_JOB_STATUS" ThisKey="SA_CODE_JOB_STATUS_ID" OtherKey="SA_CODE_JOB_STATUS_ID" Type="SA_CODE_JOB_STATUS" IsForeignKey="true" />
+      <Association Name="GS_COUNTRY_NODE_SA_STF_MEMBER" Member="GS_COUNTRY_NODE" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="GS_COUNTRY_NODE" IsForeignKey="true" />
+      <Association Name="GS_COUNTRY_NODE_SA_STF_MEMBER1" Member="GS_COUNTRY_NODE1" ThisKey="GS_COUNTRY_NODE_ID2" OtherKey="GS_COUNTRY_NODE_ID" Type="GS_COUNTRY_NODE" IsForeignKey="true" />
+      <Association Name="GS_COUNTRY_NODE_SA_STF_MEMBER2" Member="GS_COUNTRY_NODE2" ThisKey="GS_COUNTRY_NODE_ID3" OtherKey="GS_COUNTRY_NODE_ID" Type="GS_COUNTRY_NODE" IsForeignKey="true" />
+      <Association Name="SA_CODE_SC_DEG_SA_STF_MEMBER" Member="SA_CODE_SC_DEG" ThisKey="SA_CODE_SC_DEG_ID" OtherKey="SA_CODE_SC_DEG_ID" Type="SA_CODE_SC_DEG" IsForeignKey="true" />
+      <Association Name="U2_SA_ESTABLISH_SA_STF_MEMBER" Member="U2_SA_ESTABLISH" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="U2_SA_ESTABLISH" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GS_COUNTRY_NODE" Member="GS_COUNTRY_NODEs">
+    <Type Name="GS_COUNTRY_NODE">
+      <Column Name="GS_COUNTRY_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NODE_DESCR_AR" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_DESCR_EN" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="NODE_PATH" Type="System.String" DbType="NVarChar(90) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_ORDER" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_PARENT_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_LEVEL" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_CODE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="NODE_CHILD_COUNT" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_CODE_C_NODE_NATURE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_NODE_LOCAL" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_NODE_VISIBLE" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Association Name="GS_COUNTRY_NODE_AS_FACULTY_INFO" Member="AS_FACULTY_INFOs" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="AS_FACULTY_INFO" />
+      <Association Name="GS_COUNTRY_NODE_AS_NODE" Member="AS_NODEs" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="AS_NODE" />
+      <Association Name="GS_COUNTRY_NODE_SA_SC_QUAL" Member="SA_SC_QUALs" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="SA_SC_QUAL" />
+      <Association Name="GS_COUNTRY_NODE_GS_COUNTRY_INFO" Member="GS_COUNTRY_INFOs" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="GS_COUNTRY_INFO" />
+      <Association Name="GS_COUNTRY_NODE_SA_STF_MEMBER" Member="SA_STF_MEMBERs" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="SA_STF_MEMBER" />
+      <Association Name="GS_COUNTRY_NODE_SA_STF_MEMBER1" Member="SA_STF_MEMBERs1" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID2" Type="SA_STF_MEMBER" />
+      <Association Name="GS_COUNTRY_NODE_SA_STF_MEMBER2" Member="SA_STF_MEMBERs2" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID3" Type="SA_STF_MEMBER" />
+      <Association Name="GS_COUNTRY_NODE_GS_COUNTRY_NODE" Member="GS_COUNTRY_NODEs" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="NODE_PARENT_ID" Type="GS_COUNTRY_NODE" />
+      <Association Name="GS_COUNTRY_NODE_SA_EMP_HIERARCHY" Member="SA_EMP_HIERARCHies" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="SA_EMP_HIERARCHY" />
+      <Association Name="GS_COUNTRY_NODE_SA_TRAINING_COURSE" Member="SA_TRAINING_COURSEs" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="SA_TRAINING_COURSE" />
+      <Association Name="GS_COUNTRY_NODE_SA_SC_MISSION" Member="SA_SC_MISSIONs" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="SA_SC_MISSION" />
+      <Association Name="GS_COUNTRY_NODE_SA_CODE_ORG" Member="SA_CODE_ORGs" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="SA_CODE_ORG" />
+      <Association Name="GS_COUNTRY_NODE_SA_EXT_EXP" Member="SA_EXT_EXPs" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="SA_EXT_EXP" />
+      <Association Name="GS_COUNTRY_NODE_SA_SECONDMENT" Member="SA_SECONDMENTs" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="SA_SECONDMENT" />
+      <Association Name="GS_COUNTRY_NODE_SA_SC_MEETING" Member="SA_SC_MEETINGs" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="SA_SC_MEETING" />
+      <Association Name="GS_COUNTRY_NODE_U2_SA_ESTABLISH" Member="U2_SA_ESTABLISHes" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="U2_SA_ESTABLISH" />
+      <Association Name="GS_COUNTRY_NODE_U2_SA_SERVICE_COMMUNITY_ENVIRONMENT" Member="U2_SA_SERVICE_COMMUNITY_ENVIRONMENTs" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="U2_SA_SERVICE_COMMUNITY_ENVIRONMENT" />
+      <Association Name="GS_COUNTRY_NODE_GS_COUNTRY_NODE" Member="GS_COUNTRY_NODE1" ThisKey="NODE_PARENT_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="GS_COUNTRY_NODE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_EMP_HIERARCHY" Member="SA_EMP_HIERARCHies">
+    <Type Name="SA_EMP_HIERARCHY">
+      <Column Name="SA_EMP_HIERARCHY_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FROM_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DEC_NUM" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="DEC_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FOR_EMP" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="DEC_TYPE" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_CODE_SC_DEG_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="TO_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GS_COUNTRY_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Association Name="AS_NODE_SA_EMP_HIERARCHY" Member="AS_NODE" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="AS_NODE" IsForeignKey="true" />
+      <Association Name="SA_STF_MEMBER_SA_EMP_HIERARCHY" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+      <Association Name="AS_FACULTY_INFO_SA_EMP_HIERARCHY" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+      <Association Name="GS_COUNTRY_NODE_SA_EMP_HIERARCHY" Member="GS_COUNTRY_NODE" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="GS_COUNTRY_NODE" IsForeignKey="true" />
+      <Association Name="SA_CODE_SC_DEG_SA_EMP_HIERARCHY" Member="SA_CODE_SC_DEG" ThisKey="SA_CODE_SC_DEG_ID" OtherKey="SA_CODE_SC_DEG_ID" Type="SA_CODE_SC_DEG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_CODE_SC_DEG" Member="SA_CODE_SC_DEGs">
+    <Type Name="SA_CODE_SC_DEG">
+      <Column Name="SA_CODE_SC_DEG_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SC_DEG_CODE" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="SC_DEG_DESCR_AR" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="SC_DEG_DESCR_EN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="START_SAL" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="END_SAL" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="DEG_PERIOD" Type="System.Decimal" DbType="Decimal(3,0) NOT NULL" CanBeNull="false" />
+      <Column Name="STAFF_FLAG" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="DEG_ORDER" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="DEG_PERIOD_Month" Type="System.Decimal" DbType="Decimal(3,0) NOT NULL" CanBeNull="false" />
+      <Column Name="Constant" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Association Name="SA_CODE_SC_DEG_SA_STF_MEMBER" Member="SA_STF_MEMBERs" ThisKey="SA_CODE_SC_DEG_ID" OtherKey="SA_CODE_SC_DEG_ID" Type="SA_STF_MEMBER" />
+      <Association Name="SA_CODE_SC_DEG_SA_EMP_HIERARCHY" Member="SA_EMP_HIERARCHies" ThisKey="SA_CODE_SC_DEG_ID" OtherKey="SA_CODE_SC_DEG_ID" Type="SA_EMP_HIERARCHY" />
+      <Association Name="SA_CODE_SC_DEG_SA_SUPERVISING_JOB" Member="SA_SUPERVISING_JOBs" ThisKey="SA_CODE_SC_DEG_ID" OtherKey="SA_CODE_SC_DEG_ID" Type="SA_SUPERVISING_JOB" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_TRAINING_COURSE" Member="SA_TRAINING_COURSEs">
+    <Type Name="SA_TRAINING_COURSE">
+      <Column Name="SA_TRAINING_COURSE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="START_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="END_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IS_ORG_UNI" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="COURSE_COST" Type="System.Decimal" DbType="Decimal(7,2)" CanBeNull="true" />
+      <Column Name="COURSE_HRS" Type="System.Decimal" DbType="Decimal(3,0)" CanBeNull="true" />
+      <Column Name="UNI_PARTICIPATION_AMT" Type="System.Decimal" DbType="Decimal(9,2)" CanBeNull="true" />
+      <Column Name="SA_CODE_TRAINING_FLG_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="TRAINER_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GS_CODE_CURRENCY_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_CODE_COURSE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_CODE_COURSE_SCORE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_COUNTRY_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_CODE_TRAINING_ORG_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="TRAINING_PLACE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="AS_NODE_SA_TRAINING_COURSE" Member="AS_NODE" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="AS_NODE" IsForeignKey="true" />
+      <Association Name="GS_COUNTRY_NODE_SA_TRAINING_COURSE" Member="GS_COUNTRY_NODE" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="GS_COUNTRY_NODE" IsForeignKey="true" />
+      <Association Name="SA_STF_MEMBER_SA_TRAINING_COURSE" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+      <Association Name="AS_FACULTY_INFO_SA_TRAINING_COURSE" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+      <Association Name="SA_CODE_COURSE_SA_TRAINING_COURSE" Member="SA_CODE_COURSE" ThisKey="SA_CODE_COURSE_ID" OtherKey="SA_CODE_COURSE_ID" Type="SA_CODE_COURSE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_CODE_COURSE" Member="SA_CODE_COURSEs">
+    <Type Name="SA_CODE_COURSE">
+      <Column Name="SA_CODE_COURSE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="COURSE_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="COURSE_DESCR_AR" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="COURSE_DESCR_EN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="COURSE_HR_NUM" Type="System.Decimal" DbType="Decimal(3,0)" CanBeNull="true" />
+      <Column Name="COURSE_CAPACITY" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="COURSE_CODE" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="SA_CODE_COURSE_SA_TRAINING_COURSE" Member="SA_TRAINING_COURSEs" ThisKey="SA_CODE_COURSE_ID" OtherKey="SA_CODE_COURSE_ID" Type="SA_TRAINING_COURSE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_SUPERVISING_JOBS" Member="SA_SUPERVISING_JOBs">
+    <Type Name="SA_SUPERVISING_JOB">
+      <Column Name="SA_SUPERVISING_JOBS_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="START_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="END_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DECISION_NUM" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="DECISION_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PERIOD_COUNT" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="COMMENTS" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SA_CODE_SUPERVISE_JOB_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_SUPERVISING" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_CODE_SC_DEG_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="JOB_TERM_REASON" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SA_EXT_DEL_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Association Name="SA_CODE_SC_DEG_SA_SUPERVISING_JOB" Member="SA_CODE_SC_DEG" ThisKey="SA_CODE_SC_DEG_ID" OtherKey="SA_CODE_SC_DEG_ID" Type="SA_CODE_SC_DEG" IsForeignKey="true" />
+      <Association Name="AS_NODE_SA_SUPERVISING_JOB" Member="AS_NODE" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="AS_NODE" IsForeignKey="true" />
+      <Association Name="SA_STF_MEMBER_SA_SUPERVISING_JOB" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+      <Association Name="AS_FACULTY_INFO_SA_SUPERVISING_JOB" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+      <Association Name="SA_CODE_SUPERVISE_JOB_SA_SUPERVISING_JOB" Member="SA_CODE_SUPERVISE_JOB" ThisKey="SA_CODE_SUPERVISE_JOB_ID" OtherKey="SA_CODE_SUPERVISE_JOB_ID" Type="SA_CODE_SUPERVISE_JOB" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_CODE_SUPERVISE_JOB" Member="SA_CODE_SUPERVISE_JOBs">
+    <Type Name="SA_CODE_SUPERVISE_JOB">
+      <Column Name="SA_CODE_SUPERVISE_JOB_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="JOB_CODE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="IS_SUPERVISING" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="JOB_DESCR_AR" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="JOB_DESCR_EN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="JOB_PERIOD" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Association Name="SA_CODE_SUPERVISE_JOB_SA_SUPERVISING_JOB" Member="SA_SUPERVISING_JOBs" ThisKey="SA_CODE_SUPERVISE_JOB_ID" OtherKey="SA_CODE_SUPERVISE_JOB_ID" Type="SA_SUPERVISING_JOB" />
+      <Association Name="AS_FACULTY_INFO_SA_CODE_SUPERVISE_JOB" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_STF_PRIZE" Member="SA_STF_PRIZEs">
+    <Type Name="SA_STF_PRIZE">
+      <Column Name="SA_STF_PRIZE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PRIZE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DEC_NUM" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="DEC_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="COMMENTS" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_CODE_PRIZE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_PRIZE_NOMINATION_Member_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Association Name="SA_STF_MEMBER_SA_STF_PRIZE" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+      <Association Name="SA_CODE_PRIZE_SA_STF_PRIZE" Member="SA_CODE_PRIZE" ThisKey="SA_CODE_PRIZE_ID" OtherKey="SA_CODE_PRIZE_ID" Type="SA_CODE_PRIZE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_CODE_PRIZE" Member="SA_CODE_PRIZEs">
+    <Type Name="SA_CODE_PRIZE">
+      <Column Name="SA_CODE_PRIZE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PRIZE_CODE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="PRIZE_DESCR" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="PRIZE_VAL" Type="System.Decimal" DbType="Decimal(7,0)" CanBeNull="true" />
+      <Column Name="SA_CODE_PRIZE_FIELD_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_CODE_CURRENCY_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_CODE_PRIZE_GRANTING_ORG_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="PRIZE_DESCR_EN" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Association Name="SA_CODE_PRIZE_SA_STF_PRIZE" Member="SA_STF_PRIZEs" ThisKey="SA_CODE_PRIZE_ID" OtherKey="SA_CODE_PRIZE_ID" Type="SA_STF_PRIZE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_SC_MISSION" Member="SA_SC_MISSIONs">
+    <Type Name="SA_SC_MISSION">
+      <Column Name="SA_SC_MISSION_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IS_PERSONAL_GOV" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_ORG_UNI" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="START_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="END_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="HAS_COST" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="COST_TYPE" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="UNI_PART_AMT" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_CODE_SC_TRIP_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_COUNTRY_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_CODE_ORG_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_AGREEMENT_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="GS_APPROVAL_H_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_SERV_TERMIN_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_JOB_START_STATMENT_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ORG_TYPE_FLAG" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_CODE_ORG_ID2" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="AS_NODE_ID2" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="MISSION_ADD" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="SA_CODE_DISMISS_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="DISMISS_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DISMISS_AMOUNT_UNI" Type="System.Decimal" DbType="Decimal(7,2)" CanBeNull="true" />
+      <Column Name="DISMISS_AMOUNT" Type="System.Decimal" DbType="Decimal(7,2)" CanBeNull="true" />
+      <Column Name="ACTUAL_RETURN_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PLAN_YEAR" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="AFFECTS_STAFF_STATE" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="RET_AFFECTS_STAFF_STAT" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Association Name="AS_NODE_SA_SC_MISSION" Member="AS_NODE" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="AS_NODE" IsForeignKey="true" />
+      <Association Name="GS_COUNTRY_NODE_SA_SC_MISSION" Member="GS_COUNTRY_NODE" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="GS_COUNTRY_NODE" IsForeignKey="true" />
+      <Association Name="SA_STF_MEMBER_SA_SC_MISSION" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+      <Association Name="AS_FACULTY_INFO_SA_SC_MISSION" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+      <Association Name="SA_CODE_SC_TRIP_TYPE_SA_SC_MISSION" Member="SA_CODE_SC_TRIP_TYPE" ThisKey="SA_CODE_SC_TRIP_TYPE_ID" OtherKey="SA_CODE_SC_TRIP_TYPE_ID" Type="SA_CODE_SC_TRIP_TYPE" IsForeignKey="true" />
+      <Association Name="SA_CODE_ORG_SA_SC_MISSION" Member="SA_CODE_ORG" ThisKey="SA_CODE_ORG_ID" OtherKey="SA_CODE_ORG_ID" Type="SA_CODE_ORG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_CODE_SC_TRIP_TYPE" Member="SA_CODE_SC_TRIP_TYPEs">
+    <Type Name="SA_CODE_SC_TRIP_TYPE">
+      <Column Name="SA_CODE_SC_TRIP_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SC_TRIP_TYPE_CODE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="SC_TRIP_TYPE_DESCR_AR" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="SC_TRIP_TYPE_DESCR_EN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="SA_CODE_SC_TRIP_TYPE_SA_SC_MISSION" Member="SA_SC_MISSIONs" ThisKey="SA_CODE_SC_TRIP_TYPE_ID" OtherKey="SA_CODE_SC_TRIP_TYPE_ID" Type="SA_SC_MISSION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_CODE_ORG" Member="SA_CODE_ORGs">
+    <Type Name="SA_CODE_ORG">
+      <Column Name="SA_CODE_ORG_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ORG_CODE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ORG_DESCR" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ORG_ADDRESS" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="GS_COUNTRY_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_CONTACT_METHOD_H_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ORG_DESCR_EN" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Association Name="SA_CODE_ORG_SA_SC_MISSION" Member="SA_SC_MISSIONs" ThisKey="SA_CODE_ORG_ID" OtherKey="SA_CODE_ORG_ID" Type="SA_SC_MISSION" />
+      <Association Name="SA_CODE_ORG_SA_EXT_EXP" Member="SA_EXT_EXPs" ThisKey="SA_CODE_ORG_ID" OtherKey="SA_CODE_ORG_ID" Type="SA_EXT_EXP" />
+      <Association Name="SA_CODE_ORG_SA_PAR_DEL" Member="SA_PAR_DELs" ThisKey="SA_CODE_ORG_ID" OtherKey="SA_CODE_ORG_ID" Type="SA_PAR_DEL" />
+      <Association Name="SA_CODE_ORG_SA_SECONDMENT" Member="SA_SECONDMENTs" ThisKey="SA_CODE_ORG_ID" OtherKey="SA_CODE_ORG_ID" Type="SA_SECONDMENT" />
+      <Association Name="SA_CODE_ORG_SA_SC_MEETING" Member="SA_SC_MEETINGs" ThisKey="SA_CODE_ORG_ID" OtherKey="SA_CODE_ORG_ID" Type="SA_SC_MEETING" />
+      <Association Name="GS_COUNTRY_NODE_SA_CODE_ORG" Member="GS_COUNTRY_NODE" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="GS_COUNTRY_NODE" IsForeignKey="true" />
+      <Association Name="GS_CONTACT_METHOD_H_SA_CODE_ORG" Member="GS_CONTACT_METHOD_H" ThisKey="GS_CONTACT_METHOD_H_ID" OtherKey="GS_CONTACT_METHOD_H_ID" Type="GS_CONTACT_METHOD_H" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_EXT_EXP" Member="SA_EXT_EXPs">
+    <Type Name="SA_EXT_EXP">
+      <Column Name="SA_EXT_EXP_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SA_EXP_TYPE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="SA_EXT_EXP_NO" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_CODE_EXT_EXP_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="EXP_PLAN" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="EXP_PURPOSE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="IS_FUNDED" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="FOREIGN_SUP_NAME" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FOREIGN_SUP_TITLE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="START_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DEL_DUR" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="END_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="THESIS_TOPIC_AR" Type="System.String" DbType="NVarChar(240)" CanBeNull="true" />
+      <Column Name="THESIS_TOPIC_EN" Type="System.String" DbType="NVarChar(240)" CanBeNull="true" />
+      <Column Name="TITLE_AR" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="TITLE_EN" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="SUGG_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="COMMIT_END_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FOREIGN_APPROVAL_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EXEC_COMM_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DEDICATION_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DISC_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TRAINING_START_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SEC_NUM" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="SEC_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MEDICAL_RESULT" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DEG_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TERM_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ACTUAL_RETURN_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SA_CODE_DISMESS_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="OWED_AMT_EXP" Type="System.Decimal" DbType="Decimal(9,2)" CanBeNull="true" />
+      <Column Name="OWED_AMT_UNI" Type="System.Decimal" DbType="Decimal(9,2)" CanBeNull="true" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_COUNTRY_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="AS_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="GS_APPROVAL_H_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_CODE_ORG_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_JOB_START_STATMENT_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="PG_THESIS_DETAILED_SPEC_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="PG_THESIS_GENERAL_SPEC_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="AFFECT_JOB_STATUS" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_SERV_TERMIN_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="reg_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RETURN_AFFECT_JOB_STATUS" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Association Name="AS_NODE_SA_EXT_EXP" Member="AS_NODE" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="AS_NODE" IsForeignKey="true" />
+      <Association Name="GS_COUNTRY_NODE_SA_EXT_EXP" Member="GS_COUNTRY_NODE" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="GS_COUNTRY_NODE" IsForeignKey="true" />
+      <Association Name="PG_THESIS_DETAILED_SPEC_SA_EXT_EXP" Member="PG_THESIS_DETAILED_SPEC" ThisKey="PG_THESIS_DETAILED_SPEC_ID" OtherKey="PG_THESIS_DETAILED_SPEC_ID" Type="PG_THESIS_DETAILED_SPEC" IsForeignKey="true" />
+      <Association Name="SA_CODE_ORG_SA_EXT_EXP" Member="SA_CODE_ORG" ThisKey="SA_CODE_ORG_ID" OtherKey="SA_CODE_ORG_ID" Type="SA_CODE_ORG" IsForeignKey="true" />
+      <Association Name="SA_STF_MEMBER_SA_EXT_EXP" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+      <Association Name="AS_FACULTY_INFO_SA_EXT_EXP" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+      <Association Name="PG_THESIS_GENERAL_SPEC_SA_EXT_EXP" Member="PG_THESIS_GENERAL_SPEC" ThisKey="PG_THESIS_GENERAL_SPEC_ID" OtherKey="PG_THESIS_GENERAL_SPEC_ID" Type="PG_THESIS_GENERAL_SPEC" IsForeignKey="true" />
+      <Association Name="SA_CODE_EXT_EXP_SA_EXT_EXP" Member="SA_CODE_EXT_EXP" ThisKey="SA_CODE_EXT_EXP_ID" OtherKey="SA_CODE_EXT_EXP_ID" Type="SA_CODE_EXT_EXP" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_CODE_EXT_EXP" Member="SA_CODE_EXT_EXPs">
+    <Type Name="SA_CODE_EXT_EXP">
+      <Column Name="SA_CODE_EXT_EXP_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EXP_CODE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="EXP_TYPE_DESCR_AR" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="EXP_TYPE_DESCR_EN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="EXP_DUR_MON" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="EXP_DUR_YR" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Association Name="SA_CODE_EXT_EXP_SA_EXT_EXP" Member="SA_EXT_EXPs" ThisKey="SA_CODE_EXT_EXP_ID" OtherKey="SA_CODE_EXT_EXP_ID" Type="SA_EXT_EXP" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_INT_DEL" Member="SA_INT_DELs">
+    <Type Name="SA_INT_DEL">
+      <Column Name="SA_INT_DEL_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DEL_NUM" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="DEL_DUR" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="DEL_PLAN" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_FUNDED" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="TITLE_AR" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="TITLE_EN" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="SUGG_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="START_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="REG_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DISC_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DEDICATION_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DEG_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FOREIGN_SUP" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FOREIGN_SUP_TITLE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ACT_END_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_APPROVAL_H_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_JOB_START_STATMENT_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="PG_THESIS_DETAILED_SPEC_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="PG_THESIS_GENERAL_SPEC_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_CODE_DISMESS_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="EXEC_COMM_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OWED_AMT_EXP" Type="System.Decimal" DbType="Decimal(9,2)" CanBeNull="true" />
+      <Column Name="SA_SERV_TERMIN_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Association Name="PG_THESIS_DETAILED_SPEC_SA_INT_DEL" Member="PG_THESIS_DETAILED_SPEC" ThisKey="PG_THESIS_DETAILED_SPEC_ID" OtherKey="PG_THESIS_DETAILED_SPEC_ID" Type="PG_THESIS_DETAILED_SPEC" IsForeignKey="true" />
+      <Association Name="PG_THESIS_GENERAL_SPEC_SA_INT_DEL" Member="PG_THESIS_GENERAL_SPEC" ThisKey="PG_THESIS_GENERAL_SPEC_ID" OtherKey="PG_THESIS_GENERAL_SPEC_ID" Type="PG_THESIS_GENERAL_SPEC" IsForeignKey="true" />
+      <Association Name="SA_STF_MEMBER_SA_INT_DEL" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+      <Association Name="AS_FACULTY_INFO_SA_INT_DEL" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_JOINT_SUPERVISION" Member="SA_JOINT_SUPERVISIONs">
+    <Type Name="SA_JOINT_SUPERVISION">
+      <Column Name="SA_JOINT_SUPERVISION_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DEL_NUM" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="DEL_DUR_MONTH" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="DEL_DUR_YEAR" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="DEL_PLAN" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="IS_FUNDED" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="THESIS_TOPIC_AR" Type="System.String" DbType="NVarChar(240)" CanBeNull="true" />
+      <Column Name="THESIS_TOPIC_EN" Type="System.String" DbType="NVarChar(240)" CanBeNull="true" />
+      <Column Name="TITLE_AR" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="TITLE_EN" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="SUGG_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="END_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="START_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="REG_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="COMM_APPROVAL_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DEDICATION_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DEG_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FOREIGN_SUP_NAME" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="FOREIGN_SUP_JOB" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DISMISS_AMOUNT_UNI" Type="System.Decimal" DbType="Decimal(7,2)" CanBeNull="true" />
+      <Column Name="DISMISS_AMOUNT" Type="System.Decimal" DbType="Decimal(7,2)" CanBeNull="true" />
+      <Column Name="GS_APPROVAL_H_ID_DISMISS" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="AFFECTS_STAFF_STATE" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ACTUAL_RETURN_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SA_CODE_DISMISS_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_APPROVAL_H_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_SERV_TERMIN_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_JOB_START_STATMENT_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="PG_THESIS_DETAILED_SPEC_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="PG_THESIS_GENERAL_SPEC_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Association Name="PG_THESIS_DETAILED_SPEC_SA_JOINT_SUPERVISION" Member="PG_THESIS_DETAILED_SPEC" ThisKey="PG_THESIS_DETAILED_SPEC_ID" OtherKey="PG_THESIS_DETAILED_SPEC_ID" Type="PG_THESIS_DETAILED_SPEC" IsForeignKey="true" />
+      <Association Name="PG_THESIS_GENERAL_SPEC_SA_JOINT_SUPERVISION" Member="PG_THESIS_GENERAL_SPEC" ThisKey="PG_THESIS_GENERAL_SPEC_ID" OtherKey="PG_THESIS_GENERAL_SPEC_ID" Type="PG_THESIS_GENERAL_SPEC" IsForeignKey="true" />
+      <Association Name="SA_STF_MEMBER_SA_JOINT_SUPERVISION" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+      <Association Name="AS_FACULTY_INFO_SA_JOINT_SUPERVISION" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_STF_SUBJECT" Member="SA_STF_SUBJECTs">
+    <Type Name="SA_STF_SUBJECT">
+      <Column Name="SA_STF_SUBJECT_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ED_CODE_SUBJECT_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Association Name="SA_STF_MEMBER_SA_STF_SUBJECT" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+      <Association Name="AS_FACULTY_INFO_SA_STF_SUBJECT" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+      <Association Name="ED_CODE_SUBJECT_SA_STF_SUBJECT" Member="ED_CODE_SUBJECT" ThisKey="ED_CODE_SUBJECT_ID" OtherKey="ED_CODE_SUBJECT_ID" Type="ED_CODE_SUBJECT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ED_CODE_SUBJECT" Member="ED_CODE_SUBJECTs">
+    <Type Name="ED_CODE_SUBJECT">
+      <Column Name="ED_CODE_SUBJECT_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_DESCR_AR" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_DESCR_EN" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_CODE" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_ABILITY" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_CONTENTS_AR" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="SUBJECT_CONTENTS_EN" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="ED_CODE_SUBJECT_NATURE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Association Name="ED_CODE_SUBJECT_SA_STF_SUBJECT" Member="SA_STF_SUBJECTs" ThisKey="ED_CODE_SUBJECT_ID" OtherKey="ED_CODE_SUBJECT_ID" Type="SA_STF_SUBJECT" />
+      <Association Name="ED_CODE_SUBJECT_ED_SUBJECT" Member="ED_SUBJECTs" ThisKey="ED_CODE_SUBJECT_ID" OtherKey="ED_CODE_SUBJECT_ID" Type="ED_SUBJECT" />
+      <Association Name="AS_FACULTY_INFO_ED_CODE_SUBJECT" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_PAR_DEL" Member="SA_PAR_DELs">
+    <Type Name="SA_PAR_DEL">
+      <Column Name="SA_PAR_DEL_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DEC_NUM" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DEC_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DEC_SUMM" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="IS_ORG_UNI" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ACT_START_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ACT_END_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IS_IN_OUT" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="LETTER_NUM" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="LETTER_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="THEO_HRS" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="PRACTICAL_HRS" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="COMMENTS" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_CODE_ORG_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="AS_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="ED_ACAD_YEAR_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ED_CODE_SEMESTER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_APPROVAL_H_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_CODE_PAR_DEL_NATURE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="DEL_DAYS" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="AS_NODE_SA_PAR_DEL" Member="AS_NODE" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="AS_NODE" IsForeignKey="true" />
+      <Association Name="SA_CODE_ORG_SA_PAR_DEL" Member="SA_CODE_ORG" ThisKey="SA_CODE_ORG_ID" OtherKey="SA_CODE_ORG_ID" Type="SA_CODE_ORG" IsForeignKey="true" />
+      <Association Name="SA_STF_MEMBER_SA_PAR_DEL" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+      <Association Name="AS_FACULTY_INFO_SA_PAR_DEL" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_SECONDMENT" Member="SA_SECONDMENTs">
+    <Type Name="SA_SECONDMENT">
+      <Column Name="SA_SECONDMENT_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DEC_TYPE" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DEC_NUM" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="DEC_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DEC_SUMM" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="START_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="END_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="WORK_STOP_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IS_UNI_ORG" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="JOB" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="RECIEPT_NUM" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="RECIEPT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="INS_AMT" Type="System.Decimal" DbType="Decimal(6,0)" CanBeNull="true" />
+      <Column Name="ACT_RETURN_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="COMMENTS" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SA_CODE_SECONDMENT_TYPE" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_COUNTRY_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="GS_CODE_CURRENCY_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_CODE_ORG_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="GS_APPROVAL_H_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_JOB_START_STATMENT_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="AFFECTS_STAFF_STAT" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="RET_AFFECTS_STAFF_STAT" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Association Name="AS_NODE_SA_SECONDMENT" Member="AS_NODE" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="AS_NODE" IsForeignKey="true" />
+      <Association Name="GS_COUNTRY_NODE_SA_SECONDMENT" Member="GS_COUNTRY_NODE" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="GS_COUNTRY_NODE" IsForeignKey="true" />
+      <Association Name="SA_CODE_ORG_SA_SECONDMENT" Member="SA_CODE_ORG" ThisKey="SA_CODE_ORG_ID" OtherKey="SA_CODE_ORG_ID" Type="SA_CODE_ORG" IsForeignKey="true" />
+      <Association Name="SA_STF_MEMBER_SA_SECONDMENT" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+      <Association Name="AS_FACULTY_INFO_SA_SECONDMENT" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_SC_MEETING_ATTENDENCE" Member="SA_SC_MEETING_ATTENDENCEs">
+    <Type Name="SA_SC_MEETING_ATTENDENCE">
+      <Column Name="SA_SC_MEETING_ATTENDENCE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TRAVEL_START_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TRAVEL_END_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RETURN_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="COMMENTS" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PAID_BY_UNI_MEMBER" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="PAID_OR_NOT" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_MEMBER" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="FEES_DESCR" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TICKET_VAL" Type="System.Decimal" DbType="Decimal(9,2)" CanBeNull="true" />
+      <Column Name="POCKET_MONEY_PER_DAY" Type="System.Decimal" DbType="Decimal(9,2)" CanBeNull="true" />
+      <Column Name="UNI_PART_AMT" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="EXCEED_FROM" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EXCEED_TO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EXCEED_REASON" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="IS_PAID" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="SA_SC_RESEARCH_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="IS_RESEARCH_ACCEPTED" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="SA_CODE_PARTICIPATION_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_SC_MEETING_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_APPROVAL_H_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="GS_APPROVAL_H_ID2" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_CODE_CURRENCY_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Association Name="SA_STF_MEMBER_SA_SC_MEETING_ATTENDENCE" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+      <Association Name="AS_FACULTY_INFO_SA_SC_MEETING_ATTENDENCE" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+      <Association Name="SA_SC_MEETING_SA_SC_MEETING_ATTENDENCE" Member="SA_SC_MEETING" ThisKey="SA_SC_MEETING_ID" OtherKey="SA_SC_MEETING_ID" Type="SA_SC_MEETING" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_SC_MEETING" Member="SA_SC_MEETINGs">
+    <Type Name="SA_SC_MEETING">
+      <Column Name="SA_SC_MEETING_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SC_MEETING_CODE" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="SC_MEETING_NAME" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="SC_MEETING_DIRECTIONS" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="DURATION_FROM" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DURATION_TO" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IS_UNI_ORG" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_NATIONAL" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="CURRENT_UNIV" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="EXT_INT" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ADDRESS" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="EMAIL" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="WEBSITE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="EGYPTIAN_MEMBER_FEES" Type="System.Decimal" DbType="Decimal(9,2)" CanBeNull="true" />
+      <Column Name="EGYPTIAN_NON_MEMBER_FEES" Type="System.Decimal" DbType="Decimal(9,2)" CanBeNull="true" />
+      <Column Name="NON_EGYPTIAN_MEMBER_FEES" Type="System.Decimal" DbType="Decimal(9,2)" CanBeNull="true" />
+      <Column Name="NON_EGYPTIAN_NON_MEMBER_FEES" Type="System.Decimal" DbType="Decimal(9,2)" CanBeNull="true" />
+      <Column Name="MAX_NUM" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="GS_COUNTRY_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_CODE_ORG_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="AS_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="GS_CODE_CURRENCY_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="GS_CODE_CURRENCY_ID2" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_CODE_SC_MEETING_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="RET_AFFECTS_STAFF_STAT" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Association Name="SA_SC_MEETING_SA_SC_MEETING_ATTENDENCE" Member="SA_SC_MEETING_ATTENDENCEs" ThisKey="SA_SC_MEETING_ID" OtherKey="SA_SC_MEETING_ID" Type="SA_SC_MEETING_ATTENDENCE" />
+      <Association Name="AS_NODE_SA_SC_MEETING" Member="AS_NODE" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="AS_NODE" IsForeignKey="true" />
+      <Association Name="GS_COUNTRY_NODE_SA_SC_MEETING" Member="GS_COUNTRY_NODE" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="GS_COUNTRY_NODE" IsForeignKey="true" />
+      <Association Name="SA_CODE_ORG_SA_SC_MEETING" Member="SA_CODE_ORG" ThisKey="SA_CODE_ORG_ID" OtherKey="SA_CODE_ORG_ID" Type="SA_CODE_ORG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Project_Info" Member="Project_Infos">
+    <Type Name="Project_Info">
+      <Column Name="Project_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="Project_Name" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Project_Title" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Principal_investigator" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Fund" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Sponsor" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Summary" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Partners" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Duration" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Association Name="SA_STF_MEMBER_Project_Info" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.U2_SA_MEMBERSHIP" Member="U2_SA_MEMBERSHIPs">
+    <Type Name="U2_SA_MEMBERSHIP">
+      <Column Name="SA_MEMBERSHIP_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GS_CODE_MEMBERSHIP_TYPE_ID" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="AS_SCIENTIFIC_AFFLITION_ID" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="FROM_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TO_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IS_SCIENTIFIC" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Association Name="SA_STF_MEMBER_U2_SA_MEMBERSHIP" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.U2_SA_ESTABLISH" Member="U2_SA_ESTABLISHes">
+    <Type Name="U2_SA_ESTABLISH">
+      <Column Name="SA_ESTABLISH_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GS_CODE_ESTABLISH_TYPE_ID" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="FROM_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TO_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PLACE" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="GS_COUNTRY_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Association Name="U2_SA_ESTABLISH_SA_STF_MEMBER" Member="SA_STF_MEMBERs" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" />
+      <Association Name="GS_COUNTRY_NODE_U2_SA_ESTABLISH" Member="GS_COUNTRY_NODE" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="GS_COUNTRY_NODE" IsForeignKey="true" />
+      <Association Name="SA_STF_MEMBER_U2_SA_ESTABLISH" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.U2_SA_E_SUBJECT" Member="U2_SA_E_SUBJECTs">
+    <Type Name="U2_SA_E_SUBJECT">
+      <Column Name="E_SUBJECT_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SA_CODE_DEGREE_CLASS" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_SUBJECT_NAME_AR" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SA_SUBJECT_NAME_EN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SA_SITE_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="AS_Faculty_Info" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.U2_SA_BOOKS" Member="U2_SA_BOOKs">
+    <Type Name="U2_SA_BOOK">
+      <Column Name="SA_BOOKS_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="TITLE" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="AUTHORS" Type="System.String" DbType="NVarChar(400) NOT NULL" CanBeNull="false" />
+      <Column Name="PUBLISHERS" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="ISBN" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="EDITION_NUMBER" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="EDITION_DESCR" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="TITLE_EN" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Association Name="SA_STF_MEMBER_U2_SA_BOOK" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.U2_SCIENTIFIC_PAPER" Member="U2_SCIENTIFIC_PAPERs">
+    <Type Name="U2_SCIENTIFIC_PAPER">
+      <Column Name="SCIENTIFIC_PAPER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="PAPER_TITLE" Type="System.String" DbType="NVarChar(400) NOT NULL" CanBeNull="false" />
+      <Column Name="STUD_NAME" Type="System.String" DbType="NVarChar(400) NOT NULL" CanBeNull="false" />
+      <Column Name="SUPERVISORS" Type="System.String" DbType="NVarChar(400) NOT NULL" CanBeNull="false" />
+      <Column Name="SCIENTIFIC_DEGREE_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_SUPERVISE" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="DISCUSS_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="SA_STF_MEMBER_U2_SCIENTIFIC_PAPER" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.U2_SA_SERVICE_COMMUNITY_ENVIRONMENT" Member="U2_SA_SERVICE_COMMUNITY_ENVIRONMENTs">
+    <Type Name="U2_SA_SERVICE_COMMUNITY_ENVIRONMENT">
+      <Column Name="SA_SERVICE_COMMUNITY_ENVIRONMENT_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_COUNTRY_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="FROM_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TO_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PLACE" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="GS_CODE_ACTIVITY_SERVICE_TYPE_ID" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Association Name="GS_COUNTRY_NODE_U2_SA_SERVICE_COMMUNITY_ENVIRONMENT" Member="GS_COUNTRY_NODE" ThisKey="GS_COUNTRY_NODE_ID" OtherKey="GS_COUNTRY_NODE_ID" Type="GS_COUNTRY_NODE" IsForeignKey="true" />
+      <Association Name="SA_STF_MEMBER_U2_SA_SERVICE_COMMUNITY_ENVIRONMENT" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ED_PHASE_NODE" Member="ED_PHASE_NODEs">
+    <Type Name="ED_PHASE_NODE">
+      <Column Name="ED_PHASE_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NODE_PARENT_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_CHILD_COUNT" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_PATH" Type="System.String" DbType="NVarChar(90) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_ORDER" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_LEVEL" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_IS_FIXED" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_CAN_HAVE_CHILD" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ED_CODE_PHASE_NODE_NATURE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_DESCR_AR" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_DESCR_EN" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="NODE_CODE" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="ED_CODE_STUDY_METHOD_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ED_BYLAW_DEGREE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ED_CODE_PHASE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="ED_CODE_SEMESTER_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="IS_OPTIONAL" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_NODE_VISIBLE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_STUDY_REGULAR" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_STUDY_ASSOCIATIVE" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="FAIL_PHASE_FLAG" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="HOURS_PHASE_FLAG" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="COLLECTION_FLAGE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="CALC_SUBJ_POINTS_FROM_EQU" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="STUD_CASE_SUBJ_ADDED_FAILURE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="ADD_FAILED_ONCE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="CALC_SUBJ_POINTS_EQU2" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Association Name="ED_PHASE_NODE_ED_PHASE_NODE" Member="ED_PHASE_NODEs" ThisKey="ED_PHASE_NODE_ID" OtherKey="NODE_PARENT_ID" Type="ED_PHASE_NODE" />
+      <Association Name="ED_PHASE_NODE_ED_SUBJECT" Member="ED_SUBJECTs" ThisKey="ED_PHASE_NODE_ID" OtherKey="ED_PHASE_NODE_ID" Type="ED_SUBJECT" />
+      <Association Name="AS_FACULTY_INFO_ED_PHASE_NODE" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+      <Association Name="ED_PHASE_NODE_ED_PHASE_NODE" Member="ED_PHASE_NODE1" ThisKey="NODE_PARENT_ID" OtherKey="ED_PHASE_NODE_ID" Type="ED_PHASE_NODE" IsForeignKey="true" />
+      <Association Name="ED_BYLAW_DEGREE_ED_PHASE_NODE" Member="ED_BYLAW_DEGREE" ThisKey="ED_BYLAW_DEGREE_ID" OtherKey="ED_BYLAW_DEGREE_ID" Type="ED_BYLAW_DEGREE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ED_BYLAW" Member="ED_BYLAWs">
+    <Type Name="ED_BYLAW">
+      <Column Name="ED_BYLAW_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BYLAW_DESCR_AR" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="BYLAW_DESCR_EN" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="BYLAW_CODE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_CODE_GENDER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ED_ACAD_YEAR_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_STUDY_ABSTRACT" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_STUDY_APPLIED" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ISSUE_NUMBER" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ISSUE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="BYLAW_NOTES" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="IS_IMMEDIATE" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_CUR_BYLAW" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_REVIEWED1" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_REVIEWED2" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_APPROVED" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Association Name="ED_BYLAW_ED_BYLAW_DEGREE" Member="ED_BYLAW_DEGREEs" ThisKey="ED_BYLAW_ID" OtherKey="ED_BYLAW_ID" Type="ED_BYLAW_DEGREE" />
+      <Association Name="AS_FACULTY_INFO_ED_BYLAW" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ED_BYLAW_DEGREE" Member="ED_BYLAW_DEGREEs">
+    <Type Name="ED_BYLAW_DEGREE">
+      <Column Name="ED_BYLAW_DEGREE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ED_BYLAW_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_GRANTABLE_DEGREE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="MAXFAILCOUNT" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="MAXCOURSEFAILCOUNT" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="MAXEXECUSECOUNTFAC" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="MAXEXECUSECOUNTUNIV" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="MAXWRNINGCOUNTBFORCANCEL" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="MAXWRNINGCOUNTBFORBLCKFAC" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="MAXWRNINGCOUNTBFORBLCKUNIV" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="MAXBLOCKPERIODFAC" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="MAXBLOCKPERIODUNIV" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="MAXWRNINGCOUNTBFORWITHDRAW" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="INTERVALPERIODBFORREREGISTER" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="GS_CODE_STUDY_NATURE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="MAXRESEARCHSUBJCHANGECOUNT" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="MINCOMPLETIONPERCENTTOEXTEND" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="MXYRSAFTRPRIS" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="MINDAYSNOTODISCUSS" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="MAXDAYSNOTODISCUSS" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="MAXNOSUPERVISORTHESIS" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="MAXNOSUPERVISORINCOMM" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="APPLYDATEFROM" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="APPLYDATETO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="REGDATEFROM" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="REGDATETO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PG_CODE_REG_START_DATE_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="HAS_TRAINING_YEAR" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Association Name="ED_BYLAW_DEGREE_ED_PHASE_NODE" Member="ED_PHASE_NODEs" ThisKey="ED_BYLAW_DEGREE_ID" OtherKey="ED_BYLAW_DEGREE_ID" Type="ED_PHASE_NODE" />
+      <Association Name="ED_BYLAW_ED_BYLAW_DEGREE" Member="ED_BYLAW" ThisKey="ED_BYLAW_ID" OtherKey="ED_BYLAW_ID" Type="ED_BYLAW" IsForeignKey="true" />
+      <Association Name="AS_GRANTABLE_DEGREE_ED_BYLAW_DEGREE" Member="AS_GRANTABLE_DEGREE" ThisKey="AS_GRANTABLE_DEGREE_ID" OtherKey="AS_GRANTABLE_DEGREE_ID" Type="AS_GRANTABLE_DEGREE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ED_SUBJECT" Member="ED_SUBJECTs">
+    <Type Name="ED_SUBJECT">
+      <Column Name="ED_SUBJECT_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ED_PHASE_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ED_CODE_SUBJECT_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_CODE" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_DESCR_AR" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_DESCR_EN" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="ED_CODE_SUBJECT_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_CODE_LANGUAGE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ED_CODE_SUBJECT_CASE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_CODE_GENDER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_WEIGHT" Type="System.Decimal" DbType="Decimal(8,3) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_CONTENTS_AR" Type="System.String" DbType="NVarChar(400) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_CONTENTS_EN" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="IS_SUBJECT_MAIN" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="TEACHING_HOURS" Type="System.Decimal" DbType="Decimal(8,3) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_ORDER" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="MAX_GRADE" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="MIN_GRADE" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="ED_CODE_SUBJECT_PERIOD_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ED_CODE_SUBJECT_GROUP_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="CREDIT_HOURS" Type="System.Decimal" DbType="Decimal(8,3) NOT NULL" CanBeNull="false" />
+      <Column Name="HAS_GROUP" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GROUP_SEL_NUM" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_MANDATORY" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="MIN_SEMESTERS" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="COURSE_WEEKS" Type="System.Decimal" DbType="Decimal(3,0)" CanBeNull="true" />
+      <Column Name="MAX_FAILURE" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="ROUNDING_FLG" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ROUNDUP_FLG" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="CAN_SWAP" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_STUDY_ASSOCIATIVE" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_STUDY_REGULAR" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_SCI_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="TOTAL_FAIL_FLAG" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="ALL_SUB_REEXAM_FLAG" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="YEAR_REEXAM_FLAG" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_ACTIVE" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="EDEXCEL_SUBJECT" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Association Name="AS_FACULTY_INFO_ED_SUBJECT" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+      <Association Name="AS_NODE_ED_SUBJECT" Member="AS_NODE" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="AS_NODE" IsForeignKey="true" />
+      <Association Name="AS_NODE_ED_SUBJECT1" Member="AS_NODE1" ThisKey="AS_SCI_NODE_ID" OtherKey="AS_NODE_ID" Type="AS_NODE" IsForeignKey="true" />
+      <Association Name="ED_CODE_SUBJECT_ED_SUBJECT" Member="ED_CODE_SUBJECT" ThisKey="ED_CODE_SUBJECT_ID" OtherKey="ED_CODE_SUBJECT_ID" Type="ED_CODE_SUBJECT" IsForeignKey="true" />
+      <Association Name="ED_PHASE_NODE_ED_SUBJECT" Member="ED_PHASE_NODE" ThisKey="ED_PHASE_NODE_ID" OtherKey="ED_PHASE_NODE_ID" Type="ED_PHASE_NODE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_SC_RESEARCH" Member="SA_SC_RESEARCHes">
+    <Type Name="SA_SC_RESEARCH">
+      <Column Name="SA_SC_RESEARCH_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RESEARCH_CODE" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="RESEARCH_SUMM_AR" Type="System.String" DbType="NVarChar(240)" CanBeNull="true" />
+      <Column Name="RESEARCH_SUMM_EN" Type="System.String" DbType="NVarChar(240)" CanBeNull="true" />
+      <Column Name="RESEARCH_TITLE" Type="System.String" DbType="NVarChar(240) NOT NULL" CanBeNull="false" />
+      <Column Name="PG_SUBJECT_DEFINITION" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="APPROVAL_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PAGES_NUM" Type="System.Decimal" DbType="Decimal(5,0)" CanBeNull="true" />
+      <Column Name="RESEARCH_PLACE" Type="System.String" DbType="NVarChar(240)" CanBeNull="true" />
+      <Column Name="RESEARCH_EVAL" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="COMMENTS" Type="System.String" DbType="NVarChar(240)" CanBeNull="true" />
+      <Column Name="GS_APPROVAL_H_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="RESEARCH_TYPE" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_PROMOTION_REQUEST_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_SC_COMM_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="PG_CODE_RESEARCH_STRATEGY_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Association Name="SA_SC_RESEARCH_SA_RESEARCH_TEAM" Member="SA_RESEARCH_TEAMs" ThisKey="SA_SC_RESEARCH_ID" OtherKey="SA_SC_RESEARCH_ID" Type="SA_RESEARCH_TEAM" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_RESEARCH_TEAM" Member="SA_RESEARCH_TEAMs">
+    <Type Name="SA_RESEARCH_TEAM">
+      <Column Name="SA_RESEARCH_TEAM_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RESEARCHER_TYPE" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_STF_MEMBER_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_SC_RESEARCH_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="RESEARCHER_EX_NAME" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="RESEARCHER_POST_STUD_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_CODE_RESEARCH_COOP_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="SA_CODE_SC_DEG_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Association Name="SA_SC_RESEARCH_SA_RESEARCH_TEAM" Member="SA_SC_RESEARCH" ThisKey="SA_SC_RESEARCH_ID" OtherKey="SA_SC_RESEARCH_ID" Type="SA_SC_RESEARCH" IsForeignKey="true" />
+      <Association Name="AS_FACULTY_INFO_SA_RESEARCH_TEAM" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+      <Association Name="SA_STF_MEMBER_SA_RESEARCH_TEAM" Member="SA_STF_MEMBER" ThisKey="SA_STF_MEMBER_ID" OtherKey="SA_STF_MEMBER_ID" Type="SA_STF_MEMBER" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SA_RESEARCH_KEYWORD" Member="SA_RESEARCH_KEYWORDs">
+    <Type Name="SA_RESEARCH_KEYWORD">
+      <Column Name="SA_RESEARCH_KEYWORD_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SA_SC_RESEARCH_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SA_KEYWORD_LIST_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.U2_GS_CODE_ESTABLISH_TYPE" Member="U2_GS_CODE_ESTABLISH_TYPEs">
+    <Type Name="U2_GS_CODE_ESTABLISH_TYPE">
+      <Column Name="GS_CODE_ESTABLISH_TYPE_ID" Type="System.String" DbType="NVarChar(400) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ESTABLISH_DESCR_AR" Type="System.String" DbType="NVarChar(400) NOT NULL" CanBeNull="false" />
+      <Column Name="ESTABLISH_DESCR_EN" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.U2_GS_CODE_MEMBERSHIP_TYPE" Member="U2_GS_CODE_MEMBERSHIP_TYPEs">
+    <Type Name="U2_GS_CODE_MEMBERSHIP_TYPE">
+      <Column Name="GS_CODE_MEMBERSHIP_TYPE_ID" Type="System.String" DbType="NVarChar(400) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MEMBERSHIP_DESCR_AR" Type="System.String" DbType="NVarChar(400) NOT NULL" CanBeNull="false" />
+      <Column Name="MEMBERSHIP_DESCR_EN" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PG_PHASE_NODE" Member="PG_PHASE_NODEs">
+    <Type Name="PG_PHASE_NODE">
+      <Column Name="PG_PHASE_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NODE_PARENT_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_CHILD_COUNT" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_PATH" Type="System.String" DbType="NVarChar(90) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_ORDER" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_LEVEL" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_IS_FIXED" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_CAN_HAVE_CHILD" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="PG_CODE_PHASE_NODE_NATURE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_DESCR_AR" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="NODE_DESCR_EN" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="NODE_CODE" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="ED_CODE_STUDY_METHOD_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="PG_BYLAW_DEGREE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="PG_CODE_PHASE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="PG_CODE_SEMESTER_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="IS_OPTIONAL" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_NODE_VISIBLE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="COLLECTION_FLAGE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="CALC_SUBJ_POINTS_FROM_EQU" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="Fail_Phase_Flag" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="collection_Flag_Sem" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="collection_Falg_Sem_Acc" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="collection_Flag_Phase" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="collection_Flag_Phase_Acc" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="CACL_SEM_POIN" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="CACL_SEM_ACM_POINT" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="CACL_PHASE_ACM_POINT" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="CALC_PHASE_POINT" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="ADD_FAILED_ONCE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="HOURS_PHASE_FLAG" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="Calc_SubjPoints_Equ2" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="Calc_SubjPoints_Equ3" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="CR_DEGREE_COND_FLG" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="is_Regular" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="is_Associative" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="NOT_APPLY_HIGH_ACCEPTABLE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="is_General_Associative" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="is_open" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="SHOW_STUD_CASE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="STUD_FAIL_ASSESS" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="MIN_FOR_RESEARCH_REGISTER_RATE" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="MIN_FOR_SUBJECTS_RATE" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="CALC_SUBJ_POINTS_FROM_RATE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="CALC_WITH_PREV_SEM" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="CALC_ACCUM_RATING" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Association Name="PG_PHASE_NODE_PG_PHASE_NODE" Member="PG_PHASE_NODEs" ThisKey="PG_PHASE_NODE_ID" OtherKey="NODE_PARENT_ID" Type="PG_PHASE_NODE" />
+      <Association Name="PG_PHASE_NODE_PG_SUBJECT" Member="PG_SUBJECTs" ThisKey="PG_PHASE_NODE_ID" OtherKey="PG_PHASE_NODE_ID" Type="PG_SUBJECT" />
+      <Association Name="AS_FACULTY_INFO_PG_PHASE_NODE" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+      <Association Name="PG_PHASE_NODE_PG_PHASE_NODE" Member="PG_PHASE_NODE1" ThisKey="NODE_PARENT_ID" OtherKey="PG_PHASE_NODE_ID" Type="PG_PHASE_NODE" IsForeignKey="true" />
+      <Association Name="PG_BYLAW_DEGREE_PG_PHASE_NODE" Member="PG_BYLAW_DEGREE" ThisKey="PG_BYLAW_DEGREE_ID" OtherKey="PG_BYLAW_DEGREE_ID" Type="PG_BYLAW_DEGREE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PG_SUBJECT" Member="PG_SUBJECTs">
+    <Type Name="PG_SUBJECT">
+      <Column Name="PG_SUBJECT_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PG_PHASE_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="PG_CODE_SUBJECT_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_CODE" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_DESCR_AR" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_DESCR_EN" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="ED_CODE_SUBJECT_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="GS_CODE_LANGUAGE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ED_CODE_SUBJECT_CASE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_CODE_GENDER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_WEIGHT" Type="System.Decimal" DbType="Decimal(8,3) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_CONTENTS_AR" Type="System.String" DbType="NVarChar(400) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_CONTENTS_EN" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="IS_SUBJECT_MAIN" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="TEACHING_HOURS" Type="System.Decimal" DbType="Decimal(8,3) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_ORDER" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="MAX_GRADE" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="MIN_GRADE" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="ED_CODE_SUBJECT_PERIOD_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ED_CODE_SUBJECT_GROUP_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="CREDIT_HOURS" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="HAS_GROUP" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GROUP_SEL_NUM" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_MANDATORY" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="MIN_SEMESTERS" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="COURSE_WEEKS" Type="System.Decimal" DbType="Decimal(3,0)" CanBeNull="true" />
+      <Column Name="MAX_FAILURE" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="ROUNDING_FLG" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ROUNDUP_FLG" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="CAN_SWAP" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_SCI_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="TOTAL_FAIL_FLAG" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="ALL_SUB_REEXAM_FLAG" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="NEW_SUBJ_FLAG" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJ_REVIEW" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJ_APPROVE" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="subject_Validity" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="IS_ACTIVE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Association Name="AS_FACULTY_INFO_PG_SUBJECT" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+      <Association Name="AS_NODE_PG_SUBJECT" Member="AS_NODE" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="AS_NODE" IsForeignKey="true" />
+      <Association Name="AS_NODE_PG_SUBJECT1" Member="AS_NODE1" ThisKey="AS_SCI_NODE_ID" OtherKey="AS_NODE_ID" Type="AS_NODE" IsForeignKey="true" />
+      <Association Name="PG_PHASE_NODE_PG_SUBJECT" Member="PG_PHASE_NODE" ThisKey="PG_PHASE_NODE_ID" OtherKey="PG_PHASE_NODE_ID" Type="PG_PHASE_NODE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PG_BYLAW" Member="PG_BYLAWs">
+    <Type Name="PG_BYLAW">
+      <Column Name="PG_BYLAW_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BYLAW_DESCR_AR" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="BYLAW_DESCR_EN" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="BYLAW_CODE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_CODE_GENDER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ED_ACAD_YEAR_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_STUDY_ABSTRACT" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_STUDY_APPLIED" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ISSUE_NUMBER" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ISSUE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="BYLAW_NOTES" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="IS_IMMEDIATE" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_CUR_BYLAW" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_REVIEWED1" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_REVIEWED2" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_APPROVED" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Association Name="PG_BYLAW_PG_BYLAW_DEGREE" Member="PG_BYLAW_DEGREEs" ThisKey="PG_BYLAW_ID" OtherKey="PG_BYLAW_ID" Type="PG_BYLAW_DEGREE" />
+      <Association Name="AS_FACULTY_INFO_PG_BYLAW" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PG_BYLAW_DEGREE" Member="PG_BYLAW_DEGREEs">
+    <Type Name="PG_BYLAW_DEGREE">
+      <Column Name="PG_BYLAW_DEGREE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PG_BYLAW_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_GRANTABLE_DEGREE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Association Name="PG_BYLAW_DEGREE_PG_PHASE_NODE" Member="PG_PHASE_NODEs" ThisKey="PG_BYLAW_DEGREE_ID" OtherKey="PG_BYLAW_DEGREE_ID" Type="PG_PHASE_NODE" />
+      <Association Name="PG_BYLAW_DEGREE_PG_NODE_GRANTABLE_DEGREE" Member="PG_NODE_GRANTABLE_DEGREEs" ThisKey="PG_BYLAW_DEGREE_ID" OtherKey="PG_BYLAW_DEGREE_ID" Type="PG_NODE_GRANTABLE_DEGREE" />
+      <Association Name="PG_BYLAW_PG_BYLAW_DEGREE" Member="PG_BYLAW" ThisKey="PG_BYLAW_ID" OtherKey="PG_BYLAW_ID" Type="PG_BYLAW" IsForeignKey="true" />
+      <Association Name="AS_GRANTABLE_DEGREE_PG_BYLAW_DEGREE" Member="AS_GRANTABLE_DEGREE" ThisKey="AS_GRANTABLE_DEGREE_ID" OtherKey="AS_GRANTABLE_DEGREE_ID" Type="AS_GRANTABLE_DEGREE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PG_NODE_GRANTABLE_DEGREE" Member="PG_NODE_GRANTABLE_DEGREEs">
+    <Type Name="PG_NODE_GRANTABLE_DEGREE">
+      <Column Name="PG_NODE_GRANTABLE_DEGREE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AS_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="PG_BYLAW_DEGREE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="DEGREE_DESCR_AR" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="DEGREE_DESCR_EN" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="DEGREE_DESCR_CODE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="RESEARCH_REPORT_FLG" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="THESIS_FLG" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="TOT_CRDT_HR_MANDATORY" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="TOT_CRDT_HR_OPTIONAL" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Association Name="AS_NODE_PG_NODE_GRANTABLE_DEGREE" Member="AS_NODE" ThisKey="AS_NODE_ID" OtherKey="AS_NODE_ID" Type="AS_NODE" IsForeignKey="true" />
+      <Association Name="PG_BYLAW_DEGREE_PG_NODE_GRANTABLE_DEGREE" Member="PG_BYLAW_DEGREE" ThisKey="PG_BYLAW_DEGREE_ID" OtherKey="PG_BYLAW_DEGREE_ID" Type="PG_BYLAW_DEGREE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AS_GRANTABLE_DEGREE" Member="AS_GRANTABLE_DEGREEs">
+    <Type Name="AS_GRANTABLE_DEGREE">
+      <Column Name="AS_GRANTABLE_DEGREE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_CODE_DEGREE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="DEGREE_DESCR_AR" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="DEGREE_DESCR_EN" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="DEGREE_CODE" Type="System.String" DbType="NVarChar(9)" CanBeNull="true" />
+      <Column Name="MIN_YEARS" Type="System.Decimal" DbType="Decimal(9,1) NOT NULL" CanBeNull="false" />
+      <Association Name="AS_GRANTABLE_DEGREE_ED_BYLAW_DEGREE" Member="ED_BYLAW_DEGREEs" ThisKey="AS_GRANTABLE_DEGREE_ID" OtherKey="AS_GRANTABLE_DEGREE_ID" Type="ED_BYLAW_DEGREE" />
+      <Association Name="AS_GRANTABLE_DEGREE_PG_BYLAW_DEGREE" Member="PG_BYLAW_DEGREEs" ThisKey="AS_GRANTABLE_DEGREE_ID" OtherKey="AS_GRANTABLE_DEGREE_ID" Type="PG_BYLAW_DEGREE" />
+      <Association Name="AS_FACULTY_INFO_AS_GRANTABLE_DEGREE" Member="AS_FACULTY_INFO" ThisKey="AS_FACULTY_INFO_ID" OtherKey="AS_FACULTY_INFO_ID" Type="AS_FACULTY_INFO" IsForeignKey="true" />
+      <Association Name="AS_CODE_DEGREE_AS_GRANTABLE_DEGREE" Member="AS_CODE_DEGREE" ThisKey="AS_CODE_DEGREE_ID" OtherKey="AS_CODE_DEGREE_ID" Type="AS_CODE_DEGREE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.Subjects" Method="Subjects">
+    <Parameter Name="p_as_faculty_info_id" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="p_ed_phase_node_id" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="p_as_node_id" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="p_is_mandatory" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <ElementType Name="SubjectsResult">
+      <Column Name="ED_SUBJECT_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_CODE" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_DESCR_AR" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_DESCR_EN" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="CREDIT_HOURS" Type="System.Decimal" DbType="Decimal(8,3) NOT NULL" CanBeNull="false" />
+      <Column Name="TEACHING_HOURS" Type="System.Decimal" DbType="Decimal(8,3) NOT NULL" CanBeNull="false" />
+      <Column Name="MAX_GRADE" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="MIN_GRADE" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="IS_MANDATORY" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_SUBJECT_MAIN" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="FACULTY_BRANCH_DESCR_AR" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="FULL_PHASE_DESCR_AR" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="IS_TEACHING" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DESCR_AR" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="calculateExamHours" Type="System.Decimal" DbType="Decimal(38,3)" CanBeNull="true" />
+      <Column Name="DESCR_NUM" Type="System.Decimal" DbType="Decimal(8,3) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_FAILURE" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_ADDED" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ED_PHASE_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="PreRequeset" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ED_SUBJECT_ID1" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ED_PHASE_NODE_ID1" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_NODE_ID1" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ED_CODE_SUBJECT_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_CODE1" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_DESCR_AR1" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_DESCR_EN1" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="ED_CODE_SUBJECT_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_CODE_LANGUAGE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ED_CODE_SUBJECT_CASE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GS_CODE_GENDER_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_WEIGHT" Type="System.Decimal" DbType="Decimal(8,3) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_CONTENTS_AR" Type="System.String" DbType="NVarChar(400) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_CONTENTS_EN" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="IS_SUBJECT_MAIN1" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="TEACHING_HOURS1" Type="System.Decimal" DbType="Decimal(8,3) NOT NULL" CanBeNull="false" />
+      <Column Name="SUBJECT_ORDER" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="MAX_GRADE1" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="MIN_GRADE1" Type="System.Decimal" DbType="Decimal(8,3)" CanBeNull="true" />
+      <Column Name="ED_CODE_SUBJECT_PERIOD_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ED_CODE_SUBJECT_GROUP_TYPE_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="CREDIT_HOURS1" Type="System.Decimal" DbType="Decimal(8,3) NOT NULL" CanBeNull="false" />
+      <Column Name="HAS_GROUP" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GROUP_SEL_NUM" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_MANDATORY1" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="MIN_SEMESTERS" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="COURSE_WEEKS" Type="System.Decimal" DbType="Decimal(3,0)" CanBeNull="true" />
+      <Column Name="MAX_FAILURE" Type="System.Decimal" DbType="Decimal(2,0)" CanBeNull="true" />
+      <Column Name="ROUNDING_FLG" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ROUNDUP_FLG" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="CAN_SWAP" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_STUDY_ASSOCIATIVE" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_STUDY_REGULAR" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AS_SCI_NODE_ID" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="TOTAL_FAIL_FLAG" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="ALL_SUB_REEXAM_FLAG" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="YEAR_REEXAM_FLAG" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_ACTIVE" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="EDEXCEL_SUBJECT" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Natega_GRAD" Method="Natega_GRAD">
+    <Parameter Name="AS_FACULTY_INFO_id" Parameter="aS_FACULTY_INFO_id" Type="System.Decimal" DbType="Decimal(9,0)" />
+    <ElementType Name="Natega_GRADResult">
+      <Column Name="GRAD_DES" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="GRAD_CODE" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Natega_PUBLISH" Method="Natega_PUBLISH">
+    <Parameter Name="SEAT_NUM" Parameter="sEAT_NUM" Type="System.Decimal" DbType="Decimal(9,0)" />
+    <Parameter Name="NATIONAL_ID" Parameter="nATIONAL_ID" Type="System.String" DbType="NVarChar(16)" />
+    <Parameter Name="AS_FACULTY_INFO_id" Parameter="aS_FACULTY_INFO_id" Type="System.Decimal" DbType="Decimal(9,0)" />
+    <Parameter Name="RS_publish_GRADE" Parameter="rS_publish_GRADE" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Natega_PUBLISHResult">
+      <Column Name="SUB_NAME" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="STU_SUB_MARK" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="STU_SUB_DEGREE" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SUB_TERM" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Natega_FACULTY" Method="Natega_FACULTY">
+    <ElementType Name="Natega_FACULTYResult">
+      <Column Name="FACULTY_DESCR_AR" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="RS_publish_MIS_OR_EXT" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_MARK_Appear" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Natega_PUBLISH_STUD" Method="Natega_PUBLISH_STUD">
+    <Parameter Name="SEAT_NUM" Parameter="sEAT_NUM" Type="System.Decimal" DbType="Decimal(9,0)" />
+    <Parameter Name="NATIONAL_ID" Parameter="nATIONAL_ID" Type="System.String" DbType="NVarChar(16)" />
+    <Parameter Name="AS_FACULTY_INFO_id" Parameter="aS_FACULTY_INFO_id" Type="System.Decimal" DbType="Decimal(9,0)" />
+    <Parameter Name="RS_publish_GRADE" Parameter="rS_publish_GRADE" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Natega_PUBLISH_STUDResult">
+      <Column Name="STU_NAME" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="STU_DEGREE" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="STU_RES_STATUS" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SEAT_NUM" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="STU_ACD_YEAR" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STU_DEPT" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="STU_MARKS_SUM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GRAD_DES" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FACULTY_DESCR_AR" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="STU_CASE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="pay_stat" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="RS_STUDENT_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="STU_MARKS_SUM_appear" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STU_DEGREE_appear" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STU_CASE1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="pay" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Natega_FACULTY_2" Method="Natega_FACULTY_2">
+    <ElementType Name="Natega_FACULTY_2Result">
+      <Column Name="FACULTY_DESCR_AR" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="AS_FACULTY_INFO_ID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="RS_publish_MIS_OR_EXT" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_MARK_Appear" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="pg_publish" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

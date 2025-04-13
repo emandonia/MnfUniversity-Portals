@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Masterpages/FacultyMaster.Master" AutoEventWireup="true" CodeBehind="SMagazineMaster.master.cs" Inherits="MnfUniversity_Portals.Masterpages.SMagazineMaster" %>
+<asp:Content ID="Content7" ContentPlaceHolderID="meta" runat="server">
+    <meta http-equiv="Content-Type" content="المجلات العلمية بجامعة المنوفية , Menofia University scientific magazine" />
+</asp:Content>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="RightLinksPlaceHolder" runat="server">
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="LeftLinksPlaceHolder" runat="server">
+</asp:Content><asp:Content ID="Content3" ContentPlaceHolderID="EventsPlaceHolder" runat="server">
+</asp:Content>
+
+<asp:Content ID="Content6" ContentPlaceHolderID="NewsPlaceHolder" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
+</asp:Content>
+
